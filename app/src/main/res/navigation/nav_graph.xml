@@ -71,4 +71,9 @@
         android:name="com.example.miproyectohaikyuu.HinataFragment"
         android:label="fragment_hinata"
         tools:layout="@layout/fragment_hinata" />
+    <fragment
+        android:id="@+id/listaPosicionesFragment"
+        android:name="com.example.miproyectohaikyuu.ListaPosicionesFragment"
+        android:label="fragment_lista_posiciones"
+        tools:layout="@layout/fragment_lista_posiciones" />
 </navigation>

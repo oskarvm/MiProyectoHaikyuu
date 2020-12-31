@@ -71,7 +71,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/escudo_karasuno"
+                android:src="@drawable/posicion_central"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
@@ -79,7 +79,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/karasuno"
+                android:text="@string/central"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -98,7 +98,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/escudo_nekoma"
+                android:src="@drawable/posicion_opuesto"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
@@ -106,7 +106,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/nekoma"
+                android:text="@string/opuesto"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -125,7 +125,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/escudo_kamomedai"
+                android:src="@drawable/posicion_punta"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
@@ -133,7 +133,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/kamomedai"
+                android:text="@string/punta"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -152,7 +152,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/escudo_fukorodani"
+                android:src="@drawable/posicion_colocador"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
@@ -160,7 +160,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/fukorodani"
+                android:text="@string/colocador"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -179,7 +179,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/escudo_date"
+                android:src="@drawable/posicion_libero"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
@@ -187,7 +187,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/date"
+                android:text="@string/libero"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -196,95 +196,5 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/escudo_aobajosai"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/aobajosai"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/escudo_shiratorizawa"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/shiratorizawa"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/escudo_inarizaki"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/inarizaki"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0"
-        android:background="@drawable/fondonaranja">
-    </LinearLayout>
-
-
+</LinearLayout>
 </LinearLayout>
