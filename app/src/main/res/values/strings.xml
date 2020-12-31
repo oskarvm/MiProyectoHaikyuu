@@ -1,0 +1,35 @@
+<resources>
+
+    <string name="app_name">MiProyectoHaikyuu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="verjugadores">Ver jugadores</string>
+    <string name="misequipos">Mis equipos</string>
+    <string name="jugarpartida">Jugar partida</string>
+    <string name="cerrarsesion">Cerrar sesión</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="correo">Correo</string>
+    <string name="crearcuenta">Crear cuenta</string>
+    <string name="karasuno">Preparatoria Karasuno</string>
+    <string name="nekoma">Preparatoria Nekoma</string>
+    <string name="kamomedai">Preparatoria Kamomedai</string>
+    <string name="fukorodani">Academia Fukorodani</string>
+    <string name="date">Preparatoria Tecnica de Date</string>
+    <string name="aobajosai">Preparatoria Aoba Josai</string>
+    <string name="shiratorizawa">Academia Shiratorizawa</string>
+    <string name="inarizaki">Preparatoria Inarizaki</string>
+    <string name="central">Central</string>
+    <string name="opuesto">Opuesto</string>
+    <string name="punta">Punta</string>
+    <string name="colocador">Colocador</string>
+    <string name="libero">Libero</string>
+    <string name="equipos">Equipos</string>
+    <string name="posiciones">Posiciones</string>
+
+
+
+</resources>
