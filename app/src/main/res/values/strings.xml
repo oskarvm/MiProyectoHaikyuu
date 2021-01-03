@@ -29,6 +29,7 @@
     <string name="libero">Libero</string>
     <string name="equipos">Equipos</string>
     <string name="posiciones">Posiciones</string>
+    <string name="elegirjugador">Elegir Jugador</string>
 
 
 </resources>

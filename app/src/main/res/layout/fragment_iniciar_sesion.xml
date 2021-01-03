@@ -12,7 +12,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@drawable/fondonaranja">
     </LinearLayout>
@@ -22,23 +22,26 @@
         android:layout_height="wrap_content"
         android:background="@drawable/fondonegro"
         android:orientation="vertical"
-        android:padding="100dp"
-        android:layout_margin="20dp">
+        android:layout_weight="0"
+        android:layout_margin="20dp"
+        android:paddingVertical="50dp"
+        android:paddingHorizontal="30dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_regular"
             android:text="@string/usuario"
-            android:textColor="@color/blanco"
-            android:fontFamily="@font/roboto_regular"/>
+            android:textColor="@color/blanco" />
 
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/fondoblanco"
+            android:paddingBottom="20dp"
             android:layout_marginBottom="20dp"
-            android:paddingBottom="20dp"/>
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -51,8 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/fondoblanco"
-            android:layout_marginBottom="20dp"
-            android:paddingBottom="10dp" />
+            android:paddingBottom="20dp" />
 
         <Button
             android:id="@+id/iniciarSesion"
@@ -60,8 +62,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/fondonaranja"
             android:text="@string/login"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/roboto_black"/>
+            android:fontFamily="@font/roboto_black"
+            android:layout_marginTop="85dp"/>
 
 
     </LinearLayout>

@@ -9,90 +9,305 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:orientation="vertical"
         android:background="@drawable/fondonegro2">
 
         <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/flecha" />
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/jugador_karasuno_hinata"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:paddingVertical="3dp"
+        android:background="@drawable/fondoblanco"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:src="@drawable/jugador_karasuno_hinata" />
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="Hinata Shoyo"
+            android:textAlignment="center"
+            android:textSize="32dp"
+            android:textColor="@color/blanco" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_italic"
+                android:text="Datos"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Posición: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Bloqueador"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Equipo: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Karasuno"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Altura: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="164.2 cm"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_italic"
+                android:text="Características"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Bloqueo: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="7"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Remate: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="9"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Recepción: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="6"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Saque: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="5"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Colocación: "
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="5"
+                android:textSize="18dp"
+                android:textColor="@color/negro" />
+        </LinearLayout>
+
+
+
+
+
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/fondonaranja">
-
-
-    </LinearLayout>
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
     <TextView
-        android:id="@+id/verJugadores"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:background="@drawable/fondonegro"
-        android:text="@string/verjugadores"
-        android:fontFamily="@font/roboto_black"
-        android:textColor="@color/blanco"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
-        android:textAllCaps="true"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"/>
-
-
-    <TextView
-        android:id="@+id/misEquipos"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:background="@drawable/fondonegro"
-        android:text="@string/misequipos"
-        android:textColor="@color/blanco"
-        android:fontFamily="@font/roboto_black"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textAllCaps="true"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_margin="10dp"/>
-
-    <TextView
-        android:id="@+id/jugarPartida"
-        android:layout_width="200dp"
-        android:layout_height="30dp"
-        android:background="@drawable/fondonegro"
-        android:text="@string/jugarpartida"
-        android:textColor="@color/blanco"
-        android:fontFamily="@font/roboto_black"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:textAllCaps="true"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_margin="10dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/fondonaranja">
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/cerrarSesion"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:text="@string/cerrarsesion"
+        android:id="@+id/elegirJugador"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/elegirjugador"
         android:textAlignment="center"
         android:fontFamily="@font/roboto_italic"
         android:textColor="@color/blanco"
-        android:background="@drawable/fondonegro"
-        android:layout_gravity="center"/>
+        android:background="@drawable/fondonegro" />
+
+    </LinearLayout>
 
 
 
