@@ -30,6 +30,7 @@ public class RegistroFragment extends Fragment {
         return (binding = FragmentRegistroBinding.inflate(inflater, container, false)).getRoot();
     }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -37,7 +38,15 @@ public class RegistroFragment extends Fragment {
         autenticacionViewModel = new ViewModelProvider(requireActivity()).get(AutenticacionViewModel.class);
         navController = Navigation.findNavController(view);
 
+        binding.irAlIniciarSesion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_registroFragment_to_iniciarSesionFragment);
+            }
+        });
+
         autenticacionViewModel.iniciarRegistro();
+
 
         binding.registrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +56,9 @@ public class RegistroFragment extends Fragment {
 
                 autenticacionViewModel.crearCuentaEIniciarSesion(username, password);
             }
+
         });
+
 
         autenticacionViewModel.estadoDelRegistro.observe(getViewLifecycleOwner(), new Observer<AutenticacionViewModel.EstadoDelRegistro>() {
             @Override

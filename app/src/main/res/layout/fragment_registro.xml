@@ -109,7 +109,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/irAlRegistro"
+        android:id="@+id/irAlIniciarSesion"
         android:layout_width="200dp"
         android:layout_height="20dp"
         android:text="@string/login"
