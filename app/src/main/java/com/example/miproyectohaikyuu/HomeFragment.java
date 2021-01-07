@@ -31,6 +31,13 @@ public class HomeFragment extends Fragment {
 
         navController = Navigation.findNavController(view);
 
+        binding.verJugadores.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_homeFragment_to_listaEquiposFragment);
+            }
+        });
+
         binding.cerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

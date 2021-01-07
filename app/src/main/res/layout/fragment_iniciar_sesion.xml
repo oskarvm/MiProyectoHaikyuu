@@ -75,8 +75,6 @@
         android:background="@drawable/fondonaranja">
     </LinearLayout>
 
-
-
     <TextView
         android:id="@+id/irAlRegistro"
         android:layout_width="200dp"

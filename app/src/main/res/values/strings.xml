@@ -30,6 +30,10 @@
     <string name="equipos">Equipos</string>
     <string name="posiciones">Posiciones</string>
     <string name="elegirjugador">Elegir Jugador</string>
-
+    <string name="miperfil">Mi Perfil</string>
+    <string name="buscarpartida">Buscar Partida</string>
+    <string name="invitarpartida">Invitar amigo a partida</string>
+    <string name="historial">Historial de partidas</string>
+    <string name="borrarequipos">Borrar equipo</string>
 
 </resources>

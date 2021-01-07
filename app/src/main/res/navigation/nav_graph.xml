@@ -9,7 +9,14 @@
         android:id="@+id/listaEquiposFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquiposFragment"
         android:label="fragment_lista_equipos"
-        tools:layout="@layout/fragment_lista_equipos" />
+        tools:layout="@layout/fragment_lista_equipos" >
+        <action
+            android:id="@+id/action_listaEquiposFragment_to_listaPosicionesFragment"
+            app:destination="@id/listaPosicionesFragment" />
+        <action
+            android:id="@+id/action_listaEquiposFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/iniciarSesionFragment"
         android:name="com.example.miproyectohaikyuu.IniciarSesionFragment"
@@ -68,6 +75,15 @@
         <action
             android:id="@+id/action_homeFragment_to_cerrarSesionFragment"
             app:destination="@id/cerrarSesionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listaEquiposFragment"
+            app:destination="@id/listaEquiposFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_misEquipos2"
+            app:destination="@id/misEquipos2" />
+        <action
+            android:id="@+id/action_homeFragment_to_jugarPartida2"
+            app:destination="@id/jugarPartida2" />
     </fragment>
     <fragment
         android:id="@+id/hinataFragment"
@@ -78,5 +94,39 @@
         android:id="@+id/listaPosicionesFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionesFragment"
         android:label="fragment_lista_posiciones"
-        tools:layout="@layout/fragment_lista_posiciones" />
+        tools:layout="@layout/fragment_lista_posiciones" >
+        <action
+            android:id="@+id/action_listaPosicionesFragment_to_listaEquiposFragment"
+            app:destination="@id/listaEquiposFragment" />
+        <action
+            android:id="@+id/action_listaPosicionesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/misEquipos2"
+        android:name="com.example.miproyectohaikyuu.misEquipos"
+        android:label="fragment_mis_equipos"
+        tools:layout="@layout/fragment_mis_equipos" >
+        <action
+            android:id="@+id/action_misEquipos2_to_crearEquipo"
+            app:destination="@id/crearEquipo" />
+        <action
+            android:id="@+id/action_misEquipos2_to_equipoCreado"
+            app:destination="@id/equipoCreado" />
+    </fragment>
+    <fragment
+        android:id="@+id/jugarPartida2"
+        android:name="com.example.miproyectohaikyuu.jugarPartida"
+        android:label="fragment_jugar_partida"
+        tools:layout="@layout/fragment_jugar_partida" />
+    <fragment
+        android:id="@+id/crearEquipo"
+        android:name="com.example.miproyectohaikyuu.crearEquipo"
+        android:label="fragment_crear_equipo"
+        tools:layout="@layout/fragment_crear_equipo" />
+    <fragment
+        android:id="@+id/equipoCreado"
+        android:name="com.example.miproyectohaikyuu.equipoCreado"
+        android:label="fragment_equipo_creado"
+        tools:layout="@layout/fragment_equipo_creado" />
 </navigation>
