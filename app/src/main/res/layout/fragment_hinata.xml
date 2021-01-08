@@ -11,20 +11,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:background="@drawable/fondonegro2">
 
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/flecha" />
+            android:src="@drawable/flecha"
+            android:layout_weight="0"/>
 
-        <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/jugador_karasuno_hinata"
-            android:orientation="horizontal" />
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/escudo_karasuno"
+            android:layout_weight="0"
+            android:layout_marginTop="5dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -52,7 +63,8 @@
             android:layout_gravity="center"
             android:layout_marginVertical="20dp"
             android:fontFamily="@font/roboto_black"
-            android:text="Hinata Shoyo"
+            android:text="@string/hinata"
+            android:textAllCaps="true"
             android:textAlignment="center"
             android:textSize="32dp"
             android:textColor="@color/blanco" />
@@ -68,8 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_italic"
-                android:text="Datos"
-                android:textSize="18dp"
+                android:text="@string/datos"                android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>
 
@@ -83,16 +94,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Posición: "
-                android:textSize="18dp"
+                android:text="@string/posicion"                android:textSize="18dp"
                 android:textColor="@color/negro" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:text="Bloqueador"
-                android:textSize="18dp"
+                android:text="@string/bloqueador"                android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>
 
@@ -106,16 +115,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Equipo: "
-                android:textSize="18dp"
+                android:text="@string/equipo"                android:textSize="18dp"
                 android:textColor="@color/negro" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:text="Karasuno"
-                android:textSize="18dp"
+                android:text="@string/karasuno"                android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>
 
@@ -129,8 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Altura: "
-                android:textSize="18dp"
+                android:text="@string/altura"                android:textSize="18dp"
                 android:textColor="@color/negro" />
 
             <TextView
@@ -165,8 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_italic"
-                android:text="Características"
-                android:textSize="18dp"
+                android:text="@string/caracteristicas"                android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>
         <LinearLayout
@@ -179,8 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Bloqueo: "
-                android:textSize="18dp"
+                android:text="@string/bloqueo"                android:textSize="18dp"
                 android:textColor="@color/negro" />
 
             <TextView
@@ -202,8 +206,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Remate: "
-                android:textSize="18dp"
+                android:text="@string/reamte"                android:textSize="18dp"
                 android:textColor="@color/negro" />
 
             <TextView
@@ -225,8 +228,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Recepción: "
-                android:textSize="18dp"
+                android:text="@string/recepcion"                android:textSize="18dp"
                 android:textColor="@color/negro" />
 
             <TextView
@@ -248,8 +250,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Saque: "
-                android:textSize="18dp"
+                android:text="@string/saque"                android:textSize="18dp"
                 android:textColor="@color/negro" />
 
             <TextView
@@ -271,7 +272,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
-                android:text="Colocación: "
+                android:text="@string/colocacion"
                 android:textSize="18dp"
                 android:textColor="@color/negro" />
 

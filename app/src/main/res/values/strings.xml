@@ -3,6 +3,8 @@
     <string name="app_name">MiProyectoHaikyuu</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Menus -->
     <string name="login">Iniciar sesión</string>
     <string name="usuario">Usuario</string>
     <string name="contraseña">Contraseña</string>
@@ -14,19 +16,6 @@
     <string name="apellido">Apellido</string>
     <string name="correo">Correo</string>
     <string name="crearcuenta">Crear cuenta</string>
-    <string name="karasuno">Preparatoria Karasuno</string>
-    <string name="nekoma">Preparatoria Nekoma</string>
-    <string name="kamomedai">Preparatoria Kamomedai</string>
-    <string name="fukorodani">Academia Fukorodani</string>
-    <string name="date">Preparatoria Tecnica de Date</string>
-    <string name="aobajosai">Preparatoria Aoba Josai</string>
-    <string name="shiratorizawa">Academia Shiratorizawa</string>
-    <string name="inarizaki">Preparatoria Inarizaki</string>
-    <string name="central">Central</string>
-    <string name="opuesto">Opuesto</string>
-    <string name="punta">Punta</string>
-    <string name="colocador">Colocador</string>
-    <string name="libero">Libero</string>
     <string name="equipos">Equipos</string>
     <string name="posiciones">Posiciones</string>
     <string name="elegirjugador">Elegir Jugador</string>
@@ -35,5 +24,114 @@
     <string name="invitarpartida">Invitar amigo a partida</string>
     <string name="historial">Historial de partidas</string>
     <string name="borrarequipos">Borrar equipo</string>
+
+
+    <!-- Posiciones -->
+    <string name="bloqueador">Bloqueador</string>
+    <string name="opuesto">Opuesto</string>
+    <string name="punta">Punta</string>
+    <string name="colocador">Colocador</string>
+    <string name="libero">Libero</string>
+
+    <!-- Posiciones -->
+    <string name="datos">Datos</string>
+    <string name="posicion">Posición: </string>
+    <string name="equipo">Equipo: </string>
+    <string name="altura">Altura: </string>
+
+    <!-- Características -->
+    <string name="caracteristicas">Características</string>
+    <string name="bloqueo">Bloqueo: </string>
+    <string name="reamte">Remate: </string>
+    <string name="recepcion">Recepción: </string>
+    <string name="saque">Saque: </string>
+    <string name="colocacion">Colocación: </string>
+
+    <!-- Equipos -->
+    <string name="karasuno">Preparatoria Karasuno</string>
+    <string name="nekoma">Preparatoria Nekoma</string>
+    <string name="kamomedai">Preparatoria Kamomedai</string>
+    <string name="fukorodani">Academia Fukorodani</string>
+    <string name="date">Preparatoria Tecnica de Date</string>
+    <string name="aobajosai">Preparatoria Aoba Josai</string>
+    <string name="shiratorizawa">Academia Shiratorizawa</string>
+    <string name="inarizaki">Preparatoria Inarizaki</string>
+
+    <!-- Jugadores -->
+    <!-- Karasuno -->
+    <string name="hinata">Shoyo Hinata</string>
+    <string name="kageyama">Tobio Kageyama</string>
+    <string name="tanaka">Ryu Tanaka</string>
+    <string name="nishinoya">Yū Nishinoya</string>
+    <string name="tsukishima">Kei Tsukishima</string>
+    <string name="asahi">Azumane Asahi</string>
+    <string name="daichi">Sawamura Daichi</string>
+    <string name="sugawara">Koshi Sugawara</string>
+    <string name="yamaguchi">Tadashi Yamaguchi</string>
+
+    <!-- Nekoma -->
+    <string name="kuroo">Tetsurō Kuroo</string>
+    <string name="kai">Nobuyuki Kai</string>
+    <string name="yaku">Morisuke Yaku</string>
+    <string name="yamamoto">Taketora Yamamoto</string>
+    <string name="kenma">Kozume Kenma</string>
+    <string name="fukunaga">Shōhei Fukunaga</string>
+    <string name="lev">Lev Haiba</string>
+
+    <!-- Kamomedai -->
+    <string name="suwa">Aikichi Suwa</string>
+    <string name="nozawa">Izuru Nozawa</string>
+    <string name="hoshiumi">Kōrai Hoshiumi</string>
+    <string name="hirugami">Sachirō Hirugami</string>
+    <string name="hakuba">Gao Hakuba</string>
+    <string name="bessho">Kazuyoshi Bessho</string>
+    <string name="kanbayashi">Keiichirō Kanbayashi</string>
+
+    <!-- Fukorodani -->
+    <string name="washio">Tatsuki Washio</string>
+    <string name="sarukui">Yamato Sarukui</string>
+    <string name="bokuto">Kōtarō Bokuto</string>
+    <string name="akaashi">Keiji Akaashi</string>
+    <string name="konoha">Akinori Konoha</string>
+    <string name="komi">Haruki Komi</string>
+    <string name="onaga">Wataru Onaga</string>
+
+    <!-- Date -->
+    <string name="aone">Takanobu Aone</string>
+    <string name="futakuchi">Kenji Futakuchi</string>
+    <string name="obara">Yutaka Obara</string>
+    <string name="koganegawa">Kanji Koganegawa</string>
+    <string name="onagawa">Tarō Onagawa</string>
+    <string name="fukiage">Jingo Fukiage</string>
+    <string name="sakumani">Kōsuke Sakunami</string>
+
+    <!-- Aoba Josai -->
+    <string name="oikawa">Tōru Oikawa</string>
+    <string name="matsukawa">Issei Matsukawa</string>
+    <string name="iwaizumi">Hajime Iwaizumi</string>
+    <string name="watari">Shinji Watari</string>
+    <string name="kindaichi">Yūtarō Kindaichi</string>
+    <string name="kumini">Akira Kumini</string>
+    <string name="kentaro">Kentarō Kyōtanii</string>
+
+    <!-- Shiratorizawa -->
+    <string name="ushijima">Wakatoshi Ushijima</string>
+    <string name="tendo">Satori Tendō</string>
+    <string name="shibaru">Kenjirō  Shibaru</string>
+    <string name="reon">Reon Ōhira</string>
+    <string name="goshiki">Tsutomu Goshiki</string>
+    <string name="yamagata">Hayato Yamagata</string>
+    <string name="kawanishi">Taichi Kawanishi</string>
+
+    <!-- Inarizaki -->
+    <string name="kita">Shinsuke Kita</string>
+    <string name="aran">Aran Ojiro</string>
+    <string name="osamu">Osamu  Miya</string>
+    <string name="atsumu">Atsumu Miya</string>
+    <string name="suna">Rintarō Suna</string>
+    <string name="omimi">Ren Ōmimi</string>
+    <string name="akagi">Michinari Akagi</string>
+
+
 
 </resources>

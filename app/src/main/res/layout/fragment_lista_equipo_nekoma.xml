@@ -17,6 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:orientation="horizontal"
             android:layout_margin="10dp">
 
@@ -25,26 +26,21 @@
                 android:layout_height="50dp"
                 android:src="@drawable/flecha" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
-                android:textAllCaps="true"
-                android:text="@string/equipos"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/blanco"
-                android:padding="10dp" />
+                android:src="@drawable/escudo_nekoma" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textAllCaps="true"
-                android:text="@string/posiciones"
+                android:text="@string/nekoma"
+                android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/blanco"
-                android:gravity="center"
                 android:padding="10dp" />
         </LinearLayout>
 
@@ -70,16 +66,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_central"
+                android:src="@drawable/jugador_nekoma_kuroo"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irBloqueador"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/bloqueador"
+                android:text="@string/kuroo"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -98,16 +93,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_opuesto"
+                android:src="@drawable/jugador_nekoma_kai"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irOpuesto"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/opuesto"
+                android:text="@string/kai"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -126,16 +120,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_punta"
+                android:src="@drawable/jugador_nekoma_yaku"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irPunta"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/punta"
+                android:text="@string/yaku"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -154,16 +147,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_colocador"
+                android:src="@drawable/jugador_nekoma_kenma"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irColocador"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/colocador"
+                android:text="@string/kenma"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -182,16 +174,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_libero"
+                android:src="@drawable/jugador_nekoma_yamamoto"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irLibero"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/libero"
+                android:text="@string/yamamoto"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -200,5 +191,67 @@
 
         </LinearLayout>
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/jugador_nekoma_fukunaga"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/fukunaga"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/jugador_nekoma_lev"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/lev"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="@drawable/fondonaranja">
+    </LinearLayout>
+
 </LinearLayout>

@@ -17,6 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:orientation="horizontal"
             android:layout_margin="10dp">
 
@@ -25,32 +26,26 @@
                 android:layout_height="50dp"
                 android:src="@drawable/flecha" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
-                android:textAllCaps="true"
-                android:text="@string/equipos"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/blanco"
-                android:padding="10dp" />
+                android:src="@drawable/escudo_inarizaki" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textAllCaps="true"
-                android:text="@string/posiciones"
+                android:text="@string/inarizaki"
+                android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/blanco"
-                android:gravity="center"
                 android:padding="10dp" />
         </LinearLayout>
 
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_margin="20dp"
@@ -70,16 +65,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_central"
+                android:src="@drawable/jugador_inarizaki_kita"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irBloqueador"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/bloqueador"
+                android:text="@string/kita"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -98,16 +92,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_opuesto"
+                android:src="@drawable/jugador_inarizaki_aran"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irOpuesto"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/opuesto"
+                android:text="@string/aran"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -126,16 +119,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_punta"
+                android:src="@drawable/jugador_inarizaki_osamu"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irPunta"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/punta"
+                android:text="@string/osamu"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -154,16 +146,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_colocador"
+                android:src="@drawable/jugador_inarizaki_atsumu"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irColocador"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/colocador"
+                android:text="@string/atsumu"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -182,16 +173,15 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/posicion_libero"
+                android:src="@drawable/jugador_inarizaki_suna"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="0"/>
 
             <TextView
-                android:id="@+id/irLibero"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/libero"
+                android:text="@string/suna"
                 android:gravity="center"
                 android:fontFamily="@font/roboto_regular"
                 android:textColor="@color/negro"
@@ -200,5 +190,67 @@
 
         </LinearLayout>
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/jugador_inarizaki_omimi"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/omimi"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/jugador_inarizaki_akagi"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/akagi"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro"
+                android:padding="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="@drawable/fondonaranja">
+    </LinearLayout>
+
 </LinearLayout>

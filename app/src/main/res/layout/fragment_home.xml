@@ -120,9 +120,14 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1000"
-        android:background="@drawable/fondonaranja"/>
+    <TextView
+        android:id="@+id/cerrarSesion"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:text="@string/cerrarsesion"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:background="@drawable/fondonegro"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_italic" />
 </LinearLayout>
