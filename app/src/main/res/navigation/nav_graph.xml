@@ -110,11 +110,6 @@
             app:destination="@id/jugarPartida2" />
     </fragment>
     <fragment
-        android:id="@+id/hinataFragment"
-        android:name="com.example.miproyectohaikyuu.HinataFragment"
-        android:label="fragment_hinata"
-        tools:layout="@layout/fragment_hinata" />
-    <fragment
         android:id="@+id/listaPosicionesFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionesFragment"
         android:label="fragment_lista_posiciones"
@@ -233,4 +228,29 @@
         android:name="com.example.miproyectohaikyuu.ListaPosicionColocadorFragment"
         android:label="fragment_lista_posicion_colocador"
         tools:layout="@layout/fragment_lista_posicion_colocador" />
+    <fragment
+        android:id="@+id/jugadorKarasunoHinataFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoHinataFragment"
+        android:label="fragment_jugador_karasuno_hinata"
+        tools:layout="@layout/fragment_jugador_karasuno_hinata" />
+    <fragment
+        android:id="@+id/jugadorKarasunoKageyamaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoKageyamaFragment"
+        android:label="fragment_jugador_karasuno_kageyama"
+        tools:layout="@layout/fragment_jugador_karasuno_kageyama" />
+    <fragment
+        android:id="@+id/jugadorKarasunoTanakaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoTanakaFragment"
+        android:label="fragment_jugador_karasuno_tanaka"
+        tools:layout="@layout/fragment_jugador_karasuno_tanaka" />
+    <fragment
+        android:id="@+id/jugadorKarasunoNishinoyaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoNishinoyaFragment"
+        android:label="fragment_jugador_karasuno_nishinoya"
+        tools:layout="@layout/fragment_jugador_karasuno_nishinoya" />
+    <fragment
+        android:id="@+id/jugadorKarasunoTsukishimaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoTsukishimaFragment"
+        android:label="fragment_jugador_karasuno_tsukishima"
+        tools:layout="@layout/fragment_jugador_karasuno_tsukishima" />
 </navigation>
