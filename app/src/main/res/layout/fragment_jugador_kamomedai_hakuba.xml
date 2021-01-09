@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/jugador_kamomedai_hoshiumi"
+            android:background="@drawable/jugador_kamomedai_hakuba"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:layout_margin="10dp"/>
@@ -63,7 +63,7 @@
                 android:layout_gravity="center"
                 android:layout_marginVertical="20dp"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/hoshiumi"
+                android:text="@string/hakuba"
                 android:textAllCaps="true"
                 android:textAlignment="center"
                 android:textSize="32dp"
@@ -103,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/punta"
+                android:text="@string/opuesto"
                 android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>
@@ -149,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:text="169.2 cm"
+                android:text="203.3 cm"
                 android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>

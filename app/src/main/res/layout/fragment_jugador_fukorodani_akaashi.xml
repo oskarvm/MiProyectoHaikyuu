@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/jugador_kamomedai_hoshiumi"
+            android:background="@drawable/jugador_fukorodani_akaashi"
             android:orientation="horizontal"
             android:layout_weight="1"
             android:layout_margin="10dp"/>
@@ -33,7 +33,7 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/escudo_kamomedai"
+            android:src="@drawable/escudo_fukorodani"
             android:layout_weight="0"
             android:layout_marginTop="5dp"/>
     </LinearLayout>
@@ -63,11 +63,11 @@
                 android:layout_gravity="center"
                 android:layout_marginVertical="20dp"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/hoshiumi"
-                android:textAllCaps="true"
+                android:text="@string/akaashi"
                 android:textAlignment="center"
-                android:textSize="32dp"
-                android:textColor="@color/blanco" />
+                android:textAllCaps="true"
+                android:textColor="@color/blanco"
+                android:textSize="32dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -101,11 +101,11 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/punta"
-                android:textSize="18dp"
-                android:textColor="@color/negro" />
+                android:text="@string/colocador"
+                android:textColor="@color/negro"
+                android:textSize="18dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -126,7 +126,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:text="@string/kamomedai"
+                android:text="@string/fukorodani"
                 android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>
@@ -149,7 +149,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
-                android:text="169.2 cm"
+                android:text="183.0 cm"
                 android:textSize="18dp"
                 android:textColor="@color/negro" />
         </LinearLayout>

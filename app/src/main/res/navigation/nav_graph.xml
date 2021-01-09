@@ -323,4 +323,59 @@
         android:name="com.example.miproyectohaikyuu.JugadorKamomedaiHoshiumiFragment"
         android:label="fragment_jugador_kamomedai_hoshiumi"
         tools:layout="@layout/fragment_jugador_kamomedai_hoshiumi" />
+    <fragment
+        android:id="@+id/jugadorKamomedaiHirugamiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiHirugamiFragment"
+        android:label="fragment_jugador_kamomedai_hirugami"
+        tools:layout="@layout/fragment_jugador_kamomedai_hirugami" />
+    <fragment
+        android:id="@+id/jugadorKamomedaiHakubaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiHakubaFragment"
+        android:label="fragment_jugador_kamomedai_hakuba"
+        tools:layout="@layout/fragment_jugador_kamomedai_hakuba" />
+    <fragment
+        android:id="@+id/jugadorKamomedaiBesshoFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiBesshoFragment"
+        android:label="fragment_jugador_kamomedai_bessho"
+        tools:layout="@layout/fragment_jugador_kamomedai_bessho" />
+    <fragment
+        android:id="@+id/jugadorKamomedaiKanbayashiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiKanbayashiFragment"
+        android:label="fragment_jugador_kamomedai_kanbayashi"
+        tools:layout="@layout/fragment_jugador_kamomedai_kanbayashi" />
+    <fragment
+        android:id="@+id/jugadorFukorodaniWashioFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniWashioFragment"
+        android:label="fragment_jugador_fukorodani_washio"
+        tools:layout="@layout/fragment_jugador_fukorodani_washio" />
+    <fragment
+        android:id="@+id/jugadorFukorodaniSarukuiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniSarukuiFragment"
+        android:label="fragment_jugador_fukorodani_sarukui"
+        tools:layout="@layout/fragment_jugador_fukorodani_sarukui" />
+    <fragment
+        android:id="@+id/jugadorFukorodaniBokutoFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniBokutoFragment"
+        android:label="fragment_jugador_fukorodani_bokuto"
+        tools:layout="@layout/fragment_jugador_fukorodani_bokuto" />
+    <fragment
+        android:id="@+id/jugadorFukorodaniAkaashiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniAkaashiFragment"
+        android:label="fragment_jugador_fukorodani_akaashi"
+        tools:layout="@layout/fragment_jugador_fukorodani_akaashi" />
+    <fragment
+        android:id="@+id/jugadorFukorodaniKonohaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniKonohaFragment"
+        android:label="fragment_jugador_fukorodani_konoha"
+        tools:layout="@layout/fragment_jugador_fukorodani_konoha" />
+    <fragment
+        android:id="@+id/jugadorFukorodaniKomiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniKomiFragment"
+        android:label="fragment_jugador_fukorodani_komi"
+        tools:layout="@layout/fragment_jugador_fukorodani_komi" />
+    <fragment
+        android:id="@+id/jugadorFukorodaniOnagaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniOnagaFragment"
+        android:label="fragment_jugador_fukorodani_onaga"
+        tools:layout="@layout/fragment_jugador_fukorodani_onaga" />
 </navigation>
