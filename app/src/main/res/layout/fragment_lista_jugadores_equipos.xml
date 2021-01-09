@@ -7,53 +7,6 @@
     android:orientation="vertical"
     android:background="@color/naranja">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:background="@drawable/fondonegro2"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:orientation="horizontal"
-            android:layout_margin="10dp">
-
-            <ImageView
-                android:id="@+id/irAtras"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/flecha" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textAllCaps="true"
-                android:text="@string/equipos"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/blanco"
-                android:padding="10dp" />
-
-            <TextView
-                android:id="@+id/irPosicion"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textAllCaps="true"
-                android:text="@string/posiciones"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/blanco"
-                android:gravity="center"
-                android:padding="10dp" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -82,6 +35,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irKarasuno"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/karasuno"
@@ -109,6 +63,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irNekoma"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/nekoma"
@@ -136,6 +91,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irKamomedai"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/kamomedai"
@@ -163,6 +119,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irFukorodani"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/fukorodani"
@@ -190,6 +147,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irDate"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/date"
@@ -217,6 +175,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irAobajosai"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/aobajosai"
@@ -244,6 +203,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irShiratorizawa"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/shiratorizawa"
@@ -271,6 +231,7 @@
                     android:layout_weight="0"/>
 
                 <TextView
+                    android:id="@+id/irInarizaki"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/inarizaki"

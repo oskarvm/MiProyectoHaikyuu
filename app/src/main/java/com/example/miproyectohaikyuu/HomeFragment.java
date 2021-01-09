@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
         binding.verJugadores.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_homeFragment_to_listaEquiposFragment);
+                navController.navigate(R.id.action_homeFragment_to_listaEquiposYPosicionesFragment);
             }
         });
 
@@ -45,11 +45,19 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        binding.verJugadores.setOnClickListener(new View.OnClickListener() {
+        binding.misEquipos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_homeFragment_to_listaEquiposFragment);
+                navController.navigate(R.id.action_homeFragment_to_misEquipos2);
             }
         });
+
+        binding.jugarPartida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_homeFragment_to_jugarPartida2);
+            }
+        });
+
     }
 }
