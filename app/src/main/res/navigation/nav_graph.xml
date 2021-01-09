@@ -253,4 +253,74 @@
         android:name="com.example.miproyectohaikyuu.JugadorKarasunoTsukishimaFragment"
         android:label="fragment_jugador_karasuno_tsukishima"
         tools:layout="@layout/fragment_jugador_karasuno_tsukishima" />
+    <fragment
+        android:id="@+id/jugadorKarasunoAsahiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoAsahiFragment"
+        android:label="fragment_jugador_karasuno_asahi"
+        tools:layout="@layout/fragment_jugador_karasuno_asahi" />
+    <fragment
+        android:id="@+id/jugadorKarasunoDaichiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoDaichiFragment"
+        android:label="fragment_jugador_karasuno_daichi"
+        tools:layout="@layout/fragment_jugador_karasuno_daichi" />
+    <fragment
+        android:id="@+id/jugadorKarasunoSugawaraFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoSugawaraFragment"
+        android:label="fragment_jugador_karasuno_sugawara"
+        tools:layout="@layout/fragment_jugador_karasuno_sugawara" />
+    <fragment
+        android:id="@+id/jugadorKarasunoYamaguchiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKarasunoYamaguchiFragment"
+        android:label="fragment_jugador_karasuno_yamaguchi"
+        tools:layout="@layout/fragment_jugador_karasuno_yamaguchi" />
+    <fragment
+        android:id="@+id/jugadorNekomaKurooFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorNekomaKurooFragment"
+        android:label="fragment_jugador_nekoma_kuroo"
+        tools:layout="@layout/fragment_jugador_nekoma_kuroo" />
+    <fragment
+        android:id="@+id/jugadorNekomaKaiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorNekomaKaiFragment"
+        android:label="fragment_jugador_nekoma_kai"
+        tools:layout="@layout/fragment_jugador_nekoma_kai" />
+    <fragment
+        android:id="@+id/jugadorNekomaYakuFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorNekomaYakuFragment"
+        android:label="fragment_jugador_nekoma_yaku"
+        tools:layout="@layout/fragment_jugador_nekoma_yaku" />
+    <fragment
+        android:id="@+id/jugadorNekomaYamamotoFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorNekomaYamamotoFragment"
+        android:label="fragment_jugador_nekoma_yamamoto"
+        tools:layout="@layout/fragment_jugador_nekoma_yamamoto" />
+    <fragment
+        android:id="@+id/jugadorNekomaKenmaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorNekomaKenmaFragment"
+        android:label="fragment_jugador_nekoma_kenma"
+        tools:layout="@layout/fragment_jugador_nekoma_kenma" />
+    <fragment
+        android:id="@+id/jugadorNekomaFukunagaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorNekomaFukunagaFragment"
+        android:label="fragment_jugador_nekoma_fukunaga"
+        tools:layout="@layout/fragment_jugador_nekoma_fukunaga" />
+    <fragment
+        android:id="@+id/jugadorNekomaLevFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorNekomaLevFragment"
+        android:label="fragment_jugador_nekoma_lev"
+        tools:layout="@layout/fragment_jugador_nekoma_lev" />
+    <fragment
+        android:id="@+id/jugadorKamomedaiSuwaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiSuwaFragment"
+        android:label="fragment_jugador_kamomedai_suwa"
+        tools:layout="@layout/fragment_jugador_kamomedai_suwa" />
+    <fragment
+        android:id="@+id/jugadorKamomedaiNozawaFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiNozawaFragment"
+        android:label="fragment_jugador_kamomedai_nozawa"
+        tools:layout="@layout/fragment_jugador_kamomedai_nozawa" />
+    <fragment
+        android:id="@+id/jugadorKamomedaiHoshiumiFragment"
+        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiHoshiumiFragment"
+        android:label="fragment_jugador_kamomedai_hoshiumi"
+        tools:layout="@layout/fragment_jugador_kamomedai_hoshiumi" />
 </navigation>
