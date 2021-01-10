@@ -3,13 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/listaEquipoKarasunoFragment">
 
-    <fragment
-        android:id="@+id/listaEquiposFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquiposFragment"
-        android:label="fragment_lista_equipos"
-        tools:layout="@layout/fragment_lista_equipos" />
     <fragment
         android:id="@+id/iniciarSesionFragment"
         android:name="com.example.miproyectohaikyuu.IniciarSesionFragment"
@@ -61,7 +56,8 @@
         android:id="@+id/homeFragment"
         android:name="com.example.miproyectohaikyuu.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home"
+        app:startDestination="@id/action_homeFragment_to_cerrarSesionFragment">
         <action
             android:id="@+id/action_homeFragment_to_perfilFragment"
             app:destination="@id/perfilFragment" />
@@ -78,11 +74,6 @@
             android:id="@+id/action_homeFragment_to_listaEquiposYPosicionesFragment"
             app:destination="@id/listaEquiposYPosicionesFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/listaPosicionesFragment"
-        android:name="com.example.miproyectohaikyuu.ListaPosicionesFragment"
-        android:label="fragment_lista_posiciones"
-        tools:layout="@layout/fragment_lista_posiciones" />
     <fragment
         android:id="@+id/misEquipos2"
         android:name="com.example.miproyectohaikyuu.misEquipos"

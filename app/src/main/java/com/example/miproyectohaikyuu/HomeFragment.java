@@ -13,11 +13,13 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.miproyectohaikyuu.databinding.FragmentHomeBinding;
+import com.example.miproyectohaikyuu.databinding.FragmentListaEquiposYPosicionesBinding;
 
 
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
+    private FragmentListaEquiposYPosicionesBinding binding2;
     private NavController navController;
 
     @Override
@@ -30,6 +32,7 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
+
 
         binding.verJugadores.setOnClickListener(new View.OnClickListener() {
             @Override

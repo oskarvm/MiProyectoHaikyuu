@@ -7,17 +7,25 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import com.example.miproyectohaikyuu.databinding.FragmentListaEquiposBinding;
+import com.example.miproyectohaikyuu.databinding.FragmentListaPosicionesBinding;
 import com.example.miproyectohaikyuu.databinding.FragmentListaEquiposYPosicionesBinding;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
+
 public class ListaEquiposYPosicionesFragment extends Fragment {
     private FragmentListaEquiposYPosicionesBinding binding;
+    private FragmentListaEquiposBinding binding2;
+    private FragmentListaPosicionesBinding binding3;
+    private NavController navController;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return (binding = FragmentListaEquiposYPosicionesBinding.inflate(inflater, container, false)).getRoot();
     }
 
@@ -31,9 +39,9 @@ public class ListaEquiposYPosicionesFragment extends Fragment {
             public Fragment createFragment(int position) {
                 switch (position) {
                     case 0: default:
-                        return new ListaJugadoresEquipos();
+                        return new ListaEquiposFragment();
                     case 1:
-                        return new ListaJugadoresPosiciones();
+                        return new ListaPosicionesFragment();
                 }
             }
 
@@ -56,5 +64,8 @@ public class ListaEquiposYPosicionesFragment extends Fragment {
                 }
             }
         }).attach();
+
     }
+
+
 }

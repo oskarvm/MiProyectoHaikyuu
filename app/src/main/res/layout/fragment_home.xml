@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        android:layout_weight="0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,7 +32,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
+        android:layout_weight="2"
         android:background="@drawable/fondo_menus"
         android:orientation="horizontal">
 
@@ -107,14 +108,23 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/cerrarSesion"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        android:text="@string/cerrarsesion"
-        android:textAlignment="center"
-        android:textColor="@color/blanco"
-        android:background="@drawable/fondonegro"
-        android:layout_gravity="center"
-        android:fontFamily="@font/roboto_italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/cerrarSesion"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:text="@string/cerrarsesion"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:background="@drawable/fondonegro"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_italic" />
+    </LinearLayout>
+
 </LinearLayout>

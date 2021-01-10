@@ -7,47 +7,6 @@
     android:orientation="vertical"
     android:background="@color/naranja">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:background="@drawable/fondonegro2"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:orientation="horizontal"
-            android:layout_margin="10dp">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/flecha" />
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:src="@drawable/escudo_karasuno" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textAllCaps="true"
-                android:text="@string/karasuno"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/blanco"
-                android:padding="10dp" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -70,16 +29,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_hinata"
+                    android:src="@drawable/escudo_karasuno"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irHinata"
+                    android:id="@+id/irKarasuno"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/hinata"
+                    android:text="@string/karasuno"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
@@ -98,16 +57,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_kageyama"
+                    android:src="@drawable/escudo_nekoma"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irKageyama"
+                    android:id="@+id/irNekoma"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/kageyama"
+                    android:text="@string/nekoma"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
@@ -126,16 +85,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_tanaka"
+                    android:src="@drawable/escudo_kamomedai"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irTanaka"
+                    android:id="@+id/irKamomedai"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/tanaka"
+                    android:text="@string/kamomedai"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
@@ -154,16 +113,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_nishinoya"
+                    android:src="@drawable/escudo_fukorodani"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irNishinoya"
+                    android:id="@+id/irFukorodani"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/nishinoya"
+                    android:text="@string/fukorodani"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
@@ -182,16 +141,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_tsuki"
+                    android:src="@drawable/escudo_date"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irTsuki"
+                    android:id="@+id/irDate"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/tsukishima"
+                    android:text="@string/date"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
@@ -210,16 +169,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_asahi"
+                    android:src="@drawable/escudo_aobajosai"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irAsahi"
+                    android:id="@+id/irAobajosai"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/asahi"
+                    android:text="@string/aobajosai"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
@@ -238,16 +197,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_daichi"
+                    android:src="@drawable/escudo_shiratorizawa"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irDaichi"
+                    android:id="@+id/irShiratorizawa"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/daichi"
+                    android:text="@string/shiratorizawa"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
@@ -266,44 +225,16 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_sugawara"
+                    android:src="@drawable/escudo_inarizaki"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:layout_weight="0"/>
 
                 <TextView
-                    android:id="@+id/irSuga"
+                    android:id="@+id/irInarizaki"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/sugawara"
-                    android:gravity="center"
-                    android:fontFamily="@font/roboto_regular"
-                    android:textColor="@color/negro"
-                    android:padding="10dp"
-                    android:layout_weight="1"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_margin="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/jugador_karasuno_yamaguchi"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
-
-                <TextView
-                    android:id="@+id/irYamaguchi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/yamaguchi"
+                    android:text="@string/inarizaki"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
