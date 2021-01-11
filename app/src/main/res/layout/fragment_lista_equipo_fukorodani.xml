@@ -10,23 +10,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:background="@drawable/fondonegro2"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
             android:orientation="horizontal"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            tools:ignore="UselessParent">
 
             <ImageView
+                android:id="@+id/irAtras"
+                android:contentDescription="@string/flechaatras"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/flecha" />
 
             <ImageView
+                android:contentDescription="@string/fukorodani"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -51,11 +53,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <LinearLayout
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:background="@drawable/fondonaranja"
             android:orientation="vertical">
 
@@ -64,25 +66,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/washio"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_fukorodani_washio"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/washio"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -91,25 +95,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/sarukui"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_fukorodani_sarukui"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/sarukui"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -118,25 +124,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/bokuto"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_fukorodani_bokuto"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/bokuto"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -145,25 +153,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/akaashi"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_fukorodani_akaashi"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/akaashi"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -172,25 +182,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/konoha"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_fukorodani_konoha"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/konoha"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -199,25 +211,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/komi"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_fukorodani_komi"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/komi"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -226,25 +240,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/onaga"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_fukorodani_onaga"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/onaga"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -253,7 +269,8 @@
                 android:layout_width="10dp"
                 android:layout_height="0dp"
                 android:layout_weight="0"
-                android:orientation="horizontal"/>
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf" />
 
         </LinearLayout>
 

@@ -9,13 +9,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:background="@drawable/fondonaranja"
             android:orientation="vertical">
 
@@ -24,26 +24,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/karasuno"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_karasuno"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irKarasuno"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/karasuno"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -52,26 +54,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/nekoma"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_nekoma"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irNekoma"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/nekoma"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -80,26 +84,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/kamomedai"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_kamomedai"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irKamomedai"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/kamomedai"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -108,26 +114,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/fukorodani"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_fukorodani"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irFukorodani"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/fukorodani"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -136,26 +144,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/date"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_date"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irDate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/date"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -164,26 +174,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/aobajosai"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_aobajosai"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irAobajosai"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/aobajosai"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -192,26 +204,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/shiratorizawa"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_shiratorizawa"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irShiratorizawa"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/shiratorizawa"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -220,35 +234,40 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/inarizaki"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/escudo_inarizaki"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irInarizaki"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/inarizaki"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_margin="10dp"
                 android:layout_width="10dp"
                 android:layout_height="0dp"
                 android:layout_weight="0"
-                android:orientation="horizontal"/>
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf" />
 
         </LinearLayout>
 

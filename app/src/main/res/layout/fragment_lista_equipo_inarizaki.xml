@@ -10,23 +10,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:background="@drawable/fondonegro2"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
             android:orientation="horizontal"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            tools:ignore="UselessParent">
 
             <ImageView
+                android:id="@+id/irAtras"
+                android:contentDescription="@string/flechaatras"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/flecha" />
 
             <ImageView
+                android:contentDescription="@string/inarizaki"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -47,210 +49,231 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_margin="20dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/fondonaranja"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+
 
         <LinearLayout
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:background="@drawable/fondonaranja"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/jugador_inarizaki_kita"
-                android:layout_gravity="center"
+            <LinearLayout
                 android:layout_margin="10dp"
-                android:layout_weight="0"/>
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/kita"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
+                <ImageView
+                    android:contentDescription="@string/kita"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jugador_inarizaki_kita"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/kita"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/negro"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:contentDescription="@string/aran"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jugador_inarizaki_aran"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/aran"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/negro"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:contentDescription="@string/osamu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jugador_inarizaki_osamu"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/osamu"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/negro"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:contentDescription="@string/atsumu"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jugador_inarizaki_atsumu"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/atsumu"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/negro"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:contentDescription="@string/suna"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jugador_inarizaki_suna"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/suna"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/negro"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:contentDescription="@string/omimi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jugador_inarizaki_omimi"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/omimi"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/negro"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:contentDescription="@string/akagi"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/jugador_inarizaki_akagi"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/akagi"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/negro"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/jugador_inarizaki_aran"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/aran"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/jugador_inarizaki_osamu"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/osamu"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/jugador_inarizaki_atsumu"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/atsumu"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/jugador_inarizaki_suna"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/suna"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/jugador_inarizaki_omimi"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/omimi"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/jugador_inarizaki_akagi"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_weight="0"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/akagi"
-                android:gravity="center"
-                android:fontFamily="@font/roboto_regular"
-                android:textColor="@color/negro"
-                android:padding="10dp"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0"
-        android:background="@drawable/fondonaranja">
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

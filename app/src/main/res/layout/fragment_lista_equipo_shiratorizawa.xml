@@ -10,23 +10,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:background="@drawable/fondonegro2"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
             android:orientation="horizontal"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            tools:ignore="UselessParent">
 
             <ImageView
+                android:id="@+id/irAtras"
+                android:contentDescription="@string/flechaatras"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@drawable/flecha" />
 
             <ImageView
+                android:contentDescription="@string/shiratorizawa"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -51,11 +53,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <LinearLayout
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:background="@drawable/fondonaranja"
             android:orientation="vertical">
 
@@ -64,25 +66,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/ushijima"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_shiratorizawa_ushijima"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/ushijima"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -91,25 +95,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/tendo"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_shiratorizawa_tendo"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/tendo"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -118,25 +124,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/shibaru"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_shiratorizawa_shibaru"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/shibaru"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -145,25 +153,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/reon"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_shiratorizawa_reon"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/reon"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -172,25 +182,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/goshiki"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_shiratorizawa_goshiki"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/goshiki"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -199,25 +211,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/yamagata"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_shiratorizawa_yamagata"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/yamagata"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -226,36 +240,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/kawanishi"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/jugador_shiratorizawa_kawanishi"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/kawanishi"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
-
-                <LinearLayout
+            <LinearLayout
                 android:layout_margin="10dp"
                 android:layout_width="10dp"
                 android:layout_height="0dp"
                 android:layout_weight="0"
-                android:orientation="horizontal">
-                </LinearLayout>
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf" />
 
         </LinearLayout>
 

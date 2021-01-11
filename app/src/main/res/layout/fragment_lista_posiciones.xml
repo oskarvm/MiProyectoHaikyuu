@@ -9,13 +9,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:background="@drawable/fondonaranja"
             android:orientation="vertical">
 
@@ -24,26 +24,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/bloqueador"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/posicion_bloqueador"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irBloqueador"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/bloqueador"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -52,26 +54,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/opuesto"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/posicion_opuesto"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irOpuesto"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/opuesto"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -80,26 +84,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/punta"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/posicion_punta"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irPunta"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/punta"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -108,26 +114,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/bloqueador"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/posicion_colocador"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irColocador"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/colocador"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -136,26 +144,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:contentDescription="@string/libero"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:src="@drawable/posicion_libero"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:layout_weight="0"/>
+                    android:layout_margin="10dp" />
 
                 <TextView
                     android:id="@+id/irLibero"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:text="@string/libero"
                     android:gravity="center"
                     android:fontFamily="@font/roboto_regular"
                     android:textColor="@color/negro"
                     android:padding="10dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
 
             </LinearLayout>
 
@@ -164,7 +174,8 @@
                 android:layout_width="10dp"
                 android:layout_height="0dp"
                 android:layout_weight="0"
-                android:orientation="horizontal"/>
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf" />
 
         </LinearLayout>
 

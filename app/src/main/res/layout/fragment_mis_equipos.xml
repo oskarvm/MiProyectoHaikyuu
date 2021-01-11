@@ -15,6 +15,8 @@
         android:layout_margin="10dp">
 
         <ImageView
+            android:id="@+id/irAtras"
+            android:contentDescription="@string/flechaatras"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/flecha" />
@@ -25,6 +27,7 @@
             android:orientation="vertical"
             android:layout_margin="10dp">
             <ImageView
+                android:contentDescription="@string/logo"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_gravity="end"
@@ -46,26 +49,27 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:background="@drawable/fondo_menus"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:gravity="center">
+            android:gravity="center"
+            tools:ignore="UselessParent">
 
             <Button
                 android:id="@+id/equipo1"
                 android:layout_width="200dp"
-                android:layout_height="30dp"
+                android:layout_height="26dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/fondonegro"
                 android:fontFamily="@font/roboto_black"
-                android:text="EQUIPO 1"
+                android:text="@string/equipo1"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blanco" />
@@ -74,14 +78,13 @@
                 android:id="@+id/equipo2"
                 android:layout_width="200dp"
                 android:layout_height="30dp"
-                android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/fondonegro"
                 android:fontFamily="@font/roboto_black"
                 android:gravity="center"
-                android:text="EQUIPO 2"
+                android:text="@string/equipo2"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blanco" />
@@ -95,7 +98,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/fondonegro"
                 android:fontFamily="@font/roboto_black"
-                android:text="añadir nuevo equipo"
+                android:text="@string/equipo3"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blanco" />

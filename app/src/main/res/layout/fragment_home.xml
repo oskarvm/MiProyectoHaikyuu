@@ -19,8 +19,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            tools:ignore="UselessParent">
             <ImageView
+                android:contentDescription="@string/logo"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_gravity="end"
@@ -34,15 +36,16 @@
         android:layout_height="wrap_content"
         android:layout_weight="2"
         android:background="@drawable/fondo_menus"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="0"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
 
             <Button
                 android:id="@+id/miPerfil"
