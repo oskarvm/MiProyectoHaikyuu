@@ -5,14 +5,14 @@ public class Personaje {
     String nombre;
     String posicion;
     String equipo;
-    float altura;
-    int bloqueo;
-    int remate;
-    int recepcion;
-    int saque;
-    int colocacion;
+    String altura;
+    String bloqueo;
+    String remate;
+    String recepcion;
+    String saque;
+    String colocacion;
 
-    public Personaje(int foto, String nombre, String posicion, String equipo, float altura, int bloqueo, int remate, int recepcion, int saque, int colocacion) {
+    public Personaje(int foto, String nombre, String posicion, String equipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion) {
         this.foto = foto;
         this.posicion = posicion;
         this.nombre = nombre;

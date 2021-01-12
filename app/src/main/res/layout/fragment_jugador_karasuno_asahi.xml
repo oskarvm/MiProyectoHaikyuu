@@ -24,6 +24,7 @@
             tools:ignore="NestedWeights" />
 
         <ImageView
+            android:id="@+id/foto"
             android:contentDescription="@string/asahi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -110,6 +111,7 @@
                         android:textColor="@color/negro" />
 
                     <TextView
+                        android:id="@+id/posicion"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
@@ -133,6 +135,7 @@
                         android:textColor="@color/negro" />
 
                     <TextView
+                        android:id="@+id/equipo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
