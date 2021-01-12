@@ -86,7 +86,7 @@
     <string name="tsukishima">Kei Tsukishima</string>
     <string name="asahi">Azumane Asahi</string>
     <string name="daichi">Sawamura Daichi</string>
-    <string name="sugawara">Koshi Sugawara</string>
+    <string name="sugawara">Kōshi Sugawara</string>
     <string name="yamaguchi">Tadashi Yamaguchi</string>
 
     <!-- Nekoma -->
@@ -151,6 +151,7 @@
     <string name="suna">Rintarō Suna</string>
     <string name="omimi">Ren Ōmimi</string>
     <string name="akagi">Michinari Akagi</string>
+
     <string name="todo">TODO</string>
 
 
