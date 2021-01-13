@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentEquiposPersonajesBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderEquiposBinding;
+import com.example.miproyectohaikyuu.model.EquipoPosicion;
 
 import java.util.List;
 

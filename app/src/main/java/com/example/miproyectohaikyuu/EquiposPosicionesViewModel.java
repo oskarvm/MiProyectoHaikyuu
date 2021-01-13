@@ -6,6 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import com.example.miproyectohaikyuu.model.EquipoPosicion;
+import com.example.miproyectohaikyuu.model.EquipoPosicionRepository;
+
 import java.util.List;
 
 public class EquiposPosicionesViewModel extends AndroidViewModel {
@@ -18,6 +21,6 @@ public class EquiposPosicionesViewModel extends AndroidViewModel {
     }
 
     LiveData<List<EquipoPosicion>> equipoposicion(){
-        return equipoPosicionRepository.euipoposicion();
+        return equipoPosicionRepository.equipoposicion();
     }
 }

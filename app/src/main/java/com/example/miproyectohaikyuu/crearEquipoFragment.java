@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ListaPosicionLiberoFragment#newInstance} factory method to
+ * Use the {@link crearEquipoFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ListaPosicionLiberoFragment extends Fragment {
+public class crearEquipoFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class ListaPosicionLiberoFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ListaPosicionLiberoFragment() {
+    public crearEquipoFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class ListaPosicionLiberoFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ListaPosicionLiberoFragment.
+     * @return A new instance of fragment crearEquipo.
      */
     // TODO: Rename and change types and number of parameters
-    public static ListaPosicionLiberoFragment newInstance(String param1, String param2) {
-        ListaPosicionLiberoFragment fragment = new ListaPosicionLiberoFragment();
+    public static crearEquipoFragment newInstance(String param1, String param2) {
+        crearEquipoFragment fragment = new crearEquipoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class ListaPosicionLiberoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lista_posicion_libero, container, false);
+        return inflater.inflate(R.layout.fragment_crear_equipo, container, false);
     }
 }

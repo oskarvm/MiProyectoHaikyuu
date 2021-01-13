@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ListaPosicionBloqueadorFragment#newInstance} factory method to
+ * Use the {@link jugarPartidaFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ListaPosicionBloqueadorFragment extends Fragment {
+public class jugarPartidaFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +24,7 @@ public class ListaPosicionBloqueadorFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ListaPosicionBloqueadorFragment() {
+    public jugarPartidaFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +34,11 @@ public class ListaPosicionBloqueadorFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ListaPosicionBloqueadorFragment.
+     * @return A new instance of fragment jugarPartida.
      */
     // TODO: Rename and change types and number of parameters
-    public static ListaPosicionBloqueadorFragment newInstance(String param1, String param2) {
-        ListaPosicionBloqueadorFragment fragment = new ListaPosicionBloqueadorFragment();
+    public static jugarPartidaFragment newInstance(String param1, String param2) {
+        jugarPartidaFragment fragment = new jugarPartidaFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +59,6 @@ public class ListaPosicionBloqueadorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lista_posicion_bloqueador, container, false);
+        return inflater.inflate(R.layout.fragment_jugar_partida, container, false);
     }
 }

@@ -13,12 +13,15 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.miproyectohaikyuu.databinding.ActivityMainBinding;
+import com.example.miproyectohaikyuu.model.AppBaseDeDatos;
+import com.example.miproyectohaikyuu.model.Personaje;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
 
     AutenticacionViewModel autenticacionViewModel;
+    private PersonajesViewModel personajesViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
 
         autenticacionViewModel = new ViewModelProvider(this).get(AutenticacionViewModel.class);
+
+        personajesViewModel = new ViewModelProvider(this).get(PersonajesViewModel.class);
+
+
+        personajesViewModel.obtener().observe(this, personajes -> {
+            if(personajes.size() == 0) {
+                personajesViewModel.insertarDeTodo();
+            }
+        });
+
 
         setSupportActionBar(binding.toolbar);
 

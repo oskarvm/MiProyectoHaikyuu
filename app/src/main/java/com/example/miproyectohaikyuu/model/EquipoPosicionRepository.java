@@ -1,16 +1,18 @@
-package com.example.miproyectohaikyuu;
+package com.example.miproyectohaikyuu.model;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
+import com.example.miproyectohaikyuu.R;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class EquipoPosicionRepository {
 
-    LiveData<List<EquipoPosicion>> equipoposicionLiveData;
+    public LiveData<List<EquipoPosicion>> equipoposicionLiveData;
 
-    EquipoPosicionRepository() {
+    public EquipoPosicionRepository() {
         List<EquipoPosicion> equipoposicion = Arrays.asList(
                 new EquipoPosicion(R.drawable.jugador_karasuno_hinata, "Shoyo Hinata", "Bloqueador", "Preparatoria Karasuno"),
                 new EquipoPosicion(R.drawable.jugador_karasuno_kageyama, "Tobio Kageyama", "Colocador", "Preparatoria Karasuno"),
@@ -82,7 +84,7 @@ public class EquipoPosicionRepository {
         equipoposicionLiveData = new MutableLiveData<>(equipoposicion);
     }
 
-    LiveData<List<EquipoPosicion>> euipoposicion(){
+    public LiveData<List<EquipoPosicion>> equipoposicion(){
         return equipoposicionLiveData;
     }
 }

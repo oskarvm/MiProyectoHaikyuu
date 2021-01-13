@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentPersonajesBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderPersonajeBinding;
+import com.example.miproyectohaikyuu.model.Personaje;
 
 import java.util.List;
 
@@ -44,6 +45,8 @@ public class PersonajesFragment extends Fragment {
                 personajesAdapter.setPersonajeList(personajes);
             }
         });
+
+        //personajesViewModel.obtener().observe(getViewLifecycleOwner(), personajesAdapter::setPersonajeList);
     }
 
     class PersonajesAdapter extends RecyclerView.Adapter<PersonajeViewHolder>{

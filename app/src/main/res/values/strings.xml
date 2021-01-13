@@ -2,7 +2,7 @@
 
     <string name="app_name">MiProyectoHaikyuu</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
     <!-- Menus -->
     <string name="login">Iniciar sesión</string>
@@ -18,9 +18,9 @@
     <string name="crearcuenta">Crear cuenta</string>
     <string name="equipos">Equipos</string>
     <string name="posiciones">Posiciones</string>
-    <string name="elegirjugador">Elegir Jugador</string>
-    <string name="miperfil">Mi Perfil</string>
-    <string name="buscarpartida">Buscar Partida</string>
+    <string name="elegirjugador">Elegir jugador</string>
+    <string name="miperfil">Mi perfil</string>
+    <string name="buscarpartida">Buscar partida</string>
     <string name="invitarpartida">Invitar amigo a partida</string>
     <string name="historial">Historial de partidas</string>
     <string name="borrarequipos">Borrar equipo</string>
@@ -71,7 +71,7 @@
     <string name="karasuno">Preparatoria Karasuno</string>
     <string name="nekoma">Preparatoria Nekoma</string>
     <string name="kamomedai">Preparatoria Kamomedai</string>
-    <string name="fukorodani">Academia Fukorodani</string>
+    <string name="fukorodani">Academia Fukurōdani</string>
     <string name="date">Preparatoria Tecnica de Date</string>
     <string name="aobajosai">Preparatoria Aoba Josai</string>
     <string name="shiratorizawa">Academia Shiratorizawa</string>
@@ -79,80 +79,80 @@
 
     <!-- Jugadores -->
     <!-- Karasuno -->
-    <string name="hinata">Shoyo Hinata</string>
-    <string name="kageyama">Tobio Kageyama</string>
-    <string name="tanaka">Ryu Tanaka</string>
-    <string name="nishinoya">Yū Nishinoya</string>
-    <string name="tsukishima">Kei Tsukishima</string>
-    <string name="asahi">Azumane Asahi</string>
-    <string name="daichi">Sawamura Daichi</string>
-    <string name="sugawara">Kōshi Sugawara</string>
-    <string name="yamaguchi">Tadashi Yamaguchi</string>
+    <string name="hinata" translatable="false">Shoyo Hinata</string>
+    <string name="kageyama" translatable="false">Tobio Kageyama</string>
+    <string name="tanaka" translatable="false">Ryu Tanaka</string>
+    <string name="nishinoya" translatable="false">Yū Nishinoya</string>
+    <string name="tsukishima" translatable="false">Kei Tsukishima</string>
+    <string name="asahi" translatable="false">Azumane Asahi</string>
+    <string name="daichi" translatable="false">Sawamura Daichi</string>
+    <string name="sugawara" translatable="false">Kōshi Sugawara</string>
+    <string name="yamaguchi" translatable="false">Tadashi Yamaguchi</string>
 
     <!-- Nekoma -->
-    <string name="kuroo">Tetsurō Kuroo</string>
-    <string name="kai">Nobuyuki Kai</string>
-    <string name="yaku">Morisuke Yaku</string>
-    <string name="yamamoto">Taketora Yamamoto</string>
-    <string name="kenma">Kozume Kenma</string>
-    <string name="fukunaga">Shōhei Fukunaga</string>
-    <string name="lev">Lev Haiba</string>
+    <string name="kuroo" translatable="false">Tetsurō Kuroo</string>
+    <string name="kai" translatable="false">Nobuyuki Kai</string>
+    <string name="yaku" translatable="false">Morisuke Yaku</string>
+    <string name="yamamoto" translatable="false">Taketora Yamamoto</string>
+    <string name="kenma" translatable="false">Kozume Kenma</string>
+    <string name="fukunaga" translatable="false">Shōhei Fukunaga</string>
+    <string name="lev" translatable="false">Lev Haiba</string>
 
     <!-- Kamomedai -->
-    <string name="suwa">Aikichi Suwa</string>
-    <string name="nozawa">Izuru Nozawa</string>
-    <string name="hoshiumi">Kōrai Hoshiumi</string>
-    <string name="hirugami">Sachirō Hirugami</string>
-    <string name="hakuba">Gao Hakuba</string>
-    <string name="bessho">Kazuyoshi Bessho</string>
-    <string name="kanbayashi">Keiichirō Kanbayashi</string>
+    <string name="suwa" translatable="false">Aikichi Suwa</string>
+    <string name="nozawa" translatable="false">Izuru Nozawa</string>
+    <string name="hoshiumi" translatable="false">Kōrai Hoshiumi</string>
+    <string name="hirugami" translatable="false">Sachirō Hirugami</string>
+    <string name="hakuba" translatable="false">Gao Hakuba</string>
+    <string name="bessho" translatable="false">Kazuyoshi Bessho</string>
+    <string name="kanbayashi" translatable="false">Keiichirō Kanbayashi</string>
 
     <!-- Fukorodani -->
-    <string name="washio">Tatsuki Washio</string>
-    <string name="sarukui">Yamato Sarukui</string>
-    <string name="bokuto">Kōtarō Bokuto</string>
-    <string name="akaashi">Keiji Akaashi</string>
-    <string name="konoha">Akinori Konoha</string>
-    <string name="komi">Haruki Komi</string>
-    <string name="onaga">Wataru Onaga</string>
+    <string name="washio" translatable="false">Tatsuki Washio</string>
+    <string name="sarukui" translatable="false">Yamato Sarukui</string>
+    <string name="bokuto" translatable="false">Kōtarō Bokuto</string>
+    <string name="akaashi" translatable="false">Keiji Akaashi</string>
+    <string name="konoha" translatable="false">Akinori Konoha</string>
+    <string name="komi" translatable="false">Haruki Komi</string>
+    <string name="onaga" translatable="false">Wataru Onaga</string>
 
     <!-- Date -->
-    <string name="aone">Takanobu Aone</string>
-    <string name="futakuchi">Kenji Futakuchi</string>
-    <string name="obara">Yutaka Obara</string>
-    <string name="koganegawa">Kanji Koganegawa</string>
-    <string name="onagawa">Tarō Onagawa</string>
-    <string name="fukiage">Jingo Fukiage</string>
-    <string name="sakumani">Kōsuke Sakunami</string>
+    <string name="aone" translatable="false">Takanobu Aone</string>
+    <string name="futakuchi" translatable="false">Kenji Futakuchi</string>
+    <string name="obara" translatable="false">Yutaka Obara</string>
+    <string name="koganegawa" translatable="false">Kanji Koganegawa</string>
+    <string name="onagawa" translatable="false">Tarō Onagawa</string>
+    <string name="fukiage" translatable="false">Jingo Fukiage</string>
+    <string name="sakumani" translatable="false">Kōsuke Sakunami</string>
 
     <!-- Aoba Josai -->
-    <string name="oikawa">Tōru Oikawa</string>
-    <string name="matsukawa">Issei Matsukawa</string>
-    <string name="iwaizumi">Hajime Iwaizumi</string>
-    <string name="watari">Shinji Watari</string>
-    <string name="kindaichi">Yūtarō Kindaichi</string>
-    <string name="kumini">Akira Kumini</string>
-    <string name="kentaro">Kentarō Kyōtanii</string>
+    <string name="oikawa" translatable="false">Tōru Oikawa</string>
+    <string name="matsukawa" translatable="false">Issei Matsukawa</string>
+    <string name="iwaizumi" translatable="false">Hajime Iwaizumi</string>
+    <string name="watari" translatable="false">Shinji Watari</string>
+    <string name="kindaichi" translatable="false">Yūtarō Kindaichi</string>
+    <string name="kumini" translatable="false">Akira Kumini</string>
+    <string name="kentaro" translatable="false">Kentarō Kyōtanii</string>
 
     <!-- Shiratorizawa -->
-    <string name="ushijima">Wakatoshi Ushijima</string>
-    <string name="tendo">Satori Tendō</string>
-    <string name="shibaru">Kenjirō  Shibaru</string>
-    <string name="reon">Reon Ōhira</string>
-    <string name="goshiki">Tsutomu Goshiki</string>
-    <string name="yamagata">Hayato Yamagata</string>
-    <string name="kawanishi">Taichi Kawanishi</string>
+    <string name="ushijima" translatable="false">Wakatoshi Ushijima</string>
+    <string name="tendo" translatable="false">Satori Tendō</string>
+    <string name="shibaru" translatable="false">Kenjirō  Shibaru</string>
+    <string name="reon" translatable="false">Reon Ōhira</string>
+    <string name="goshiki" translatable="false">Tsutomu Goshiki</string>
+    <string name="yamagata" translatable="false">Hayato Yamagata</string>
+    <string name="kawanishi" translatable="false">Taichi Kawanishi</string>
 
     <!-- Inarizaki -->
-    <string name="kita">Shinsuke Kita</string>
-    <string name="aran">Aran Ojiro</string>
-    <string name="osamu">Osamu  Miya</string>
-    <string name="atsumu">Atsumu Miya</string>
-    <string name="suna">Rintarō Suna</string>
-    <string name="omimi">Ren Ōmimi</string>
-    <string name="akagi">Michinari Akagi</string>
+    <string name="kita" translatable="false">Shinsuke Kita</string>
+    <string name="aran" translatable="false">Aran Ojiro</string>
+    <string name="osamu" translatable="false">Osamu  Miya</string>
+    <string name="atsumu" translatable="false">Atsumu Miya</string>
+    <string name="suna" translatable="false">Rintarō Suna</string>
+    <string name="omimi" translatable="false">Ren Ōmimi</string>
+    <string name="akagi" translatable="false">Michinari Akagi</string>
 
-    <string name="todo">TODO</string>
+    <string name="todo" translatable="false">TODO</string>
 
 
 </resources>

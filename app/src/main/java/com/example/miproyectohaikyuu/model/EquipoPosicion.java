@@ -1,4 +1,4 @@
-package com.example.miproyectohaikyuu;
+package com.example.miproyectohaikyuu.model;
 
 public class EquipoPosicion {
     int foto;

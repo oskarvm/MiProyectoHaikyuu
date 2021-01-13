@@ -1,17 +1,24 @@
-package com.example.miproyectohaikyuu;
+package com.example.miproyectohaikyuu.model;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Personaje {
-    int foto;
-    int escudo;
-    String nombre;
-    String posicion;
-    String equipo;
-    String altura;
-    String bloqueo;
-    String remate;
-    String recepcion;
-    String saque;
-    String colocacion;
+    @PrimaryKey(autoGenerate = true)
+    public int id;
+
+    public int foto;
+    public int escudo;
+    public String nombre;
+    public String posicion;
+    public String equipo;
+    public String altura;
+    public String bloqueo;
+    public String remate;
+    public String recepcion;
+    public String saque;
+    public String colocacion;
 
     public Personaje(int foto, int escudo, String nombre, String posicion, String equipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion) {
         this.foto = foto;

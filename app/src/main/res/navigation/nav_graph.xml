@@ -77,7 +77,7 @@
     </fragment>
     <fragment
         android:id="@+id/misEquipos2"
-        android:name="com.example.miproyectohaikyuu.misEquipos"
+        android:name="com.example.miproyectohaikyuu.misEquiposFragment"
         android:label="fragment_mis_equipos"
         tools:layout="@layout/fragment_mis_equipos" >
         <action
@@ -89,12 +89,12 @@
     </fragment>
     <fragment
         android:id="@+id/jugarPartida2"
-        android:name="com.example.miproyectohaikyuu.jugarPartida"
+        android:name="com.example.miproyectohaikyuu.jugarPartidaFragment"
         android:label="fragment_jugar_partida"
         tools:layout="@layout/fragment_jugar_partida" />
     <fragment
         android:id="@+id/crearEquipo"
-        android:name="com.example.miproyectohaikyuu.crearEquipo"
+        android:name="com.example.miproyectohaikyuu.crearEquipoFragment"
         android:label="fragment_crear_equipo"
         tools:layout="@layout/fragment_crear_equipo" />
     <fragment
