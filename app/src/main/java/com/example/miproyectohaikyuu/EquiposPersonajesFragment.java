@@ -5,14 +5,19 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentEquiposPersonajesBinding;
-import com.example.miproyectohaikyuu.databinding.FragmentPersonajesBinding;
+import com.example.miproyectohaikyuu.databinding.ViewholderEquiposBinding;
+
+import java.util.List;
 
 public class EquiposPersonajesFragment extends Fragment {
 
@@ -30,6 +35,55 @@ public class EquiposPersonajesFragment extends Fragment {
 
         EquiposPosicionesViewModel equiposPosicionesViewModel = new ViewModelProvider(this).get(EquiposPosicionesViewModel.class);
 
-        equiposPosicionesViewModel.equipoposicion();
+        final EquiposPersonajesFragment.EquiposAdapter equiposAdapter = new EquiposPersonajesFragment.EquiposAdapter();
+
+        binding.recyclerEquipoPosiciones.setAdapter(equiposAdapter);
+
+        equiposPosicionesViewModel.equipoposicion().observe(getViewLifecycleOwner(), new Observer<List<EquipoPosicion>>() {
+            @Override
+            public void onChanged(List<EquipoPosicion> equipoPosicion) {
+                equiposAdapter.setEquipoList(equipoPosicion);
+            }
+        });
+    }
+
+    class EquiposAdapter extends RecyclerView.Adapter<EquiposPersonajesFragment.EquiposViewHolder>{
+
+        List<EquipoPosicion> equipoList;
+        @NonNull
+        @Override
+        public EquiposViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            return new EquiposPersonajesFragment.EquiposViewHolder(ViewholderEquiposBinding.inflate(getLayoutInflater(), parent, false));
+        }
+
+        @Override
+        public void onBindViewHolder(@NonNull EquiposViewHolder holder, int position) {
+            EquipoPosicion equipoPosicion = equipoList.get(position);
+
+            Glide.with(EquiposPersonajesFragment.this).load(equipoPosicion.foto).into(holder.binding.foto);
+            holder.binding.nombre.setText(equipoPosicion.nombre);
+            holder.binding.posicion.setText(equipoPosicion.posicion);
+        }
+
+        @Override
+        public int getItemCount() {
+            return equipoList == null ? 0 : equipoList.size();
+        }
+
+        void setEquipoList(List<EquipoPosicion> equipoList){
+            this.equipoList = equipoList;
+            notifyDataSetChanged();
+        }
+    }
+
+    class EquiposViewHolder extends RecyclerView.ViewHolder{
+
+        ViewholderEquiposBinding binding;
+
+        public EquiposViewHolder(@NonNull ViewholderEquiposBinding binding) {
+            super(binding.getRoot());
+
+            this.binding = binding;
+        }
     }
 }

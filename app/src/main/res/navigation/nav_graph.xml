@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/personajesFragment">
+    app:startDestination="@id/equiposPersonajesFragment">
 
     <fragment
         android:id="@+id/iniciarSesionFragment"
@@ -103,75 +103,10 @@
         android:label="fragment_equipo_creado"
         tools:layout="@layout/fragment_equipo_creado" />
     <fragment
-        android:id="@+id/listaEquipoKarasunoFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoKarasunoFragment"
-        android:label="fragment_lista_equipo_karasuno"
-        tools:layout="@layout/fragment_lista_equipo_karasuno" />
-    <fragment
-        android:id="@+id/listaEquipoNekomaFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoNekomaFragment"
-        android:label="fragment_lista_equipo_nekoma"
-        tools:layout="@layout/fragment_lista_equipo_nekoma" />
-    <fragment
-        android:id="@+id/listaEquipoKamomedaiFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoKamomedaiFragment"
-        android:label="fragment_lista_equipo_kamomedai"
-        tools:layout="@layout/fragment_lista_equipo_kamomedai" />
-    <fragment
-        android:id="@+id/listaEquipoFukorodaniFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoFukorodaniFragment"
-        android:label="fragment_lista_equipo_fukorodani"
-        tools:layout="@layout/fragment_lista_equipo_fukorodani" />
-    <fragment
-        android:id="@+id/listaEquipoDateFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoDateFragment"
-        android:label="fragment_lista_equipo_date"
-        tools:layout="@layout/fragment_lista_equipo_date" />
-    <fragment
-        android:id="@+id/listaEquipoAobajosaiFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoAobajosaiFragment"
-        android:label="fragment_lista_equipo_aobajosai"
-        tools:layout="@layout/fragment_lista_equipo_aobajosai" />
-    <fragment
-        android:id="@+id/listaEquipoShiratorizawaFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoShiratorizawaFragment"
-        android:label="fragment_lista_equipo_shiratorizawa"
-        tools:layout="@layout/fragment_lista_equipo_shiratorizawa" />
-    <fragment
-        android:id="@+id/listaEquipoInarizakiFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquipoInarizakiFragment"
-        android:label="fragment_lista_equipo_inarizaki"
-        tools:layout="@layout/fragment_lista_equipo_inarizaki" />
-    <fragment
-        android:id="@+id/listaPosicionPuntaFragment"
-        android:name="com.example.miproyectohaikyuu.ListaPosicionPuntaFragment"
-        android:label="fragment_lista_posicion_punta"
-        tools:layout="@layout/fragment_lista_posicion_punta" />
-    <fragment
-        android:id="@+id/listaPosicionBloqueadorFragment"
-        android:name="com.example.miproyectohaikyuu.ListaPosicionBloqueadorFragment"
-        android:label="fragment_lista_posicion_bloqueador"
-        tools:layout="@layout/fragment_lista_posicion_bloqueador" />
-    <fragment
-        android:id="@+id/listaPosicionOpuestoFragment"
-        android:name="com.example.miproyectohaikyuu.ListaPosicionOpuestoFragment"
-        android:label="fragment_lista_posicion_opuesto"
-        tools:layout="@layout/fragment_lista_posicion_opuesto" />
-    <fragment
-        android:id="@+id/listaPosicionColocadorFragment"
-        android:name="com.example.miproyectohaikyuu.ListaPosicionColocadorFragment"
-        android:label="fragment_lista_posicion_colocador"
-        tools:layout="@layout/fragment_lista_posicion_colocador" />
-    <fragment
         android:id="@+id/listaEquiposYPosicionesFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquiposYPosicionesFragment"
         android:label="fragment_lista_equipos_y_posiciones"
         tools:layout="@layout/fragment_lista_equipos_y_posiciones" />
-    <fragment
-        android:id="@+id/listaPosicionLiberoFragment"
-        android:name="com.example.miproyectohaikyuu.ListaPosicionLiberoFragment"
-        android:label="fragment_lista_posicion_libero"
-        tools:layout="@layout/fragment_lista_posicion_libero" />
     <fragment
         android:id="@+id/personajesFragment"
         android:name="com.example.miproyectohaikyuu.PersonajesFragment"
