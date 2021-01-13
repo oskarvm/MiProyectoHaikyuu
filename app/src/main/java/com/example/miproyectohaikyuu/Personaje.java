@@ -2,6 +2,7 @@ package com.example.miproyectohaikyuu;
 
 public class Personaje {
     int foto;
+    int escudo;
     String nombre;
     String posicion;
     String equipo;
@@ -12,8 +13,9 @@ public class Personaje {
     String saque;
     String colocacion;
 
-    public Personaje(int foto, String nombre, String posicion, String equipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion) {
+    public Personaje(int foto, int escudo, String nombre, String posicion, String equipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion) {
         this.foto = foto;
+        this.escudo = escudo;
         this.posicion = posicion;
         this.nombre = nombre;
         this.equipo = equipo;

@@ -61,15 +61,16 @@ public class PersonajesFragment extends Fragment {
             Personaje personaje = personajeList.get(position);
 
             Glide.with(PersonajesFragment.this).load(personaje.foto).into(holder.binding.foto);
+            Glide.with(PersonajesFragment.this).load(personaje.escudo).into(holder.binding.escudo);
             holder.binding.nombre.setText(personaje.nombre);
-            /*holder.binding.posicion.setText(personaje.posicion);
+            holder.binding.posicion.setText(personaje.posicion);
             holder.binding.equipo.setText(personaje.equipo);
             holder.binding.altura.setText(personaje.altura);
             holder.binding.bloqueo.setText(personaje.bloqueo);
             holder.binding.remate.setText(personaje.remate);
             holder.binding.recepcion.setText(personaje.recepcion);
             holder.binding.saque.setText(personaje.saque);
-            holder.binding.colocacion.setText(personaje.colocacion);*/
+            holder.binding.colocacion.setText(personaje.colocacion);
         }
 
         @Override

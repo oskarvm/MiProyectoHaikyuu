@@ -20,9 +20,6 @@ import com.google.android.material.tabs.TabLayoutMediator;
 
 public class ListaEquiposYPosicionesFragment extends Fragment {
     private FragmentListaEquiposYPosicionesBinding binding;
-    private FragmentListaEquiposBinding binding2;
-    private FragmentListaPosicionesBinding binding3;
-    private NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

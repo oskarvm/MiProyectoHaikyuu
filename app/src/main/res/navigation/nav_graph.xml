@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/personajesFragment">
 
     <fragment
         android:id="@+id/iniciarSesionFragment"
@@ -106,859 +106,85 @@
         android:id="@+id/listaEquipoKarasunoFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoKarasunoFragment"
         android:label="fragment_lista_equipo_karasuno"
-        tools:layout="@layout/fragment_lista_equipo_karasuno" >
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoHinataFragment"
-            app:destination="@id/jugadorKarasunoHinataFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoKageyamaFragment"
-            app:destination="@id/jugadorKarasunoKageyamaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoTanakaFragment"
-            app:destination="@id/jugadorKarasunoTanakaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoNishinoyaFragment"
-            app:destination="@id/jugadorKarasunoNishinoyaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoTsukishimaFragment"
-            app:destination="@id/jugadorKarasunoTsukishimaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoAsahiFragment"
-            app:destination="@id/jugadorKarasunoAsahiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoDaichiFragment"
-            app:destination="@id/jugadorKarasunoDaichiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoSugawaraFragment"
-            app:destination="@id/jugadorKarasunoSugawaraFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_jugadorKarasunoYamaguchiFragment"
-            app:destination="@id/jugadorKarasunoYamaguchiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKarasunoFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_karasuno" />
     <fragment
         android:id="@+id/listaEquipoNekomaFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoNekomaFragment"
         android:label="fragment_lista_equipo_nekoma"
-        tools:layout="@layout/fragment_lista_equipo_nekoma" >
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_jugadorNekomaKurooFragment"
-            app:destination="@id/jugadorNekomaKurooFragment" />
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_jugadorNekomaKaiFragment"
-            app:destination="@id/jugadorNekomaKaiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_jugadorNekomaYakuFragment"
-            app:destination="@id/jugadorNekomaYakuFragment" />
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_jugadorNekomaYamamotoFragment"
-            app:destination="@id/jugadorNekomaYamamotoFragment" />
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_jugadorNekomaKenmaFragment"
-            app:destination="@id/jugadorNekomaKenmaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_jugadorNekomaFukunagaFragment"
-            app:destination="@id/jugadorNekomaFukunagaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_jugadorNekomaLevFragment"
-            app:destination="@id/jugadorNekomaLevFragment" />
-        <action
-            android:id="@+id/action_listaEquipoNekomaFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_nekoma" />
     <fragment
         android:id="@+id/listaEquipoKamomedaiFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoKamomedaiFragment"
         android:label="fragment_lista_equipo_kamomedai"
-        tools:layout="@layout/fragment_lista_equipo_kamomedai" >
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_jugadorKamomedaiSuwaFragment"
-            app:destination="@id/jugadorKamomedaiSuwaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_jugadorKamomedaiNozawaFragment"
-            app:destination="@id/jugadorKamomedaiNozawaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_jugadorKamomedaiHoshiumiFragment"
-            app:destination="@id/jugadorKamomedaiHoshiumiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_jugadorKamomedaiHirugamiFragment"
-            app:destination="@id/jugadorKamomedaiHirugamiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_jugadorKamomedaiHakubaFragment"
-            app:destination="@id/jugadorKamomedaiHakubaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_jugadorKamomedaiBesshoFragment"
-            app:destination="@id/jugadorKamomedaiBesshoFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_jugadorKamomedaiKanbayashiFragment"
-            app:destination="@id/jugadorKamomedaiKanbayashiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoKamomedaiFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_kamomedai" />
     <fragment
         android:id="@+id/listaEquipoFukorodaniFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoFukorodaniFragment"
         android:label="fragment_lista_equipo_fukorodani"
-        tools:layout="@layout/fragment_lista_equipo_fukorodani" >
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_jugadorFukorodaniWashioFragment"
-            app:destination="@id/jugadorFukorodaniWashioFragment" />
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_jugadorFukorodaniSarukuiFragment"
-            app:destination="@id/jugadorFukorodaniSarukuiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_jugadorFukorodaniBokutoFragment"
-            app:destination="@id/jugadorFukorodaniBokutoFragment" />
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_jugadorFukorodaniAkaashiFragment"
-            app:destination="@id/jugadorFukorodaniAkaashiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_jugadorFukorodaniKonohaFragment"
-            app:destination="@id/jugadorFukorodaniKonohaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_jugadorFukorodaniKomiFragment"
-            app:destination="@id/jugadorFukorodaniKomiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_jugadorFukorodaniOnagaFragment2"
-            app:destination="@id/jugadorFukorodaniOnagaFragment2" />
-        <action
-            android:id="@+id/action_listaEquipoFukorodaniFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_fukorodani" />
     <fragment
         android:id="@+id/listaEquipoDateFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoDateFragment"
         android:label="fragment_lista_equipo_date"
-        tools:layout="@layout/fragment_lista_equipo_date" >
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_jugadorDateAoneFragment"
-            app:destination="@id/jugadorDateAoneFragment" />
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_jugadorDateFutakuchiFragment"
-            app:destination="@id/jugadorDateFutakuchiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_jugadorDateObaraFragment"
-            app:destination="@id/jugadorDateObaraFragment" />
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_jugadorDateKoganegawaFragment"
-            app:destination="@id/jugadorDateKoganegawaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_jugadorDateOnagawaFragment"
-            app:destination="@id/jugadorDateOnagawaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_jugadorDateFukiageFragment"
-            app:destination="@id/jugadorDateFukiageFragment" />
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_jugadorDateSakunamiFragment"
-            app:destination="@id/jugadorDateSakunamiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoDateFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_date" />
     <fragment
         android:id="@+id/listaEquipoAobajosaiFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoAobajosaiFragment"
         android:label="fragment_lista_equipo_aobajosai"
-        tools:layout="@layout/fragment_lista_equipo_aobajosai" >
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_jugadorAobajosaiOikawaFragment"
-            app:destination="@id/jugadorAobajosaiOikawaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_jugadorAobajosaiMatsukawaFragment"
-            app:destination="@id/jugadorAobajosaiMatsukawaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_jugadorAobajosaiIwaizumiFragment"
-            app:destination="@id/jugadorAobajosaiIwaizumiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_jugadorAobajosaiWatariFragment"
-            app:destination="@id/jugadorAobajosaiWatariFragment" />
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_jugadorAobajosaiKindaichiFragment"
-            app:destination="@id/jugadorAobajosaiKindaichiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_jugadorAobajosaiKuminiFragment"
-            app:destination="@id/jugadorAobajosaiKuminiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_jugadorAobajosaiKentaroFragment"
-            app:destination="@id/jugadorAobajosaiKentaroFragment" />
-        <action
-            android:id="@+id/action_listaEquipoAobajosaiFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_aobajosai" />
     <fragment
         android:id="@+id/listaEquipoShiratorizawaFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoShiratorizawaFragment"
         android:label="fragment_lista_equipo_shiratorizawa"
-        tools:layout="@layout/fragment_lista_equipo_shiratorizawa" >
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_jugadorShiratorizawaUshijimaFragment"
-            app:destination="@id/jugadorShiratorizawaUshijimaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_jugadorShiratorizawaTendoFragment"
-            app:destination="@id/jugadorShiratorizawaTendoFragment" />
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_jugadorShiratorizawaShibaruFragment"
-            app:destination="@id/jugadorShiratorizawaShibaruFragment" />
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_jugadorShiratorizawaReonFragment"
-            app:destination="@id/jugadorShiratorizawaReonFragment" />
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_jugadorShiratorizawaGoshikiFragment"
-            app:destination="@id/jugadorShiratorizawaGoshikiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_jugadorShiratorizawaYamagataFragment"
-            app:destination="@id/jugadorShiratorizawaYamagataFragment" />
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_jugadorShiratorizawaKawanishiFragment"
-            app:destination="@id/jugadorShiratorizawaKawanishiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoShiratorizawaFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_shiratorizawa" />
     <fragment
         android:id="@+id/listaEquipoInarizakiFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquipoInarizakiFragment"
         android:label="fragment_lista_equipo_inarizaki"
-        tools:layout="@layout/fragment_lista_equipo_inarizaki" >
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_jugadorInarizakiKitaFragment"
-            app:destination="@id/jugadorInarizakiKitaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_jugadorInarizakiAranFragment"
-            app:destination="@id/jugadorInarizakiAranFragment" />
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_jugadorInarizakiOsamuFragment"
-            app:destination="@id/jugadorInarizakiOsamuFragment" />
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_jugadorInarizakiAtsumuFragment"
-            app:destination="@id/jugadorInarizakiAtsumuFragment" />
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_jugadorInarizakiSunaFragment"
-            app:destination="@id/jugadorInarizakiSunaFragment" />
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_jugadorInarizakiOmimiFragment"
-            app:destination="@id/jugadorInarizakiOmimiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_jugadorInarizakiAkagiFragment"
-            app:destination="@id/jugadorInarizakiAkagiFragment" />
-        <action
-            android:id="@+id/action_listaEquipoInarizakiFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipo_inarizaki" />
     <fragment
         android:id="@+id/listaPosicionPuntaFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionPuntaFragment"
         android:label="fragment_lista_posicion_punta"
-        tools:layout="@layout/fragment_lista_posicion_punta" >
-        <action
-            android:id="@+id/action_listaPosicionPuntaFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_posicion_punta" />
     <fragment
         android:id="@+id/listaPosicionBloqueadorFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionBloqueadorFragment"
         android:label="fragment_lista_posicion_bloqueador"
-        tools:layout="@layout/fragment_lista_posicion_bloqueador" >
-        <action
-            android:id="@+id/action_listaPosicionBloqueadorFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_posicion_bloqueador" />
     <fragment
         android:id="@+id/listaPosicionOpuestoFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionOpuestoFragment"
         android:label="fragment_lista_posicion_opuesto"
-        tools:layout="@layout/fragment_lista_posicion_opuesto" >
-        <action
-            android:id="@+id/action_listaPosicionOpuestoFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_posicion_opuesto" />
     <fragment
         android:id="@+id/listaPosicionColocadorFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionColocadorFragment"
         android:label="fragment_lista_posicion_colocador"
-        tools:layout="@layout/fragment_lista_posicion_colocador" >
-        <action
-            android:id="@+id/action_listaPosicionColocadorFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoHinataFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoHinataFragment"
-        android:label="fragment_jugador_karasuno_hinata"
-        tools:layout="@layout/fragment_jugador_karasuno_hinata" >
-        <action
-            android:id="@+id/action_jugadorKarasunoHinataFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoKageyamaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoKageyamaFragment"
-        android:label="fragment_jugador_karasuno_kageyama"
-        tools:layout="@layout/fragment_jugador_karasuno_kageyama" >
-        <action
-            android:id="@+id/action_jugadorKarasunoKageyamaFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoTanakaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoTanakaFragment"
-        android:label="fragment_jugador_karasuno_tanaka"
-        tools:layout="@layout/fragment_jugador_karasuno_tanaka" >
-        <action
-            android:id="@+id/action_jugadorKarasunoTanakaFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoNishinoyaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoNishinoyaFragment"
-        android:label="fragment_jugador_karasuno_nishinoya"
-        tools:layout="@layout/fragment_jugador_karasuno_nishinoya" >
-        <action
-            android:id="@+id/action_jugadorKarasunoNishinoyaFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoTsukishimaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoTsukishimaFragment"
-        android:label="fragment_jugador_karasuno_tsukishima"
-        tools:layout="@layout/fragment_jugador_karasuno_tsukishima" >
-        <action
-            android:id="@+id/action_jugadorKarasunoTsukishimaFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoAsahiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoAsahiFragment"
-        android:label="fragment_jugador_karasuno_asahi"
-        tools:layout="@layout/fragment_jugador_karasuno_asahi" >
-        <action
-            android:id="@+id/action_jugadorKarasunoAsahiFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoDaichiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoDaichiFragment"
-        android:label="fragment_jugador_karasuno_daichi"
-        tools:layout="@layout/fragment_jugador_karasuno_daichi" >
-        <action
-            android:id="@+id/action_jugadorKarasunoDaichiFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoSugawaraFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoSugawaraFragment"
-        android:label="fragment_jugador_karasuno_sugawara"
-        tools:layout="@layout/fragment_jugador_karasuno_sugawara" >
-        <action
-            android:id="@+id/action_jugadorKarasunoSugawaraFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKarasunoYamaguchiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKarasunoYamaguchiFragment"
-        android:label="fragment_jugador_karasuno_yamaguchi"
-        tools:layout="@layout/fragment_jugador_karasuno_yamaguchi" >
-        <action
-            android:id="@+id/action_jugadorKarasunoYamaguchiFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorNekomaKurooFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorNekomaKurooFragment"
-        android:label="fragment_jugador_nekoma_kuroo"
-        tools:layout="@layout/fragment_jugador_nekoma_kuroo" >
-        <action
-            android:id="@+id/action_jugadorNekomaKurooFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorNekomaKaiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorNekomaKaiFragment"
-        android:label="fragment_jugador_nekoma_kai"
-        tools:layout="@layout/fragment_jugador_nekoma_kai" >
-        <action
-            android:id="@+id/action_jugadorNekomaKaiFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorNekomaYakuFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorNekomaYakuFragment"
-        android:label="fragment_jugador_nekoma_yaku"
-        tools:layout="@layout/fragment_jugador_nekoma_yaku" >
-        <action
-            android:id="@+id/action_jugadorNekomaYakuFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorNekomaYamamotoFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorNekomaYamamotoFragment"
-        android:label="fragment_jugador_nekoma_yamamoto"
-        tools:layout="@layout/fragment_jugador_nekoma_yamamoto" >
-        <action
-            android:id="@+id/action_jugadorNekomaYamamotoFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorNekomaKenmaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorNekomaKenmaFragment"
-        android:label="fragment_jugador_nekoma_kenma"
-        tools:layout="@layout/fragment_jugador_nekoma_kenma" >
-        <action
-            android:id="@+id/action_jugadorNekomaKenmaFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorNekomaFukunagaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorNekomaFukunagaFragment"
-        android:label="fragment_jugador_nekoma_fukunaga"
-        tools:layout="@layout/fragment_jugador_nekoma_fukunaga" >
-        <action
-            android:id="@+id/action_jugadorNekomaFukunagaFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorNekomaLevFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorNekomaLevFragment"
-        android:label="fragment_jugador_nekoma_lev"
-        tools:layout="@layout/fragment_jugador_nekoma_lev" >
-        <action
-            android:id="@+id/action_jugadorNekomaLevFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKamomedaiSuwaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiSuwaFragment"
-        android:label="fragment_jugador_kamomedai_suwa"
-        tools:layout="@layout/fragment_jugador_kamomedai_suwa" >
-        <action
-            android:id="@+id/action_jugadorKamomedaiSuwaFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKamomedaiNozawaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiNozawaFragment"
-        android:label="fragment_jugador_kamomedai_nozawa"
-        tools:layout="@layout/fragment_jugador_kamomedai_nozawa" >
-        <action
-            android:id="@+id/action_jugadorKamomedaiNozawaFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKamomedaiHoshiumiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiHoshiumiFragment"
-        android:label="fragment_jugador_kamomedai_hoshiumi"
-        tools:layout="@layout/fragment_jugador_kamomedai_hoshiumi" >
-        <action
-            android:id="@+id/action_jugadorKamomedaiHoshiumiFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKamomedaiHirugamiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiHirugamiFragment"
-        android:label="fragment_jugador_kamomedai_hirugami"
-        tools:layout="@layout/fragment_jugador_kamomedai_hirugami" >
-        <action
-            android:id="@+id/action_jugadorKamomedaiHirugamiFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKamomedaiHakubaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiHakubaFragment"
-        android:label="fragment_jugador_kamomedai_hakuba"
-        tools:layout="@layout/fragment_jugador_kamomedai_hakuba" >
-        <action
-            android:id="@+id/action_jugadorKamomedaiHakubaFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKamomedaiBesshoFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiBesshoFragment"
-        android:label="fragment_jugador_kamomedai_bessho"
-        tools:layout="@layout/fragment_jugador_kamomedai_bessho" >
-        <action
-            android:id="@+id/action_jugadorKamomedaiBesshoFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorKamomedaiKanbayashiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorKamomedaiKanbayashiFragment"
-        android:label="fragment_jugador_kamomedai_kanbayashi"
-        tools:layout="@layout/fragment_jugador_kamomedai_kanbayashi" >
-        <action
-            android:id="@+id/action_jugadorKamomedaiKanbayashiFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorFukorodaniWashioFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniWashioFragment"
-        android:label="fragment_jugador_fukorodani_washio"
-        tools:layout="@layout/fragment_jugador_fukorodani_washio" >
-        <action
-            android:id="@+id/action_jugadorFukorodaniWashioFragment_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorFukorodaniSarukuiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniSarukuiFragment"
-        android:label="fragment_jugador_fukorodani_sarukui"
-        tools:layout="@layout/fragment_jugador_fukorodani_sarukui" >
-        <action
-            android:id="@+id/action_jugadorFukorodaniSarukuiFragment_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorFukorodaniBokutoFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniBokutoFragment"
-        android:label="fragment_jugador_fukorodani_bokuto"
-        tools:layout="@layout/fragment_jugador_fukorodani_bokuto" >
-        <action
-            android:id="@+id/action_jugadorFukorodaniBokutoFragment_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorFukorodaniAkaashiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniAkaashiFragment"
-        android:label="fragment_jugador_fukorodani_akaashi"
-        tools:layout="@layout/fragment_jugador_fukorodani_akaashi" >
-        <action
-            android:id="@+id/action_jugadorFukorodaniAkaashiFragment_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorFukorodaniKonohaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniKonohaFragment"
-        android:label="fragment_jugador_fukorodani_konoha"
-        tools:layout="@layout/fragment_jugador_fukorodani_konoha" >
-        <action
-            android:id="@+id/action_jugadorFukorodaniKonohaFragment_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorFukorodaniKomiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniKomiFragment"
-        android:label="fragment_jugador_fukorodani_komi"
-        tools:layout="@layout/fragment_jugador_fukorodani_komi" >
-        <action
-            android:id="@+id/action_jugadorFukorodaniKomiFragment_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorFukorodaniOnagaFragment2"
-        android:name="com.example.miproyectohaikyuu.JugadorFukorodaniOnagaFragment"
-        android:label="fragment_jugador_fukorodani_onaga"
-        tools:layout="@layout/fragment_jugador_fukorodani_onaga" >
-        <action
-            android:id="@+id/action_jugadorFukorodaniOnagaFragment2_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorDateAoneFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorDateAoneFragment"
-        android:label="fragment_jugador_date_aone"
-        tools:layout="@layout/fragment_jugador_date_aone" >
-        <action
-            android:id="@+id/action_jugadorDateAoneFragment_to_listaEquipoDateFragment"
-            app:destination="@id/listaEquipoDateFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorDateFutakuchiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorDateFutakuchiFragment"
-        android:label="fragment_jugador_date_futakuchi"
-        tools:layout="@layout/fragment_jugador_date_futakuchi" >
-        <action
-            android:id="@+id/action_jugadorDateFutakuchiFragment_to_listaEquipoDateFragment"
-            app:destination="@id/listaEquipoDateFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorDateObaraFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorDateObaraFragment"
-        android:label="fragment_jugador_date_obara"
-        tools:layout="@layout/fragment_jugador_date_obara" />
-    <fragment
-        android:id="@+id/jugadorDateKoganegawaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorDateKoganegawaFragment"
-        android:label="fragment_jugador_date_koganegawa"
-        tools:layout="@layout/fragment_jugador_date_koganegawa" >
-        <action
-            android:id="@+id/action_jugadorDateKoganegawaFragment_to_listaEquipoDateFragment"
-            app:destination="@id/listaEquipoDateFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorDateOnagawaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorDateOnagawaFragment"
-        android:label="fragment_jugador_date_onagawa"
-        tools:layout="@layout/fragment_jugador_date_onagawa" >
-        <action
-            android:id="@+id/action_jugadorDateOnagawaFragment_to_listaEquipoDateFragment"
-            app:destination="@id/listaEquipoDateFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorDateFukiageFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorDateFukiageFragment"
-        android:label="fragment_jugador_date_fukiage"
-        tools:layout="@layout/fragment_jugador_date_fukiage" >
-        <action
-            android:id="@+id/action_jugadorDateFukiageFragment_to_listaEquipoDateFragment"
-            app:destination="@id/listaEquipoDateFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorDateSakunamiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorDateSakunamiFragment"
-        android:label="fragment_jugador_date_sakunami"
-        tools:layout="@layout/fragment_jugador_date_sakunami" >
-        <action
-            android:id="@+id/action_jugadorDateSakunamiFragment_to_listaEquipoDateFragment"
-            app:destination="@id/listaEquipoDateFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorAobajosaiOikawaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorAobajosaiOikawaFragment"
-        android:label="fragment_jugador_aobajosai_oikawa"
-        tools:layout="@layout/fragment_jugador_aobajosai_oikawa" >
-        <action
-            android:id="@+id/action_jugadorAobajosaiOikawaFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorAobajosaiMatsukawaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorAobajosaiMatsukawaFragment"
-        android:label="fragment_jugador_aobajosai_matsukawa"
-        tools:layout="@layout/fragment_jugador_aobajosai_matsukawa" >
-        <action
-            android:id="@+id/action_jugadorAobajosaiMatsukawaFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorAobajosaiWatariFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorAobajosaiWatariFragment"
-        android:label="fragment_jugador_aobajosai_watari"
-        tools:layout="@layout/fragment_jugador_aobajosai_watari" >
-        <action
-            android:id="@+id/action_jugadorAobajosaiWatariFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorAobajosaiKindaichiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorAobajosaiKindaichiFragment"
-        android:label="fragment_jugador_aobajosai_kindaichi"
-        tools:layout="@layout/fragment_jugador_aobajosai_kindaichi" >
-        <action
-            android:id="@+id/action_jugadorAobajosaiKindaichiFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorAobajosaiKuminiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorAobajosaiKuminiFragment"
-        android:label="fragment_jugador_aobajosai_kumini"
-        tools:layout="@layout/fragment_jugador_aobajosai_kumini" >
-        <action
-            android:id="@+id/action_jugadorAobajosaiKuminiFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorAobajosaiKentaroFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorAobajosaiKentaroFragment"
-        android:label="fragment_jugador_aobajosai_kentaro"
-        tools:layout="@layout/fragment_jugador_aobajosai_kentaro" >
-        <action
-            android:id="@+id/action_jugadorAobajosaiKentaroFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorShiratorizawaUshijimaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorShiratorizawaUshijimaFragment"
-        android:label="fragment_jugador_shiratorizawa_ushijima"
-        tools:layout="@layout/fragment_jugador_shiratorizawa_ushijima" >
-        <action
-            android:id="@+id/action_jugadorShiratorizawaUshijimaFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorShiratorizawaTendoFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorShiratorizawaTendoFragment"
-        android:label="fragment_jugador_shiratorizawa_tendo"
-        tools:layout="@layout/fragment_jugador_shiratorizawa_tendo" >
-        <action
-            android:id="@+id/action_jugadorShiratorizawaTendoFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorShiratorizawaShibaruFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorShiratorizawaShibaruFragment"
-        android:label="fragment_jugador_shiratorizawa_shibaru"
-        tools:layout="@layout/fragment_jugador_shiratorizawa_shibaru" >
-        <action
-            android:id="@+id/action_jugadorShiratorizawaShibaruFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorShiratorizawaReonFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorShiratorizawaReonFragment"
-        android:label="fragment_jugador_shiratorizawa_reon"
-        tools:layout="@layout/fragment_jugador_shiratorizawa_reon" >
-        <action
-            android:id="@+id/action_jugadorShiratorizawaReonFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorShiratorizawaGoshikiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorShiratorizawaGoshikiFragment"
-        android:label="fragment_jugador_shiratorizawa_goshiki"
-        tools:layout="@layout/fragment_jugador_shiratorizawa_goshiki" >
-        <action
-            android:id="@+id/action_jugadorShiratorizawaGoshikiFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorShiratorizawaYamagataFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorShiratorizawaYamagataFragment"
-        android:label="fragment_jugador_shiratorizawa_yamagata"
-        tools:layout="@layout/fragment_jugador_shiratorizawa_yamagata" >
-        <action
-            android:id="@+id/action_jugadorShiratorizawaYamagataFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorShiratorizawaKawanishiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorShiratorizawaKawanishiFragment"
-        android:label="fragment_jugador_shiratorizawa_kawanishi"
-        tools:layout="@layout/fragment_jugador_shiratorizawa_kawanishi" >
-        <action
-            android:id="@+id/action_jugadorShiratorizawaKawanishiFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorAobajosaiIwaizumiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorAobajosaiIwaizumiFragment"
-        android:label="fragment_jugador_aobajosai_iwaizumi"
-        tools:layout="@layout/fragment_jugador_aobajosai_iwaizumi" >
-        <action
-            android:id="@+id/action_jugadorAobajosaiIwaizumiFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorInarizakiKitaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorInarizakiKitaFragment"
-        android:label="fragment_jugador_inarizaki_kita"
-        tools:layout="@layout/fragment_jugador_inarizaki_kita" >
-        <action
-            android:id="@+id/action_jugadorInarizakiKitaFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorInarizakiAranFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorInarizakiAranFragment"
-        android:label="fragment_jugador_inarizaki_aran"
-        tools:layout="@layout/fragment_jugador_inarizaki_aran" >
-        <action
-            android:id="@+id/action_jugadorInarizakiAranFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorInarizakiOsamuFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorInarizakiOsamuFragment"
-        android:label="fragment_jugador_inarizaki_osamu"
-        tools:layout="@layout/fragment_jugador_inarizaki_osamu" >
-        <action
-            android:id="@+id/action_jugadorInarizakiOsamuFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorInarizakiAtsumuFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorInarizakiAtsumuFragment"
-        android:label="fragment_jugador_inarizaki_atsumu"
-        tools:layout="@layout/fragment_jugador_inarizaki_atsumu" >
-        <action
-            android:id="@+id/action_jugadorInarizakiAtsumuFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorInarizakiSunaFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorInarizakiSunaFragment"
-        android:label="fragment_jugador_inarizaki_suna"
-        tools:layout="@layout/fragment_jugador_inarizaki_suna" >
-        <action
-            android:id="@+id/action_jugadorInarizakiSunaFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorInarizakiOmimiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorInarizakiOmimiFragment"
-        android:label="fragment_jugador_inarizaki_omimi"
-        tools:layout="@layout/fragment_jugador_inarizaki_omimi" >
-        <action
-            android:id="@+id/action_jugadorInarizakiOmimiFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugadorInarizakiAkagiFragment"
-        android:name="com.example.miproyectohaikyuu.JugadorInarizakiAkagiFragment"
-        android:label="fragment_jugador_inarizaki_akagi"
-        tools:layout="@layout/fragment_jugador_inarizaki_akagi" >
-        <action
-            android:id="@+id/action_jugadorInarizakiAkagiFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_posicion_colocador" />
     <fragment
         android:id="@+id/listaEquiposYPosicionesFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquiposYPosicionesFragment"
         android:label="fragment_lista_equipos_y_posiciones"
-        tools:layout="@layout/fragment_lista_equipos_y_posiciones" >
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoKarasunoFragment"
-            app:destination="@id/listaEquipoKarasunoFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoNekomaFragment"
-            app:destination="@id/listaEquipoNekomaFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoFukorodaniFragment"
-            app:destination="@id/listaEquipoFukorodaniFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoAobajosaiFragment"
-            app:destination="@id/listaEquipoAobajosaiFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoShiratorizawaFragment"
-            app:destination="@id/listaEquipoShiratorizawaFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoInarizakiFragment"
-            app:destination="@id/listaEquipoInarizakiFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaPosicionPuntaFragment"
-            app:destination="@id/listaPosicionPuntaFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaPosicionBloqueadorFragment"
-            app:destination="@id/listaPosicionBloqueadorFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaPosicionOpuestoFragment"
-            app:destination="@id/listaPosicionOpuestoFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaPosicionColocadorFragment"
-            app:destination="@id/listaPosicionColocadorFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoKamomedaiFragment"
-            app:destination="@id/listaEquipoKamomedaiFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaEquipoDateFragment"
-            app:destination="@id/listaEquipoDateFragment" />
-        <action
-            android:id="@+id/action_listaEquiposYPosicionesFragment_to_listaPosicionLiberoFragment"
-            app:destination="@id/listaPosicionLiberoFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_equipos_y_posiciones" />
     <fragment
         android:id="@+id/listaPosicionLiberoFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionLiberoFragment"
         android:label="fragment_lista_posicion_libero"
-        tools:layout="@layout/fragment_lista_posicion_libero" >
-        <action
-            android:id="@+id/action_listaPosicionLiberoFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_lista_posicion_libero" />
     <fragment
         android:id="@+id/personajesFragment"
         android:name="com.example.miproyectohaikyuu.PersonajesFragment"
         android:label="fragment_personajes"
         tools:layout="@layout/fragment_personajes" />
+    <fragment
+        android:id="@+id/equiposPersonajesFragment"
+        android:name="com.example.miproyectohaikyuu.EquiposPersonajesFragment"
+        android:label="fragment_equipos_personajes"
+        tools:layout="@layout/fragment_equipos_personajes" />
+    <fragment
+        android:id="@+id/posicionesPersonajesFragment"
+        android:name="com.example.miproyectohaikyuu.PosicionesPersonajesFragment"
+        android:label="fragment_posiciones_personajes"
+        tools:layout="@layout/fragment_posiciones_personajes" />
 </navigation>
