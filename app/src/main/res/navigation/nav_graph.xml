@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/equiposPersonajesFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/iniciarSesionFragment"
@@ -74,10 +74,13 @@
         <action
             android:id="@+id/action_homeFragment_to_listaEquiposYPosicionesFragment"
             app:destination="@id/listaEquiposYPosicionesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_equiposPersonajesFragment"
+            app:destination="@id/equiposPersonajesFragment" />
     </fragment>
     <fragment
         android:id="@+id/misEquipos2"
-        android:name="com.example.miproyectohaikyuu.misEquiposFragment"
+        android:name="com.example.miproyectohaikyuu.MisEquiposFragment"
         android:label="fragment_mis_equipos"
         tools:layout="@layout/fragment_mis_equipos" >
         <action
@@ -114,7 +117,7 @@
         tools:layout="@layout/fragment_personajes" />
     <fragment
         android:id="@+id/equiposPersonajesFragment"
-        android:name="com.example.miproyectohaikyuu.EquiposPersonajesFragment"
+        android:name="com.example.miproyectohaikyuu.PersonajesPorEquipoFragment"
         android:label="fragment_equipos_personajes"
         tools:layout="@layout/fragment_equipos_personajes" />
     <fragment

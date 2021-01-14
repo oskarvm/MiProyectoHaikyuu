@@ -2,6 +2,7 @@ package com.example.miproyectohaikyuu;
 
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.miproyectohaikyuu.databinding.FragmentHomeBinding;
-import com.example.miproyectohaikyuu.model.Personaje;
+import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
 
 public class HomeFragment extends Fragment {
 
@@ -31,45 +32,18 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        PersonajesViewModel personajeViewModel = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
         personajesViewModel = new ViewModelProvider(this).get(PersonajesViewModel.class);
 
         navController = Navigation.findNavController(view);
 
+//        personajesViewModel.obtener().observe(getViewLifecycleOwner(), personajes -> {
+//            Log.e("personajes size ", ""+personajes.size());
+//            if(personajes.size() == 0) personajesViewModel.insertarDeTodo();
+//        });
 
-        binding.crear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                personajesViewModel.obtener().observe(getViewLifecycleOwner(), personajes -> {
-                    if(personajes.size() == 0) {
-                        personajesViewModel.insertarDeTodo();
-                    }
-                });
-            }
-        });
-
-        binding.cerrarSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_homeFragment_to_cerrarSesionFragment);
-            }
-        });
-
-        binding.misEquipos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_homeFragment_to_misEquipos2);
-            }
-        });
-
-        binding.jugarPartida.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_homeFragment_to_jugarPartida2);
-            }
-        });
-
-
-
+        binding.miPerfil.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_equiposPersonajesFragment));
+        binding.cerrarSesion.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_cerrarSesionFragment));
+        binding.misEquipos.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_misEquipos2));
+        binding.jugarPartida.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_jugarPartida2));
     }
 }

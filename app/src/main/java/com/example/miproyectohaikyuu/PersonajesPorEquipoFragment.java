@@ -1,33 +1,31 @@
 package com.example.miproyectohaikyuu;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RatingBar;
-
 import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentEquiposPersonajesBinding;
-import com.example.miproyectohaikyuu.databinding.ViewholderEquiposBinding;
-import com.example.miproyectohaikyuu.databinding.ViewholderPersonajeBinding;
-import com.example.miproyectohaikyuu.model.EquipoPosicion;
+
+import com.example.miproyectohaikyuu.databinding.ViewholderPersonajePorEquipoBinding;
 import com.example.miproyectohaikyuu.model.Personaje;
+import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
+import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
 
 import java.util.List;
 
-public class EquiposPersonajesFragment extends Fragment {
+public class PersonajesPorEquipoFragment extends Fragment {
 
     private FragmentEquiposPersonajesBinding binding;
     PersonajesViewModel personajesViewModel;
@@ -52,45 +50,36 @@ public class EquiposPersonajesFragment extends Fragment {
         binding.recyclerView.setAdapter(personajesAdapter);
         binding.recyclerView.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
 
-        obtenerPersonaje().observe(getViewLifecycleOwner(), new Observer<List<Personaje>>() {
-            @Override
-            public void onChanged(List<Personaje> personajes) {
-                personajesAdapter.establecerLista(personajes);
-            }
-        });
+        obtenerPersonaje().observe(getViewLifecycleOwner(), personajes -> personajesAdapter.establecerLista(personajes));
     }
 
-    LiveData<List<Personaje>> obtenerPersonaje(){
+    LiveData<List<PersonajeConEquipo>> obtenerPersonaje(){
         return personajesViewModel.obtener();
     }
 
 
-    class PersonajesAdapter extends RecyclerView.Adapter<PersonajesFragment.PersonajeViewHolder>{
-        List<Personaje> personajes;
+    class PersonajesAdapter extends RecyclerView.Adapter<PersonajeViewHolder>{
+        List<PersonajeConEquipo> personajes;
 
         @NonNull
         @Override
-        public PersonajesFragment.PersonajeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return new PersonajesFragment.PersonajeViewHolder(ViewholderPersonajeBinding.inflate(getLayoutInflater(), parent, false));        }
+        public PersonajeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            return new PersonajeViewHolder(ViewholderPersonajePorEquipoBinding.inflate(getLayoutInflater(), parent, false));
+        }
 
         @Override
-        public void onBindViewHolder(@NonNull PersonajesFragment.PersonajeViewHolder holder, int position) {
-            Personaje personaje = personajes.get(position);
+        public void onBindViewHolder(@NonNull PersonajeViewHolder holder, int position) {
+            PersonajeConEquipo personaje = personajes.get(position);
 
             holder.binding.nombre.setText(personaje.nombre);
             holder.binding.posicion.setText(personaje.posicion);
 
-            holder.itemView.setOnClickListener(new View.OnClickListener()
+            Glide.with(PersonajesPorEquipoFragment.this).load(personaje.foto).into(holder.binding.foto);
 
-                {
-                    @Override
-                    public void onClick (View v){
-                    personajesViewModel.seleccionar(personaje);
-                    navController.navigate(R.id.action_global_personajesFragment);
-                }
-
+            holder.itemView.setOnClickListener(v -> {
+                personajesViewModel.seleccionar(personaje);
+                navController.navigate(R.id.action_global_personajesFragment);
             });
-
         }
 
         @Override
@@ -98,7 +87,7 @@ public class EquiposPersonajesFragment extends Fragment {
             return personajes != null ? personajes.size() : 0;
         }
 
-        public void establecerLista(List<Personaje> elementos){
+        public void establecerLista(List<PersonajeConEquipo> elementos){
             this.personajes = elementos;
             notifyDataSetChanged();
         }
@@ -106,5 +95,14 @@ public class EquiposPersonajesFragment extends Fragment {
         /*public Personaje obtenerPersonaje(int posicion){
             return personajes.get(posicion);
         }*/
+    }
+
+    static class PersonajeViewHolder extends RecyclerView.ViewHolder {
+        final ViewholderPersonajePorEquipoBinding binding;
+
+        public PersonajeViewHolder(@NonNull ViewholderPersonajePorEquipoBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+        }
     }
 }

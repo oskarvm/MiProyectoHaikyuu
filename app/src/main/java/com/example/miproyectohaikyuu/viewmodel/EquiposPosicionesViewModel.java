@@ -1,4 +1,4 @@
-package com.example.miproyectohaikyuu;
+package com.example.miproyectohaikyuu.viewmodel;
 
 import android.app.Application;
 
@@ -20,7 +20,7 @@ public class EquiposPosicionesViewModel extends AndroidViewModel {
         equipoPosicionRepository = new EquipoPosicionRepository();
     }
 
-    LiveData<List<EquipoPosicion>> equipoposicion(){
+    public  LiveData<List<EquipoPosicion>> equipoposicion(){
         return equipoPosicionRepository.equipoposicion();
     }
 }

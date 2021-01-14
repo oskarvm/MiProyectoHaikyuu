@@ -1,4 +1,4 @@
-package com.example.miproyectohaikyuu;
+package com.example.miproyectohaikyuu.viewmodel;
 
 import android.app.Application;
 
@@ -11,21 +11,21 @@ import com.example.miproyectohaikyuu.model.Usuario;
 
 public class AutenticacionViewModel extends AndroidViewModel {
 
-    enum EstadoDeLaAutenticacion {
+    public  enum EstadoDeLaAutenticacion {
         NO_AUTENTICADO,
         AUTENTICADO,
         AUTENTICACION_INVALIDA
     }
 
-    enum EstadoDelRegistro {
+    public enum EstadoDelRegistro {
         INICIO_DEL_REGISTRO,
         NOMBRE_NO_DISPONIBLE,
         REGISTRO_COMPLETADO
     }
 
-    MutableLiveData<EstadoDeLaAutenticacion> estadoDeLaAutenticacion = new MutableLiveData<>(EstadoDeLaAutenticacion.NO_AUTENTICADO);
-    MutableLiveData<EstadoDelRegistro> estadoDelRegistro = new MutableLiveData<>(EstadoDelRegistro.INICIO_DEL_REGISTRO);
-    MutableLiveData<Usuario> usuarioAutenticado = new MutableLiveData<>();
+    public MutableLiveData<EstadoDeLaAutenticacion> estadoDeLaAutenticacion = new MutableLiveData<>(EstadoDeLaAutenticacion.NO_AUTENTICADO);
+    public MutableLiveData<EstadoDelRegistro> estadoDelRegistro = new MutableLiveData<>(EstadoDelRegistro.INICIO_DEL_REGISTRO);
+    public MutableLiveData<Usuario> usuarioAutenticado = new MutableLiveData<>();
 
     AutenticacionManager autenticacionManager;
 
@@ -35,7 +35,7 @@ public class AutenticacionViewModel extends AndroidViewModel {
     }
 
 
-    void iniciarSesion(String username, String password){
+    public void iniciarSesion(String username, String password){
         autenticacionManager.iniciarSesion(username, password, new AutenticacionManager.IniciarSesionCallback() {
             @Override
             public void cuandoUsuarioAutenticado(Usuario usuario) {
@@ -50,11 +50,11 @@ public class AutenticacionViewModel extends AndroidViewModel {
         });
     }
 
-    void iniciarRegistro(){
+    public void iniciarRegistro(){
         estadoDelRegistro.postValue(EstadoDelRegistro.INICIO_DEL_REGISTRO);
     }
 
-    void crearCuentaEIniciarSesion(final String username, final String password){
+    public void crearCuentaEIniciarSesion(final String username, final String password){
         autenticacionManager.crearCuenta(username, password, new AutenticacionManager.RegistrarCallback() {
             @Override
             public void cuandoRegistroCompletado() {
@@ -69,7 +69,7 @@ public class AutenticacionViewModel extends AndroidViewModel {
         });
     }
 
-    void cerrarSesion(){
+    public  void cerrarSesion(){
         usuarioAutenticado.postValue(null);
         estadoDeLaAutenticacion.postValue(EstadoDeLaAutenticacion.NO_AUTENTICADO);
     }

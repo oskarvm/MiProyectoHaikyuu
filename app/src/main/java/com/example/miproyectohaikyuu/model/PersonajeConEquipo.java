@@ -1,14 +1,10 @@
 package com.example.miproyectohaikyuu.model;
 
 import androidx.room.Entity;
-import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-@Entity
-public class Personaje {
-    @PrimaryKey(autoGenerate = true)
+public class PersonajeConEquipo {
     public int id;
-
     public int foto;
     public String nombre;
     public String posicion;
@@ -19,10 +15,11 @@ public class Personaje {
     public String recepcion;
     public String saque;
     public String colocacion;
+    public String nombreEquipo;
+    public int escudo;
 
-
-
-    public Personaje(int foto, String nombre, String posicion, int idEquipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion) {
+    public PersonajeConEquipo(int id, int foto, String nombre, String posicion, int idEquipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion, String nombreEquipo, int escudo) {
+        this.id = id;
         this.foto = foto;
         this.nombre = nombre;
         this.posicion = posicion;
@@ -33,5 +30,7 @@ public class Personaje {
         this.recepcion = recepcion;
         this.saque = saque;
         this.colocacion = colocacion;
+        this.nombreEquipo = nombreEquipo;
+        this.escudo = escudo;
     }
 }

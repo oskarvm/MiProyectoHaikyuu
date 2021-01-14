@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.miproyectohaikyuu.databinding.FragmentPerfilBinding;
 import com.example.miproyectohaikyuu.model.Usuario;
+import com.example.miproyectohaikyuu.viewmodel.AutenticacionViewModel;
 
 
 public class PerfilFragment extends Fragment {

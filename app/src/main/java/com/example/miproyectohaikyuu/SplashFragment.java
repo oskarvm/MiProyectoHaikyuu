@@ -40,32 +40,18 @@ public class SplashFragment extends Fragment {
 
         navController = Navigation.findNavController(view);
 
-        // esta variable deberia estar en un ViewModel
         final MutableLiveData<Boolean> finishedLoading = new MutableLiveData<>();
 
 
-        finishedLoading.observe(getViewLifecycleOwner(), new Observer<Boolean>() {
-            @Override
-            public void onChanged(Boolean aBoolean) {
-                navController.navigate(R.id.action_splashFragment_to_iniciarSesionFragment);
+        finishedLoading.observe(getViewLifecycleOwner(), aBoolean -> navController.navigate(R.id.action_splashFragment_to_iniciarSesionFragment));
+
+        executor.execute(() -> {
+            try {
+                Thread.sleep(100);
+                finishedLoading.postValue(true);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         });
-
-        // esto deberia estar en el Model y llamarlo a traves del ViewModel
-        executor.execute(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    // simular la carga de recursos
-                    Thread.sleep(10000);
-                    finishedLoading.postValue(true);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-
-
     }
 }

@@ -13,10 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentPosicionesPersonajesBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderPosicionesBinding;
 import com.example.miproyectohaikyuu.model.EquipoPosicion;
+import com.example.miproyectohaikyuu.viewmodel.EquiposPosicionesViewModel;
 
 import java.util.List;
 

@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.miproyectohaikyuu.databinding.FragmentRegistroBinding;
+import com.example.miproyectohaikyuu.viewmodel.AutenticacionViewModel;
 
 
 public class RegistroFragment extends Fragment {

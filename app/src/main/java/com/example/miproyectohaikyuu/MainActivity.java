@@ -13,8 +13,8 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.miproyectohaikyuu.databinding.ActivityMainBinding;
-import com.example.miproyectohaikyuu.model.AppBaseDeDatos;
-import com.example.miproyectohaikyuu.model.Personaje;
+import com.example.miproyectohaikyuu.viewmodel.AutenticacionViewModel;
+import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
