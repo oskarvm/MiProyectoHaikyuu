@@ -13,16 +13,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentPersonajesBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderPersonajeBinding;
 import com.example.miproyectohaikyuu.model.Personaje;
 
-import java.util.List;
 
 public class PersonajesFragment extends Fragment {
-
-    FragmentPersonajesBinding binding;
+    private FragmentPersonajesBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -33,23 +30,28 @@ public class PersonajesFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        PersonajesViewModel personajesViewModel = new ViewModelProvider(this).get(PersonajesViewModel.class);
+        PersonajesViewModel personajesViewModel = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
 
-        final PersonajesAdapter personajesAdapter = new PersonajesAdapter();
-
-        binding.recyclerView.setAdapter(personajesAdapter);
-
-        personajesViewModel.personajes().observe(getViewLifecycleOwner(), new Observer<List<Personaje>>() {
+        personajesViewModel.seleccionado().observe(getViewLifecycleOwner(), new Observer<Personaje>() {
             @Override
-            public void onChanged(List<Personaje> personajes) {
-                personajesAdapter.setPersonajeList(personajes);
+            public void onChanged(Personaje personaje) {
+                binding.nombre.setText(personaje.nombre);
+                binding.posicion.setText(personaje.posicion);
             }
         });
-
-        //personajesViewModel.obtener().observe(getViewLifecycleOwner(), personajesAdapter::setPersonajeList);
     }
 
-    class PersonajesAdapter extends RecyclerView.Adapter<PersonajeViewHolder>{
+    static class PersonajeViewHolder extends RecyclerView.ViewHolder {
+        final ViewholderPersonajeBinding binding;
+
+        public PersonajeViewHolder(@NonNull ViewholderPersonajeBinding binding) {
+            super(binding.getRoot());
+            this.binding = binding;
+        }
+    }
+}
+
+/*class PersonajesAdapter extends RecyclerView.Adapter<PersonajeViewHolder>{
 
         List<Personaje> personajeList;
 
@@ -87,7 +89,7 @@ public class PersonajesFragment extends Fragment {
         }
     }
 
-    class PersonajeViewHolder extends RecyclerView.ViewHolder{
+    static class PersonajeViewHolder extends RecyclerView.ViewHolder{
 
         ViewholderPersonajeBinding binding;
 
@@ -96,5 +98,4 @@ public class PersonajesFragment extends Fragment {
 
             this.binding = binding;
         }
-    }
-}
+    }*/

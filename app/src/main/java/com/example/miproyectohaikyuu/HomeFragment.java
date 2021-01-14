@@ -9,18 +9,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.miproyectohaikyuu.databinding.FragmentHomeBinding;
-import com.example.miproyectohaikyuu.databinding.FragmentListaEquiposYPosicionesBinding;
-
+import com.example.miproyectohaikyuu.model.Personaje;
 
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
-    private FragmentListaEquiposYPosicionesBinding binding2;
     private NavController navController;
+    private PersonajesViewModel personajesViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -31,13 +31,20 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        PersonajesViewModel personajeViewModel = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
+        personajesViewModel = new ViewModelProvider(this).get(PersonajesViewModel.class);
+
         navController = Navigation.findNavController(view);
 
 
-        binding.verJugadores.setOnClickListener(new View.OnClickListener() {
+        binding.crear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_homeFragment_to_listaEquiposYPosicionesFragment);
+                personajesViewModel.obtener().observe(getViewLifecycleOwner(), personajes -> {
+                    if(personajes.size() == 0) {
+                        personajesViewModel.insertarDeTodo();
+                    }
+                });
             }
         });
 

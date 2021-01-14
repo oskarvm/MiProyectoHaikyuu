@@ -121,5 +121,5 @@
         android:id="@+id/posicionesPersonajesFragment"
         android:name="com.example.miproyectohaikyuu.PosicionesPersonajesFragment"
         android:label="fragment_posiciones_personajes"
-        tools:layout="@layout/fragment_posiciones_personajes" />
+        tools:layout="@layout/fragment_posiciones_personajes" /><action android:id="@+id/action_global_personajesFragment" app:destination="@id/personajesFragment"/>
 </navigation>

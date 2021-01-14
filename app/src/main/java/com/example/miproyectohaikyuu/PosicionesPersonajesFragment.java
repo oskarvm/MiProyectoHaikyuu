@@ -60,9 +60,9 @@ public class PosicionesPersonajesFragment extends Fragment {
         public void onBindViewHolder(@NonNull PosicionViewHolder holder, int position) {
             EquipoPosicion equipoPosicion = equipoPosicionList.get(position);
 
-            Glide.with(PosicionesPersonajesFragment.this).load(equipoPosicion.foto).into(holder.binding.foto);
+           /* Glide.with(PosicionesPersonajesFragment.this).load(.foto).into(holder.binding.foto);
             holder.binding.nombre.setText(equipoPosicion.nombre);
-            holder.binding.equipo.setText(equipoPosicion.equipo);
+            holder.binding.equipo.setText(equipoPosicion.equipo);*/
         }
 
         @Override

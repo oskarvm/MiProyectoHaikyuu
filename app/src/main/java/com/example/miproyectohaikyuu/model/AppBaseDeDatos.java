@@ -49,6 +49,7 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
         @Insert
         void insertar(Personaje personaje);
 
+
         @Query("SELECT * FROM Personaje")
         LiveData<List<Personaje>> obtener();
     }

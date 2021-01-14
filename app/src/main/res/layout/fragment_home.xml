@@ -63,7 +63,7 @@
                 android:textColor="@color/blanco" />
 
             <Button
-                android:id="@+id/verJugadores"
+                android:id="@+id/crear"
                 android:layout_width="200dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"

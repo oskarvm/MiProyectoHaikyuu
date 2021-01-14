@@ -19,7 +19,6 @@ import com.example.miproyectohaikyuu.model.Personaje;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
-
     AutenticacionViewModel autenticacionViewModel;
     private PersonajesViewModel personajesViewModel;
 
@@ -33,18 +32,17 @@ public class MainActivity extends AppCompatActivity {
         personajesViewModel = new ViewModelProvider(this).get(PersonajesViewModel.class);
 
 
-        personajesViewModel.obtener().observe(this, personajes -> {
+        /*personajesViewModel.obtener().observe(this, personajes -> {
             if(personajes.size() == 0) {
                 personajesViewModel.insertarDeTodo();
             }
-        });
+        });*/
 
 
         setSupportActionBar(binding.toolbar);
 
 
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
-
 
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
             @Override

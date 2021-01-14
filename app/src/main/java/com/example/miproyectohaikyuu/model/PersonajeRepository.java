@@ -22,7 +22,7 @@ public class PersonajeRepository {
 
         personajeDao = AppBaseDeDatos.getInstance(application).obtenerPersonajeDao();
 
-        List<Personaje> personajes = Arrays.asList(
+        /*List<Personaje> personajes = Arrays.asList(
                 new Personaje(R.drawable.jugador_karasuno_hinata, R.drawable.escudo_karasuno, "Shoyo Hinata", "Bloqueador","Preparatoria Karasuno", "164.2", "7", "9", "6", "5", "5"),
                 new Personaje(R.drawable.jugador_karasuno_kageyama, R.drawable.escudo_karasuno, "Tobio Kageyama", "Colocador","Preparatoria Karasuno", "181.9", "7", "9", "6", "5", "5"),
                 new Personaje(R.drawable.jugador_karasuno_tanaka, R.drawable.escudo_karasuno, "Ryu Tanaka", "Punta","Preparatoria Karasuno", "178.2", "7", "9", "6", "5", "5"),
@@ -88,23 +88,26 @@ public class PersonajeRepository {
                 new Personaje(R.drawable.jugador_inarizaki_suna, R.drawable.escudo_inarizaki,"Rintarō Suna","Bloqueador", "Preparatoria Inarizaki", "185.7", "7", "9", "6", "5", "5"),
                 new Personaje(R.drawable.jugador_inarizaki_omimi, R.drawable.escudo_inarizaki,"Ren Ōmimi","Bloqueador", "Preparatoria Inarizaki", "191.5", "7", "9", "6", "5", "5"),
                 new Personaje(R.drawable.jugador_inarizaki_akagi, R.drawable.escudo_inarizaki,"Michinari Akagi","Libero", "Preparatoria Inarizaki", "174.2", "7", "9", "6", "5", "5")
-                );
+                );*/
 
-                personajesLiveData = new MutableLiveData<>(personajes);
+                //personajesLiveData = new MutableLiveData<>(personajes);
     }
 
-    public LiveData<List<Personaje>> personajes(){
+    /*public LiveData<List<Personaje>> personajes(){
         return personajesLiveData;
-    }
+    }*/
 
-    public void insertar(int foto, int escudo, String nombre, String posicion, String equipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion) {
-        executor.execute(() -> {
-            personajeDao.insertar(new Personaje(foto, escudo, nombre, posicion, equipo, altura, bloqueo, remate, recepcion, saque, colocacion));
+    /*public void insertar(Personaje personaje){
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                personajeDao.insertar(personaje);
+            }
         });
+    }*/
 
-    }
-
-    public void insertarTidi(){
+    public void insertarTodo(){
+        executor.execute(() -> {
         List<Personaje> personajes = Arrays.asList(
                 new Personaje(R.drawable.jugador_karasuno_hinata, R.drawable.escudo_karasuno, "Shoyo Hinata", "Bloqueador","Preparatoria Karasuno", "164.2", "7", "9", "6", "5", "5"),
                 new Personaje(R.drawable.jugador_karasuno_kageyama, R.drawable.escudo_karasuno, "Tobio Kageyama", "Colocador","Preparatoria Karasuno", "181.9", "7", "9", "6", "5", "5"),
@@ -173,13 +176,22 @@ public class PersonajeRepository {
                 new Personaje(R.drawable.jugador_inarizaki_akagi, R.drawable.escudo_inarizaki,"Michinari Akagi","Libero", "Preparatoria Inarizaki", "174.2", "7", "9", "6", "5", "5")
         );
 
-        executor.execute(() -> {
+
             for(Personaje personaje:personajes){
                 personajeDao.insertar(personaje);
             }
         });
 
     }
+
+    /*public void insertar(Personaje personaje) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                personajeDao.insertar(personaje);
+            }
+        });
+    }*/
 
     public LiveData<List<Personaje>> obtener(){
         return personajeDao.obtener();
