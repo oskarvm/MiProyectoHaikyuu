@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".PosicionesPersonajesFragment">
+    tools:context=".PersonajesPorEquipoFragment"
+    android:background="@color/naranja">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerEquipoPosiciones"
+        android:id="@+id/recyclerEquipo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/viewholder_personaje_por_equipo" />
 </FrameLayout>

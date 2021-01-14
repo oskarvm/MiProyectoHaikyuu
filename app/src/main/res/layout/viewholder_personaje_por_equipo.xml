@@ -42,7 +42,7 @@
                 android:id="@+id/posicion"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="@string/nekoma"
+                android:text="@string/bloqueador"
                 android:gravity="center"
                 android:textAlignment="textStart"
                 android:fontFamily="@font/roboto_italic"

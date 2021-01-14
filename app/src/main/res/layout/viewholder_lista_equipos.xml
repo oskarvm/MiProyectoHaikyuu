@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/naranja">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:contentDescription="@string/karasuno"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/escudo_karasuno"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/irKarasuno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/karasuno"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/negro"
+            android:padding="10dp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/negro"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp" />
+
+</LinearLayout>

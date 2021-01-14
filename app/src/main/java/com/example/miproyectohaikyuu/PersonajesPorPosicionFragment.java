@@ -16,23 +16,23 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.miproyectohaikyuu.databinding.FragmentPersonajePorEquipoBinding;
-import com.example.miproyectohaikyuu.databinding.ViewholderPersonajePorEquipoBinding;
+import com.example.miproyectohaikyuu.databinding.FragmentPersonajesPorPosicionBinding;
+import com.example.miproyectohaikyuu.databinding.ViewholderPersonajePorPosicionBinding;
 import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
 import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
 
 import java.util.List;
 
-public class PersonajesPorEquipoFragment extends Fragment {
+public class PersonajesPorPosicionFragment extends Fragment {
 
-    private FragmentPersonajePorEquipoBinding binding;
+    private FragmentPersonajesPorPosicionBinding binding;
     PersonajesViewModel personajesViewModel;
     private NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return (binding = FragmentPersonajePorEquipoBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = FragmentPersonajesPorPosicionBinding.inflate(inflater, container, false)).getRoot();
     }
 
     @Override
@@ -45,8 +45,8 @@ public class PersonajesPorEquipoFragment extends Fragment {
         PersonajesAdapter personajesAdapter;
         personajesAdapter = new PersonajesAdapter();
 
-        binding.recyclerEquipo.setAdapter(personajesAdapter);
-        binding.recyclerEquipo.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
+        binding.recyclerPosicion.setAdapter(personajesAdapter);
+        binding.recyclerPosicion.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
 
         obtenerPersonaje().observe(getViewLifecycleOwner(), personajes -> personajesAdapter.establecerLista(personajes));
     }
@@ -62,7 +62,7 @@ public class PersonajesPorEquipoFragment extends Fragment {
         @NonNull
         @Override
         public PersonajeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return new PersonajeViewHolder(ViewholderPersonajePorEquipoBinding.inflate(getLayoutInflater(), parent, false));
+            return new PersonajeViewHolder(ViewholderPersonajePorPosicionBinding.inflate(getLayoutInflater(), parent, false));
         }
 
         @Override
@@ -70,9 +70,9 @@ public class PersonajesPorEquipoFragment extends Fragment {
             PersonajeConEquipo personaje = personajes.get(position);
 
             holder.binding.nombre.setText(personaje.nombre);
-            holder.binding.posicion.setText(personaje.posicion);
+            holder.binding.equipo.setText(personaje.nombreEquipo);
 
-            Glide.with(PersonajesPorEquipoFragment.this).load(personaje.foto).into(holder.binding.foto);
+            Glide.with(PersonajesPorPosicionFragment.this).load(personaje.foto).into(holder.binding.foto);
 
             holder.itemView.setOnClickListener(v -> {
                 personajesViewModel.seleccionar(personaje);
@@ -90,15 +90,12 @@ public class PersonajesPorEquipoFragment extends Fragment {
             notifyDataSetChanged();
         }
 
-        /*public Personaje obtenerPersonaje(int posicion){
-            return personajes.get(posicion);
-        }*/
     }
 
     static class PersonajeViewHolder extends RecyclerView.ViewHolder {
-        final ViewholderPersonajePorEquipoBinding binding;
+        final ViewholderPersonajePorPosicionBinding binding;
 
-        public PersonajeViewHolder(@NonNull ViewholderPersonajePorEquipoBinding binding) {
+        public PersonajeViewHolder(@NonNull ViewholderPersonajePorPosicionBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
         }

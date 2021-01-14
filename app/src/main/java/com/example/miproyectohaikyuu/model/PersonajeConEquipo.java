@@ -1,8 +1,5 @@
 package com.example.miproyectohaikyuu.model;
 
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
 public class PersonajeConEquipo {
     public int id;
     public int foto;

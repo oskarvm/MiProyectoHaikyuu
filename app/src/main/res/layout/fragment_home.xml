@@ -63,7 +63,7 @@
                 android:textColor="@color/blanco" />
 
             <Button
-                android:id="@+id/crear"
+                android:id="@+id/verJugadores"
                 android:layout_width="200dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -121,13 +121,13 @@
         <TextView
             android:id="@+id/cerrarSesion"
             android:layout_width="200dp"
-            android:layout_height="20dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fondonegro"
+            android:fontFamily="@font/roboto_italic"
+            android:gravity="center"
             android:text="@string/cerrarsesion"
             android:textAlignment="center"
-            android:textColor="@color/blanco"
-            android:background="@drawable/fondonegro"
-            android:layout_gravity="center"
-            android:fontFamily="@font/roboto_italic" />
+            android:textColor="@color/blanco" />
     </LinearLayout>
 
 </LinearLayout>
