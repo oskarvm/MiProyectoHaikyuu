@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MiProyectoHaikyuu</string>
     <string name="login">Iniciar sesio</string>
     <string name="usuario">Usuari</string>
     <string name="contraseña">Contrasenya</string>
@@ -52,4 +51,11 @@
     <string name="saque">"Servei: "</string>
     <string name="colocacion">"Colocació: "</string>
     <string name="fukorodani">Academia Fukurōdani</string>
+    <string name="karasuno">Preparatòria Karasuno</string>
+    <string name="nekoma">Preparatòria Nekoma</string>
+    <string name="kamomedai">Preparatòria Kamomedai</string>
+    <string name="date">Preparatòria Tecnica de Date</string>
+    <string name="aobajosai">Preparatòria Aoba Josai</string>
+    <string name="shiratorizawa">Academia Shiratorizawa</string>
+    <string name="inarizaki">Preparatòria Inarizaki</string>
 </resources>

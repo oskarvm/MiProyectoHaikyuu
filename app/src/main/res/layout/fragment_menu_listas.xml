@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
     android:orientation="vertical"
     android:background="@color/naranja">
 
@@ -61,47 +60,34 @@
             tools:ignore="UselessParent">
 
             <Button
-                android:id="@+id/equipo1"
+                android:id="@+id/porEpuipos"
                 android:layout_width="200dp"
-                android:layout_height="26dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/fondonegro"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/equipo1"
+                android:text="@string/equipos"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blanco" />
 
             <Button
-                android:id="@+id/equipo2"
+                android:id="@+id/porPosiciones"
                 android:layout_width="200dp"
-                android:layout_height="30dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/fondonegro"
                 android:fontFamily="@font/roboto_black"
                 android:gravity="center"
-                android:text="@string/equipo2"
+                android:text="@string/posiciones"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blanco" />
 
-            <Button
-                android:id="@+id/masEquipos"
-                android:layout_width="200dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/fondonegro"
-                android:fontFamily="@font/roboto_black"
-                android:text="@string/equipo3"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/blanco" />
 
         </LinearLayout>
 

@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentPersonajesBinding;
@@ -17,6 +19,7 @@ import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
 
 public class PersonajesFragment extends Fragment {
     private FragmentPersonajesBinding binding;
+    private NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,6 +31,8 @@ public class PersonajesFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         PersonajesViewModel personajesViewModel = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
+
+        navController = Navigation.findNavController(view);
 
         personajesViewModel.seleccionado().observe(getViewLifecycleOwner(), personaje -> {
             Glide.with(PersonajesFragment.this).load(personaje.foto).into(binding.foto);
@@ -42,6 +47,11 @@ public class PersonajesFragment extends Fragment {
             binding.saque.setText(personaje.saque);
             binding.colocacion.setText(personaje.colocacion);
         });
+
+        binding.elegirJugador.setOnClickListener(v -> navController.navigate(R.id.action_personajesFragment_to_equipoCreado));
+
+
+        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
     }
 }
 

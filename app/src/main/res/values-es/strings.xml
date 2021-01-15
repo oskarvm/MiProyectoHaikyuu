@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MiProyectoHaikyuu</string>
     <string name="login">Iniciar sesión</string>
     <string name="usuario">Usuario</string>
     <string name="contraseña">Contraseña</string>
@@ -56,4 +55,7 @@
     <string name="nekoma">Preparatoria Nekoma</string>
     <string name="kamomedai">Preparatoria Kamomedai</string>
     <string name="date">Preparatoria Tecnica de Date</string>
+    <string name="aobajosai">Preparatoria Aoba Josai</string>
+    <string name="shiratorizawa">Academia Shiratorizawa</string>
+    <string name="inarizaki">Preparatoria Inarizaki</string>
 </resources>

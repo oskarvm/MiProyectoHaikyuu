@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MiProyectoHaikyuu</string>
     <string name="login">Log in</string>
     <string name="usuario">User</string>
     <string name="contraseña">Password</string>
@@ -56,4 +55,7 @@
     <string name="kamomedai">Kamomedai High</string>
     <string name="fukorodani">"Fukurōdani Academy "</string>
     <string name="date">Date Tech High</string>
+    <string name="aobajosai">Aoba Josai High</string>
+    <string name="shiratorizawa">Shiratorizawa Academy</string>
+    <string name="inarizaki">Inarizaki High</string>
 </resources>

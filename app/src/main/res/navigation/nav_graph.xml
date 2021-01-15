@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/listaEquiposYPosicionesFragment">
 
     <fragment
         android:id="@+id/iniciarSesionFragment"
@@ -60,57 +60,36 @@
         tools:layout="@layout/fragment_home"
         app:startDestination="@id/action_homeFragment_to_cerrarSesionFragment">
         <action
-            android:id="@+id/action_homeFragment_to_perfilFragment"
-            app:destination="@id/perfilFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_cerrarSesionFragment"
             app:destination="@id/cerrarSesionFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_misEquipos2"
-            app:destination="@id/misEquipos2" />
+            android:id="@+id/action_homeFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_jugarPartida2"
-            app:destination="@id/jugarPartida2" />
+            android:id="@+id/action_homeFragment_to_menuMisEquiposFragment"
+            app:destination="@id/menuMisEquiposFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_equiposPersonajesFragment"
-            app:destination="@id/equiposPersonajesFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_personajesPorPosicionFragment"
-            app:destination="@id/personajesPorPosicionFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_listaEquiposFragment"
-            app:destination="@id/listaEquiposFragment" />
+            android:id="@+id/action_homeFragment_to_menuJugarPartidaFragment"
+            app:destination="@id/menuJugarPartidaFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/misEquipos2"
-        android:name="com.example.miproyectohaikyuu.MisEquiposFragment"
-        android:label="fragment_mis_equipos"
-        tools:layout="@layout/fragment_mis_equipos" >
-        <action
-            android:id="@+id/action_misEquipos2_to_crearEquipo"
-            app:destination="@id/crearEquipo" />
-        <action
-            android:id="@+id/action_misEquipos2_to_equipoCreado"
-            app:destination="@id/equipoCreado" />
-    </fragment>
-    <fragment
-        android:id="@+id/jugarPartida2"
-        android:name="com.example.miproyectohaikyuu.jugarPartidaFragment"
-        android:label="fragment_jugar_partida"
-        tools:layout="@layout/fragment_jugar_partida" />
     <fragment
         android:id="@+id/crearEquipo"
         android:name="com.example.miproyectohaikyuu.crearEquipoFragment"
         android:label="fragment_crear_equipo"
-        tools:layout="@layout/fragment_crear_equipo" />
+        tools:layout="@layout/fragment_crear_equipo" >
+        <action
+            android:id="@+id/action_crearEquipo_to_menuListasFragment"
+            app:destination="@id/menuListasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/equipoCreado"
-        android:name="com.example.miproyectohaikyuu.equipoCreado"
+        android:name="com.example.miproyectohaikyuu.equipoCreadoFragment"
         android:label="fragment_equipo_creado"
-        tools:layout="@layout/fragment_equipo_creado" />
+        tools:layout="@layout/fragment_equipo_creado" >
+        <action
+            android:id="@+id/action_equipoCreado_to_menuMisEquiposFragment"
+            app:destination="@id/menuMisEquiposFragment" />
+    </fragment>
     <fragment
         android:id="@+id/listaEquiposYPosicionesFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquiposYPosicionesFragment"
@@ -120,7 +99,11 @@
         android:id="@+id/personajesFragment"
         android:name="com.example.miproyectohaikyuu.PersonajesFragment"
         android:label="fragment_personajes"
-        tools:layout="@layout/fragment_personajes" />
+        tools:layout="@layout/fragment_personajes" >
+        <action
+            android:id="@+id/action_personajesFragment_to_equipoCreado"
+            app:destination="@id/equipoCreado" />
+    </fragment>
     <fragment
         android:id="@+id/equiposPersonajesFragment"
         android:name="com.example.miproyectohaikyuu.PersonajesPorEquipoFragment"
@@ -137,4 +120,39 @@
         android:name="com.example.miproyectohaikyuu.ListaEquiposFragment"
         android:label="fragment_lista_equipos"
         tools:layout="@layout/fragment_lista_equipos" /><action android:id="@+id/action_global_equiposPersonajesFragment" app:destination="@id/equiposPersonajesFragment"/>
+    <fragment
+        android:id="@+id/listaPosicionesFragment"
+        android:name="com.example.miproyectohaikyuu.ListaPosicionesFragment"
+        android:label="fragment_lista_posiciones"
+        tools:layout="@layout/fragment_lista_posiciones" />
+    <fragment
+        android:id="@+id/menuMisEquiposFragment"
+        android:name="com.example.miproyectohaikyuu.MenuMisEquiposFragment"
+        android:label="fragment_menu_mis_equipos"
+        tools:layout="@layout/fragment_menu_mis_equipos" >
+        <action
+            android:id="@+id/action_menuMisEquiposFragment_to_equipoCreado"
+            app:destination="@id/equipoCreado" />
+        <action
+            android:id="@+id/action_menuMisEquiposFragment_to_crearEquipo"
+            app:destination="@id/crearEquipo" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuJugarPartidaFragment"
+        android:name="com.example.miproyectohaikyuu.MenuJugarPartidaFragment"
+        android:label="fragment_menu_jugar_partida"
+        tools:layout="@layout/fragment_menu_jugar_partida" />
+    <fragment
+        android:id="@+id/menuListasFragment"
+        android:name="com.example.miproyectohaikyuu.MenuListasFragment"
+        android:label="fragment_menu_listas"
+        tools:layout="@layout/fragment_menu_listas" >
+        <action
+            android:id="@+id/action_menuListasFragment_to_listaEquiposFragment"
+            app:destination="@id/listaEquiposFragment" />
+        <action
+            android:id="@+id/action_menuListasFragment_to_listaPosicionesFragment"
+            app:destination="@id/listaPosicionesFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_personajesPorPosicionFragment" app:destination="@id/personajesPorPosicionFragment" />
 </navigation>

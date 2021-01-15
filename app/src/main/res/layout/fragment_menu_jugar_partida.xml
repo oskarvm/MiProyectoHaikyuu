@@ -12,15 +12,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="10dp"
-        android:layout_weight="0">
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/irAtras"
+            android:contentDescription="@string/flechaatras"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/flecha" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="10dp"
-            tools:ignore="UselessParent">
+            android:layout_margin="10dp">
             <ImageView
                 android:contentDescription="@string/logo"
                 android:layout_width="200dp"
@@ -31,63 +36,67 @@
     </LinearLayout>
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="1000"
+        android:background="@drawable/fondonaranja"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:background="@drawable/fondo_menus"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:layout_gravity="center"
             android:gravity="center"
-            android:orientation="vertical"
             tools:ignore="UselessParent">
 
             <Button
-                android:id="@+id/irMiPerfil"
+                android:id="@+id/buscarPartida"
                 android:layout_width="200dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/fondonegro"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/miperfil"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/blanco" />
-
-
-            <Button
-                android:id="@+id/irMisEquipos"
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/fondonegro"
-                android:fontFamily="@font/roboto_black"
-                android:gravity="center"
-                android:text="@string/misequipos"
+                android:text="@string/buscarpartida"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blanco" />
 
             <Button
-                android:id="@+id/irJugarPartida"
+                android:id="@+id/invitarPartida"
                 android:layout_width="200dp"
-                android:layout_height="50dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/fondonegro"
                 android:fontFamily="@font/roboto_black"
-                android:gravity="center"
-                android:text="@string/jugarpartida"
+                android:text="@string/invitarpartida"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/blanco" />
+
+            <Button
+                android:id="@+id/historial"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fondonegro"
+                android:fontFamily="@font/roboto_black"
+                android:text="@string/historial"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/blanco" />
@@ -96,23 +105,9 @@
 
     </LinearLayout>
 
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <TextView
-            android:id="@+id/cerrarSesion"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:background="@drawable/fondoblanco"
-            android:fontFamily="@font/roboto_italic"
-            android:gravity="center"
-            android:text="@string/cerrarsesion"
-            android:textAlignment="center"
-            android:textColor="@color/negro" />
-    </LinearLayout>
-
+        android:layout_weight="1000"
+        android:background="@drawable/fondonaranja"/>
 </LinearLayout>
