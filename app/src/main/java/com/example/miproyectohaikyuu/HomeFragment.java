@@ -44,7 +44,7 @@ public class HomeFragment extends Fragment {
         binding.miPerfil.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_equiposPersonajesFragment));
         binding.verJugadores.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_personajesPorPosicionFragment));
         binding.cerrarSesion.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_cerrarSesionFragment));
-        binding.misEquipos.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_misEquipos2));
+        binding.misEquipos.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_listaEquiposFragment));
         binding.jugarPartida.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_jugarPartida2));
     }
 }

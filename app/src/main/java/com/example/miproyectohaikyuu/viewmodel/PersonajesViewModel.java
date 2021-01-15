@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
+import com.example.miproyectohaikyuu.model.Equipo;
 import com.example.miproyectohaikyuu.model.Personaje;
 import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
 import com.example.miproyectohaikyuu.model.PersonajeRepository;
@@ -17,17 +18,20 @@ public class PersonajesViewModel extends AutenticacionViewModel {
 
     public  MutableLiveData<PersonajeConEquipo> personajeSeleccionado = new MutableLiveData<>();
 
+    public  MutableLiveData<Equipo> equipoSeleccionado = new MutableLiveData<>();
+
     public PersonajesViewModel(@NonNull Application application) {
         super(application);
 
         personajeRepository = new PersonajeRepository(application);
-
-
     }
-
 
     public LiveData<List<PersonajeConEquipo>> obtener(){
         return personajeRepository.obtener();
+    }
+
+    public LiveData<List<Equipo>> obtenerEquipo(){
+        return personajeRepository.obtenerEquipo();
     }
 
     public PersonajeRepository getPersonajeRepository() {
@@ -42,10 +46,13 @@ public class PersonajesViewModel extends AutenticacionViewModel {
         return personajeSeleccionado;
     }
 
-
-    public void insertarDeTodo(){
-//        personajeRepository.insertarTodo();
+    public void seleccionarEquipo(Equipo equipo){
+        equipoSeleccionado.setValue(equipo);
     }
+
+   // public void insertarDeTodo(){
+//        personajeRepository.insertarTodo();
+    //}
 
     /*public void insertar(Personaje personaje){
         personajeRepository.insertar(personaje);

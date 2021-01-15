@@ -80,6 +80,9 @@
         <action
             android:id="@+id/action_homeFragment_to_personajesPorPosicionFragment"
             app:destination="@id/personajesPorPosicionFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_listaEquiposFragment"
+            app:destination="@id/listaEquiposFragment" />
     </fragment>
     <fragment
         android:id="@+id/misEquipos2"
@@ -129,4 +132,9 @@
         android:name="com.example.miproyectohaikyuu.PersonajesPorPosicionFragment"
         android:label="fragment_personajes_por_posicion"
         tools:layout="@layout/fragment_personajes_por_posicion" />
+    <fragment
+        android:id="@+id/listaEquiposFragment"
+        android:name="com.example.miproyectohaikyuu.ListaEquiposFragment"
+        android:label="fragment_lista_equipos"
+        tools:layout="@layout/fragment_lista_equipos" /><action android:id="@+id/action_global_equiposPersonajesFragment" app:destination="@id/equiposPersonajesFragment"/>
 </navigation>

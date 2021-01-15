@@ -19,10 +19,9 @@ public class Personaje {
     public String recepcion;
     public String saque;
     public String colocacion;
+    public int fotoPosicion;
 
-
-
-    public Personaje(int foto, String nombre, String posicion, int idEquipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion) {
+    public Personaje(int foto, String nombre, String posicion, int idEquipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion, int fotoPosicion) {
         this.foto = foto;
         this.nombre = nombre;
         this.posicion = posicion;
@@ -33,5 +32,6 @@ public class Personaje {
         this.recepcion = recepcion;
         this.saque = saque;
         this.colocacion = colocacion;
+        this.fotoPosicion = fotoPosicion;
     }
 }

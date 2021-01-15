@@ -12,10 +12,11 @@ public class PersonajeConEquipo {
     public String recepcion;
     public String saque;
     public String colocacion;
+    public int fotoPosicion;
     public String nombreEquipo;
     public int escudo;
 
-    public PersonajeConEquipo(int id, int foto, String nombre, String posicion, int idEquipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion, String nombreEquipo, int escudo) {
+    public PersonajeConEquipo(int id, int foto, String nombre, String posicion, int idEquipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion, int fotoPosicion, String nombreEquipo, int escudo) {
         this.id = id;
         this.foto = foto;
         this.nombre = nombre;
@@ -27,6 +28,7 @@ public class PersonajeConEquipo {
         this.recepcion = recepcion;
         this.saque = saque;
         this.colocacion = colocacion;
+        this.fotoPosicion = fotoPosicion;
         this.nombreEquipo = nombreEquipo;
         this.escudo = escudo;
     }
