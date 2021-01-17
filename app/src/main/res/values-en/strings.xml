@@ -58,4 +58,6 @@
     <string name="aobajosai">Aoba Josai High</string>
     <string name="shiratorizawa">Shiratorizawa Academy</string>
     <string name="inarizaki">Inarizaki High</string>
+    <string name="iniciodesesion">" Login"</string>
+    <string name="registro">" Registry data"</string>
 </resources>

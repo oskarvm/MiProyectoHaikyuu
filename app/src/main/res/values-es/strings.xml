@@ -58,4 +58,6 @@
     <string name="aobajosai">Preparatoria Aoba Josai</string>
     <string name="shiratorizawa">Academia Shiratorizawa</string>
     <string name="inarizaki">Preparatoria Inarizaki</string>
+    <string name="iniciodesesion">Inicio de sesión</string>
+    <string name="registro">Datos del registro</string>
 </resources>

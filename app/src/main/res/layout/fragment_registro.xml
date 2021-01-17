@@ -4,138 +4,204 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/naranja">
+    android:background="@color/naranja"
+    android:padding="20dp">
 
     <ImageView
         android:contentDescription="@string/logo"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="67dp"
         android:src="@drawable/logo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/fondonaranja">
+    </View>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/fondonegro"
-        android:orientation="vertical"
-        android:padding="20dp"
-        android:layout_margin="20dp">
+        android:layout_weight="0"
+        android:background="@drawable/fondonaranja"
+        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="match_parent"
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="@string/usuario"
-            android:textColor="@color/blanco"
-            android:fontFamily="@font/roboto_regular"/>
+            tools:ignore="NestedWeights" />
 
-        <EditText
-            android:id="@+id/username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fondoblanco"
-            android:layout_marginBottom="20dp"
-            android:paddingBottom="10dp"
-            android:inputType="text"
-            android:importantForAutofill="no"
-            tools:ignore="LabelFor" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/usuario"
+            android:src="@drawable/registro" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/contraseña"
-            android:textColor="@color/blanco"
-            android:fontFamily="@font/roboto_regular"/>
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fondoblanco"
-            android:layout_marginBottom="20dp"
-            android:paddingBottom="10dp"
-            android:importantForAutofill="no"
-            android:inputType="textPassword"
-            tools:ignore="LabelFor" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/nombre"
-            android:textColor="@color/blanco"
-            android:fontFamily="@font/roboto_regular"/>
-        <EditText
-            android:id="@+id/nombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fondoblanco"
-            android:layout_marginBottom="20dp"
-            android:paddingBottom="10dp"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            tools:ignore="LabelFor" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/apellido"
-            android:textColor="@color/blanco"
-            android:fontFamily="@font/roboto_regular"/>
-        <EditText
-            android:id="@+id/apellido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fondoblanco"
-            android:layout_marginBottom="20dp"
-            android:paddingBottom="10dp"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            tools:ignore="LabelFor" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/correo"
-            android:textColor="@color/blanco"
-            android:fontFamily="@font/roboto_regular"/>
-        <EditText
-            android:id="@+id/correo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/fondoblanco"
-            android:layout_marginBottom="20dp"
-            android:paddingBottom="10dp"
-            android:importantForAutofill="no"
-            android:inputType="textEmailAddress"
-            tools:ignore="LabelFor" />
-
-        <Button
-            android:id="@+id/registrar"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/fondonaranja"
-            android:text="@string/crearcuenta"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/roboto_black"/>
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="@string/registro"
+                android:textColor="@color/blanco"
+                android:textSize="30sp"
+                tools:ignore="NestedWeights" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/fondonaranja">
+        android:layout_height="400dp"
+        android:background="@drawable/fondonegro"
+        android:orientation="vertical"
+        android:paddingVertical="50dp"
+        android:paddingHorizontal="30dp">
 
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="15sp"
+                    android:text="@string/usuario"
+                    android:textColor="@color/blanco" />
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fondoblanco"
+                    android:layout_marginBottom="20dp"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="@string/contraseña"
+                    android:textColor="@color/blanco"
+                    android:fontFamily="@font/roboto_regular"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fondoblanco"
+                    android:layout_marginBottom="20dp"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="15sp"
+                    android:text="@string/nombre"
+                    android:textColor="@color/blanco" />
+                <EditText
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fondoblanco"
+                    android:layout_marginBottom="20dp"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="15sp"
+                    android:text="@string/apellido"
+                    android:textColor="@color/blanco" />
+                <EditText
+                    android:id="@+id/apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fondoblanco"
+                    android:layout_marginBottom="20dp"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="15sp"
+                    android:text="@string/correo"
+                    android:textColor="@color/blanco" />
+                <EditText
+                    android:id="@+id/correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fondoblanco"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="LabelFor" />
+
+                <Button
+                    android:id="@+id/registrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/fondonaranja"
+                    android:text="@string/crearcuenta"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="85dp"/>
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
-    <TextView
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/fondonaranja">
+    </View>
+
+    <Button
         android:id="@+id/irAlIniciarSesion"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="0dp"
-        android:background="@drawable/fondonegro"
+        android:background="@drawable/fondoblanco"
         android:fontFamily="@font/roboto_italic"
-        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
         android:text="@string/login"
         android:textAlignment="center"
-        android:textColor="@color/blanco" />
+        android:textColor="@color/negro" />
 </LinearLayout>
