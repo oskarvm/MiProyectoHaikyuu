@@ -133,15 +133,17 @@
         android:background="@drawable/fondonaranja">
     </View>
 
+
     <Button
         android:id="@+id/irAlRegistro"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:background="@drawable/fondoblanco"
+        android:background="@drawable/boton_blanco"
         android:fontFamily="@font/roboto_italic"
         android:layout_gravity="center"
         android:textSize="20sp"
         android:text="@string/crearcuenta"
         android:textAlignment="center"
         android:textColor="@color/negro" />
+
 </LinearLayout>

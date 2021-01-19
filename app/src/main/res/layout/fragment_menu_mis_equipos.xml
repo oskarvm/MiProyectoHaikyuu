@@ -4,111 +4,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/naranja">
-
+    android:background="@color/naranja"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/irAtras"
             android:contentDescription="@string/flechaatras"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
             android:src="@drawable/flecha" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
+            android:orientation="vertical">
             <ImageView
                 android:contentDescription="@string/logo"
                 android:layout_width="200dp"
-                android:layout_height="50dp"
+                android:layout_height="67dp"
                 android:layout_gravity="end"
                 android:src="@drawable/logo" />
         </LinearLayout>
+
     </LinearLayout>
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/fondonaranja">
+    </View>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1000"
-        android:background="@drawable/fondonaranja"/>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:background="@drawable/fondo_menus"
-        android:orientation="horizontal"
-        android:baselineAligned="false">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_gravity="center"
             android:gravity="center"
+            android:orientation="vertical"
             tools:ignore="UselessParent">
 
             <Button
                 android:id="@+id/equipo1"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/fondonegro"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boton_negro"
+                android:textColor="@color/blanco"
                 android:fontFamily="@font/roboto_black"
                 android:text="@string/equipo1"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="@color/blanco" />
+                android:textSize="20sp"/>
 
             <Button
                 android:id="@+id/equipo2"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/fondonegro"
+                android:background="@drawable/boton_negro"
                 android:fontFamily="@font/roboto_black"
-                android:gravity="center"
+                android:layout_marginBottom="10dp"
                 android:text="@string/equipo2"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="@color/blanco" />
+                android:textColor="@color/blanco"
+                android:textSize="20sp"/>
 
             <Button
                 android:id="@+id/equipo3"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/fondonegro"
+                android:background="@drawable/boton_negro"
                 android:fontFamily="@font/roboto_black"
                 android:text="@string/equipo3"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="@color/blanco" />
+                android:textColor="@color/blanco"
+                android:textSize="20sp"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1000"
-        android:background="@drawable/fondonaranja"/>
+        android:layout_weight="1"
+        android:background="@drawable/fondonaranja">
+    </View>
+
 </LinearLayout>

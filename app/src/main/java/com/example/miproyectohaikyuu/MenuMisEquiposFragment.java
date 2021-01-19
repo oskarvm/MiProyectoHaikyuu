@@ -13,7 +13,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.miproyectohaikyuu.databinding.FragmentMenuMisEquiposBinding;
-import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
 
 public class MenuMisEquiposFragment extends Fragment {
 
@@ -21,7 +20,7 @@ public class MenuMisEquiposFragment extends Fragment {
     private NavController navController;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return (binding = FragmentMenuMisEquiposBinding.inflate(inflater, container, false)).getRoot();
     }
 
@@ -34,6 +33,6 @@ public class MenuMisEquiposFragment extends Fragment {
         binding.equipo1.setOnClickListener(v -> navController.navigate(R.id.action_menuMisEquiposFragment_to_equipoCreado));
         binding.equipo2.setOnClickListener(v -> navController.navigate(R.id.action_menuMisEquiposFragment_to_crearEquipo));
         binding.equipo3.setOnClickListener(v -> navController.navigate(R.id.action_menuMisEquiposFragment_to_equipoCreado));
-        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
+        binding.irAtras.setOnClickListener(v -> navController.navigate(R.id.action_menuMisEquiposFragment_to_homeFragment));
     }
 }

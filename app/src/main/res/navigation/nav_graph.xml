@@ -105,7 +105,7 @@
             app:destination="@id/equipoCreado" />
     </fragment>
     <fragment
-        android:id="@+id/equiposPersonajesFragment"
+        android:id="@+id/personajesPorEquipoFragment"
         android:name="com.example.miproyectohaikyuu.PersonajesPorEquipoFragment"
         android:label="fragment_equipos_personajes"
         tools:layout="@layout/fragment_personaje_por_equipo" />
@@ -119,7 +119,7 @@
         android:id="@+id/listaEquiposFragment"
         android:name="com.example.miproyectohaikyuu.ListaEquiposFragment"
         android:label="fragment_lista_equipos"
-        tools:layout="@layout/fragment_lista_equipos" /><action android:id="@+id/action_global_equiposPersonajesFragment" app:destination="@id/equiposPersonajesFragment"/>
+        tools:layout="@layout/fragment_lista_equipos" /><action android:id="@+id/action_global_equiposPersonajesFragment" app:destination="@id/personajesPorEquipoFragment"/>
     <fragment
         android:id="@+id/listaPosicionesFragment"
         android:name="com.example.miproyectohaikyuu.ListaPosicionesFragment"
@@ -136,6 +136,9 @@
         <action
             android:id="@+id/action_menuMisEquiposFragment_to_crearEquipo"
             app:destination="@id/crearEquipo" />
+        <action
+            android:id="@+id/action_menuMisEquiposFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuJugarPartidaFragment"
