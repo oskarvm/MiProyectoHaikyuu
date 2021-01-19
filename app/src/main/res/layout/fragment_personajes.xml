@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
     android:orientation="vertical"
     android:background="@color/naranja">
 
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-       android:layout_weight="1"
+       android:layout_weight="0"
        android:orientation="horizontal"
        android:background="@drawable/fondonegro2">
 
@@ -21,7 +20,9 @@
           android:layout_height="50dp"
           android:src="@drawable/flecha"
           android:layout_weight="0"
-          tools:ignore="NestedWeights" />
+          tools:ignore="NestedWeights"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="10dp"/>
 
       <ImageView
           android:id="@+id/foto"
@@ -31,6 +32,7 @@
           android:layout_gravity="center"
           android:orientation="horizontal"
           android:layout_weight="1"
+          android:src="@drawable/jugador_karasuno_hinata"
           android:layout_margin="10dp"/>
 
       <ImageView
@@ -39,7 +41,9 @@
           android:layout_width="50dp"
           android:layout_height="50dp"
           android:layout_weight="0"
-          android:layout_marginTop="5dp"/>
+          android:src="@drawable/escudo_karasuno"
+          android:layout_marginEnd="10dp"
+          android:layout_marginTop="10dp"/>
    </LinearLayout>
 
    <LinearLayout
@@ -49,12 +53,6 @@
        android:paddingVertical="3dp"
        android:background="@drawable/fondoblanco"/>
 
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_weight="2"
-       android:orientation="vertical">
-
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -62,6 +60,7 @@
 
          <TextView
              android:id="@+id/nombre"
+             android:text="@string/hinata"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_gravity="center"
@@ -73,18 +72,15 @@
              android:textColor="@color/blanco" />
       </LinearLayout>
 
-      <ScrollView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
          <LinearLayout
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:orientation="vertical">
+             android:orientation="vertical"
+             android:padding="20dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
                    android:layout_width="wrap_content"
@@ -98,11 +94,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
-                   android:layout_width="150dp"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/posicion"
@@ -119,13 +114,12 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
-                   android:layout_width="wrap_content"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/equipo"
@@ -144,11 +138,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
-                   android:layout_width="150dp"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/altura"
@@ -164,24 +157,18 @@
                    android:textColor="@color/negro"
                    tools:ignore="HardcodedText" />
             </LinearLayout>
+         </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
-
-               <TextView
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:textSize="18sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
                    android:layout_width="wrap_content"
@@ -192,14 +179,14 @@
                    android:textColor="@color/blanco" />
             </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
-                   android:layout_width="150dp"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/bloqueo"
@@ -218,11 +205,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
-                   android:layout_width="150dp"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/remate"
@@ -241,11 +227,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
-                   android:layout_width="150dp"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/recepcion"
@@ -264,11 +249,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:orientation="horizontal">
 
                <TextView
-                   android:layout_width="150dp"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/saque"
@@ -286,12 +270,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp">
+                android:layout_height="wrap_content">
 
                <TextView
-                   android:layout_width="150dp"
+                   android:layout_width="100dp"
                    android:layout_height="wrap_content"
                    android:fontFamily="@font/roboto_bold"
                    android:text="@string/colocacion"
@@ -307,26 +289,23 @@
                    android:textColor="@color/negro" />
             </LinearLayout>
          </LinearLayout>
-      </ScrollView>
-   </LinearLayout>
 
-   <LinearLayout
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_weight="0"
-       android:orientation="horizontal"
-       android:layout_gravity="center">
-      <TextView
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"/>
+
+
+      <Button
           android:id="@+id/elegirJugador"
           android:layout_width="150dp"
           android:layout_height="50dp"
           android:text="@string/elegirjugador"
           android:textAlignment="center"
-          android:gravity="center"
-          android:fontFamily="@font/roboto_italic"
-          android:textColor="@color/blanco"
-          android:background="@drawable/fondonegro" />
-
-   </LinearLayout>
+          android:layout_gravity="center"
+          android:fontFamily="@font/roboto_bold_italic"
+          android:textColor="@color/negro"
+          android:background="@drawable/boton_blanco"
+          android:layout_marginBottom="20dp"/>
 
 </LinearLayout>
