@@ -124,7 +124,7 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
                 new Personaje(R.drawable.jugador_karasuno_asahi,  "Azumane Asahi","Punta", 0, "186.4", "8", "8", "7", "7", "5",R.drawable.posicion_punta),
                 new Personaje(R.drawable.jugador_karasuno_daichi, "Sawamura Daichi","Opuesto", 0, "176.7", "7", "7", "9", "6", "5",R.drawable.posicion_opuesto),
                 new Personaje(R.drawable.jugador_karasuno_sugawara,"Kōshi Sugawara","Colocador", 0, "174.6", "6", "6", "7", "7", "8",R.drawable.posicion_colocador),
-                new Personaje(R.drawable.jugador_karasuno_yamaguchi, "Tadashi Yamaguchi","Bloqueador", 0, "180.0f", "7", "6", "5", "8", "5",R.drawable.posicion_bloqueador)
+                new Personaje(R.drawable.jugador_karasuno_yamaguchi, "Tadashi Yamaguchi","Bloqueador", 0, "180.0", "7", "6", "5", "8", "5",R.drawable.posicion_bloqueador)
         ));
 
         personajes.put("Preparatoria Nekoma", Arrays.asList(
