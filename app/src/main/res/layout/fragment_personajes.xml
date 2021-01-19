@@ -76,7 +76,7 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:orientation="vertical"
-             android:padding="20dp">
+             android:padding="10dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,7 +163,7 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:orientation="vertical"
-       android:padding="20dp">
+       android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -306,6 +306,6 @@
           android:fontFamily="@font/roboto_bold_italic"
           android:textColor="@color/negro"
           android:background="@drawable/boton_blanco"
-          android:layout_marginBottom="20dp"/>
+          android:layout_marginBottom="10dp"/>
 
 </LinearLayout>

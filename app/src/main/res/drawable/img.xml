@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <item android:drawable="@drawable/jugador_karasuno_hinata"/>
-    <item android:drawable="@drawable/circulo"/>
-
-</layer-list>
