@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/naranja"
+    android:background="@drawable/fondo_menus_naranja"
     android:padding="10dp">
 
     <LinearLayout
@@ -36,8 +36,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@drawable/fondonaranja">
+        android:layout_weight="1">
     </View>
 
         <LinearLayout
@@ -91,8 +90,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="@drawable/fondonaranja">
+        android:layout_weight="1">
     </View>
 
 </LinearLayout>
