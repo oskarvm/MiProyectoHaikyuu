@@ -30,9 +30,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
         navController = Navigation.findNavController(view);
-
 
         binding.irMiPerfil.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_perfilFragment));
         binding.irMisEquipos.setOnClickListener(v -> navController.navigate(R.id.action_homeFragment_to_menuMisEquiposFragment));

@@ -13,22 +13,22 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.bumptech.glide.Glide;
-import com.example.miproyectohaikyuu.databinding.FragmentSplashBinding;
+import com.example.miproyectohaikyuu.databinding.FragmentSplash1Binding;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 
-public class SplashFragment extends Fragment {
+public class Splash1Fragment extends Fragment {
 
     Executor executor = Executors.newSingleThreadExecutor();
 
     NavController navController;
-    private FragmentSplashBinding binding;
+    private FragmentSplash1Binding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return (binding = FragmentSplashBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = FragmentSplash1Binding.inflate(inflater, container, false)).getRoot();
 
     }
 
@@ -37,7 +37,7 @@ public class SplashFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        Glide.with(requireView()).load(R.drawable.cuervobueno).into(binding.carga1);
+        Glide.with(requireView()).load(R.drawable.splah1).into(binding.splash1);
 
         navController = Navigation.findNavController(view);
 
@@ -45,11 +45,11 @@ public class SplashFragment extends Fragment {
 
 
 
-        finishedLoading.observe(getViewLifecycleOwner(), aBoolean -> navController.navigate(R.id.action_splashFragment_to_iniciarSesionFragment));
+        finishedLoading.observe(getViewLifecycleOwner(), aBoolean -> navController.navigate(R.id.action_splash1Fragment_to_splashFragment));
 
         executor.execute(() -> {
             try {
-                Thread.sleep(5000);
+                Thread.sleep(2000);
                 finishedLoading.postValue(true);
             } catch (InterruptedException e) {
                 e.printStackTrace();

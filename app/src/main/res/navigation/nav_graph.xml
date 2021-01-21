@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/splash1Fragment">
 
     <fragment
         android:id="@+id/iniciarSesionFragment"
@@ -158,4 +158,13 @@
             app:destination="@id/listaPosicionesFragment" />
     </fragment>
     <action android:id="@+id/action_global_personajesPorPosicionFragment" app:destination="@id/personajesPorPosicionFragment" />
+    <fragment
+        android:id="@+id/splash1Fragment"
+        android:name="com.example.miproyectohaikyuu.Splash1Fragment"
+        android:label="fragment_splash1"
+        tools:layout="@layout/fragment_splash1" >
+        <action
+            android:id="@+id/action_splash1Fragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
 </navigation>

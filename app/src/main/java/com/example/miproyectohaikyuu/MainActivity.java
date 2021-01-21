@@ -32,16 +32,6 @@ public class MainActivity extends AppCompatActivity {
         personajesViewModel = new ViewModelProvider(this).get(PersonajesViewModel.class);
 
 
-        /*personajesViewModel.obtener().observe(this, personajes -> {
-            if(personajes.size() == 0) {
-                personajesViewModel.insertarDeTodo();
-            }
-        });*/
-
-
-        setSupportActionBar(binding.toolbar);
-
-
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
 
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
@@ -53,9 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 if (destination.getId() == R.id.iniciarSesionFragment
                         || destination.getId() == R.id.registroFragment
                         || destination.getId() == R.id.splashFragment) {
-                    binding.toolbar.setVisibility(View.GONE);
                 } else {
-                    binding.toolbar.setVisibility(View.VISIBLE);
                 }
             }
         });
