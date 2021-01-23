@@ -29,7 +29,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/cuervobueno"/>
-
         <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
             android:id="@+id/progress_bar_1"
             style="?android:attr/progressBarStyleHorizontal"
@@ -38,11 +37,10 @@
             android:indeterminate="false"
             android:maxHeight="12dp"
             android:minHeight="12dp"
-            android:progress="40"
-            app:backgroundColor="@color/blanco"
+            android:progress="50"
+            app:backgroundColor="@color/negropuro"
             app:progressColor="@color/blanco"/>
 
     </LinearLayout>
-
 
 </LinearLayout>

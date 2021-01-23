@@ -54,8 +54,8 @@ public class AutenticacionViewModel extends AndroidViewModel {
         estadoDelRegistro.postValue(EstadoDelRegistro.INICIO_DEL_REGISTRO);
     }
 
-    public void crearCuentaEIniciarSesion(final String username, final String password){
-        autenticacionManager.crearCuenta(username, password, new AutenticacionManager.RegistrarCallback() {
+    public void crearCuentaEIniciarSesion(final String username, final String password, final String nombre, final String apellido, final String correo, final String telefono, final String edad, final String genero){
+        autenticacionManager.crearCuenta(username, password, nombre, apellido, correo, telefono, edad, genero, new AutenticacionManager.RegistrarCallback() {
             @Override
             public void cuandoRegistroCompletado() {
                 estadoDelRegistro.postValue(EstadoDelRegistro.REGISTRO_COMPLETADO);

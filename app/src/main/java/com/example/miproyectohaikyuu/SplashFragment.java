@@ -36,6 +36,7 @@ public class SplashFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        binding.progressBar1.animateProgress(5200, 0, 100);
 
         Glide.with(requireView()).load(R.drawable.cuervobueno).into(binding.carga1);
 

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="login">Iniciar sesio</string>
-    <string name="usuario">Usuari</string>
-    <string name="contraseña">Contrasenya</string>
+    <string name="usuario">Usuari: </string>
+    <string name="contraseña">"Contrasenya: "</string>
     <string name="verjugadores">Veure jugadors</string>
     <string name="misequipos">Els meus equips</string>
     <string name="jugarpartida">Jugar partida</string>
     <string name="cerrarsesion">Tancar sessió</string>
-    <string name="nombre">Nom</string>
-    <string name="apellido">Cognom</string>
-    <string name="correo">Correu</string>
+    <string name="nombre">Nom: </string>
+    <string name="apellido">Cognom: </string>
+    <string name="correo">Correu:</string>
     <string name="crearcuenta">Crear compte</string>
     <string name="equipos">Equips</string>
     <string name="posiciones">Posicions</string>
@@ -39,17 +39,17 @@
     <string name="colocador">Col·locador</string>
     <string name="libero">Libero</string>
     <string name="datos">Dades</string>
-    <string name="posicion">"Posició: "</string>
-    <string name="equipo">"Equip: "</string>
-    <string name="altura">"Alçada: "</string>
+    <string name="posicion">Posició: </string>
+    <string name="equipo">Equip: </string>
+    <string name="altura">Alçada: </string>
     <string name="elegirjugadoresequipo">Tria els teus jugadors:</string>
     <string name="mediaequipo">Característiques mitjana de l\'equip:</string>
     <string name="caracteristicas">Característiques</string>
-    <string name="bloqueo">"Bloqueig: "</string>
-    <string name="remate">"Rematada: "</string>
-    <string name="recepcion">"Recepció: "</string>
-    <string name="saque">"Servei: "</string>
-    <string name="colocacion">"Colocació: "</string>
+    <string name="bloqueo">Bloqueig: </string>
+    <string name="remate">Rematada: </string>
+    <string name="recepcion">Recepció: </string>
+    <string name="saque">Servei: </string>
+    <string name="colocacion">Colocació: </string>
     <string name="fukorodani">Academia Fukurōdani</string>
     <string name="karasuno">Preparatòria Karasuno</string>
     <string name="nekoma">Preparatòria Nekoma</string>
@@ -60,4 +60,7 @@
     <string name="inarizaki">Preparatòria Inarizaki</string>
     <string name="iniciodesesion">Inici de sesió</string>
     <string name="registro">Dades del registre</string>
+    <string name="telefono">Telefon:</string>
+    <string name="edad">Edat:</string>
+    <string name="genero">Génere:</string>
 </resources>

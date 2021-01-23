@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="login">Log in</string>
-    <string name="usuario">User</string>
-    <string name="contraseña">Password</string>
+    <string name="usuario">User: </string>
+    <string name="contraseña">Password: </string>
     <string name="verjugadores">View players</string>
     <string name="misequipos">My teams</string>
     <string name="jugarpartida">Play game</string>
     <string name="cerrarsesion">Sign off</string>
-    <string name="nombre">Name</string>
-    <string name="apellido">Last name</string>
-    <string name="correo">Mail</string>
+    <string name="nombre">Name: </string>
+    <string name="apellido">Last name: </string>
+    <string name="correo">Mail: </string>
     <string name="crearcuenta">Create account</string>
     <string name="equipos">Teams</string>
     <string name="posiciones">Positions</string>
@@ -39,17 +39,17 @@
     <string name="colocador">Setter</string>
     <string name="libero">Libero</string>
     <string name="datos">Data</string>
-    <string name="posicion">"Position: "</string>
-    <string name="equipo">"Team: "</string>
-    <string name="altura">"Height: "</string>
+    <string name="posicion">Position:</string>
+    <string name="equipo">Team:</string>
+    <string name="altura">Height:</string>
     <string name="elegirjugadoresequipo">Choose your players:</string>
     <string name="mediaequipo">Average equipment characteristics:</string>
     <string name="caracteristicas">Characteristic</string>
-    <string name="bloqueo">"Blocking: "</string>
-    <string name="remate">"Shot: "</string>
-    <string name="recepcion">"Reception: "</string>
-    <string name="saque">"Service: "</string>
-    <string name="colocacion">"Setting: "</string>
+    <string name="bloqueo">Blocking: </string>
+    <string name="remate">Shot: </string>
+    <string name="recepcion">Reception: </string>
+    <string name="saque">Service: </string>
+    <string name="colocacion">Setting: </string>
     <string name="karasuno">Karasuno High</string>
     <string name="nekoma">"Nekoma High "</string>
     <string name="kamomedai">Kamomedai High</string>
@@ -58,6 +58,9 @@
     <string name="aobajosai">Aoba Josai High</string>
     <string name="shiratorizawa">Shiratorizawa Academy</string>
     <string name="inarizaki">Inarizaki High</string>
-    <string name="iniciodesesion">" Login"</string>
-    <string name="registro">" Registry data"</string>
+    <string name="iniciodesesion">Login</string>
+    <string name="registro">Registry data</string>
+    <string name="telefono">Phone: </string>
+    <string name="edad">Age: </string>
+    <string name="genero">Gender: </string>
 </resources>

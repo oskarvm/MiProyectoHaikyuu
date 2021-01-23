@@ -54,8 +54,14 @@ public class RegistroFragment extends Fragment {
             public void onClick(View v) {
                 String username = binding.username.getText().toString();
                 String password = binding.password.getText().toString();
+                String nombre = binding.nombre.getText().toString();
+                String apellido = binding.apellido.getText().toString();
+                String correo = binding.correo.getText().toString();
+                String telefono = binding.telefono.getText().toString();
+                String edad = binding.edad.getText().toString();
+                String genero = binding.genero.getText().toString();
 
-                autenticacionViewModel.crearCuentaEIniciarSesion(username, password);
+                autenticacionViewModel.crearCuentaEIniciarSesion(username, password, nombre, apellido, correo, telefono, edad, genero);
             }
 
         });

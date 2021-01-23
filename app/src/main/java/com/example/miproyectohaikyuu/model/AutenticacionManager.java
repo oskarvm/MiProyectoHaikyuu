@@ -41,14 +41,14 @@ public class AutenticacionManager {
         });
     }
 
-    public void crearCuenta(final String username, final String password, final RegistrarCallback callback) {
+    public void crearCuenta(final String username, final String password, final String nombre, final String apellido, final String correo, final String telefono, final String edad, final String genero, final RegistrarCallback callback) {
         executor.execute(new Runnable() {
             @Override
             public void run() {
                 Usuario usuario = dao.comprobarNombreDisponible(username);
 
                 if (usuario == null){
-                    dao.insertarUsuario(new Usuario(username, password));
+                    dao.insertarUsuario(new Usuario(username, password, nombre, apellido, correo, telefono, edad, genero));
                     callback.cuandoRegistroCompletado();
                 } else {
                     callback.cuandoNombreNoDisponible();

@@ -37,6 +37,13 @@ public class PerfilFragment extends Fragment {
             @Override
             public void onChanged(Usuario usuario) {
                 binding.username.setText(usuario.username);
+                binding.nombre.setText(usuario.nombre);
+                binding.apellido.setText(usuario.apellido);
+                binding.correo.setText(usuario.correo);
+                binding.telefono.setText(usuario.telefono);
+                binding.edad.setText(usuario.edad);
+                binding.genero.setText(usuario.genero);
+
             }
         });
     }

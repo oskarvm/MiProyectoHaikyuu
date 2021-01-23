@@ -1,7 +1,6 @@
 package com.example.miproyectohaikyuu.model;
 
 import android.content.Context;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
@@ -21,7 +20,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Usuario.class, Personaje.class, Equipo.class}, version = 7, exportSchema = false)
+@Database(entities = {Usuario.class, Personaje.class, Equipo.class}, version = 9, exportSchema = false)
 public abstract class AppBaseDeDatos extends RoomDatabase {
 
     public abstract AppDao obtenerDao();

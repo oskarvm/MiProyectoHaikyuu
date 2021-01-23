@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="login">Iniciar sesión</string>
-    <string name="usuario">Usuario</string>
-    <string name="contraseña">Contraseña</string>
+    <string name="usuario">Usuario: </string>
+    <string name="contraseña">Contraseña: </string>
     <string name="verjugadores">Ver jugadores</string>
     <string name="misequipos">Mis equipos</string>
     <string name="jugarpartida">Jugar partida</string>
     <string name="cerrarsesion">Cerrar sesión</string>
-    <string name="nombre">Nombre</string>
-    <string name="apellido">Apellido</string>
-    <string name="correo">Correo</string>
+    <string name="nombre">Nombre: </string>
+    <string name="apellido">Apellido: </string>
+    <string name="correo">Correo: </string>
     <string name="crearcuenta">Crear cuenta</string>
     <string name="equipos">Equipos</string>
     <string name="posiciones">Posiciones</string>
@@ -39,17 +39,17 @@
     <string name="colocador">Colocador</string>
     <string name="libero">Libero</string>
     <string name="datos">Datos</string>
-    <string name="posicion">"Posición: "</string>
-    <string name="equipo">"Equipo: "</string>
-    <string name="altura">"Altura: "</string>
+    <string name="posicion">Posición: </string>
+    <string name="equipo">Equipo: </string>
+    <string name="altura">Altura: </string>
     <string name="elegirjugadoresequipo">Elige tus jugadores:</string>
     <string name="mediaequipo">Características media del equipo:</string>
     <string name="caracteristicas">Características</string>
-    <string name="bloqueo">"Bloqueo: "</string>
-    <string name="remate">"Remate: "</string>
-    <string name="recepcion">"Recepción: "</string>
-    <string name="saque">Saque:</string>
-    <string name="colocacion">"Colocación: "</string>
+    <string name="bloqueo">Bloqueo: </string>
+    <string name="remate">Remate: </string>
+    <string name="recepcion">Recepción: </string>
+    <string name="saque">Saque: </string>
+    <string name="colocacion">Colocación: </string>
     <string name="fukorodani">Academia Fukurōdani</string>
     <string name="karasuno">Preparatoria Karasuno</string>
     <string name="nekoma">Preparatoria Nekoma</string>
@@ -60,4 +60,7 @@
     <string name="inarizaki">Preparatoria Inarizaki</string>
     <string name="iniciodesesion">Inicio de sesión</string>
     <string name="registro">Datos del registro</string>
+    <string name="telefono">Teléfono: </string>
+    <string name="edad">Edad: </string>
+    <string name="genero">Género: </string>
 </resources>
