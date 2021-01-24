@@ -63,4 +63,7 @@
     <string name="telefono">Phone: </string>
     <string name="edad">Age: </string>
     <string name="genero">Gender: </string>
+    <string name="victoria">Victory</string>
+    <string name="derrota">Default</string>
+    <string name="ultimaspartidas">" Last 10 games"</string>
 </resources>

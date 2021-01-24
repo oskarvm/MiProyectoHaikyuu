@@ -144,7 +144,20 @@
         android:id="@+id/menuJugarPartidaFragment"
         android:name="com.example.miproyectohaikyuu.MenuJugarPartidaFragment"
         android:label="fragment_menu_jugar_partida"
-        tools:layout="@layout/fragment_menu_jugar_partida" />
+        tools:layout="@layout/fragment_menu_jugar_partida" >
+        <action
+            android:id="@+id/action_menuJugarPartidaFragment_to_buscandoPartidaFragment"
+            app:destination="@id/buscandoPartidaFragment" />
+        <action
+            android:id="@+id/action_menuJugarPartidaFragment_to_invitarAmigoFragment"
+            app:destination="@id/invitarAmigoFragment" />
+        <action
+            android:id="@+id/action_menuJugarPartidaFragment_to_historialPartidasFragment"
+            app:destination="@id/historialPartidasFragment" />
+        <action
+            android:id="@+id/action_menuJugarPartidaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/menuListasFragment"
         android:name="com.example.miproyectohaikyuu.MenuListasFragment"
@@ -169,4 +182,28 @@
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
+    <fragment
+        android:id="@+id/buscandoPartidaFragment"
+        android:name="com.example.miproyectohaikyuu.buscandoPartidaFragment"
+        android:label="fragment_buscando_partida"
+        tools:layout="@layout/fragment_buscando_partida" >
+        <action
+            android:id="@+id/action_buscandoPartidaFragment_to_partidaEncontradaFragment"
+            app:destination="@id/partidaEncontradaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partidaEncontradaFragment"
+        android:name="com.example.miproyectohaikyuu.PartidaEncontradaFragment"
+        android:label="fragment_partida_encontrada"
+        tools:layout="@layout/fragment_partida_encontrada" />
+    <fragment
+        android:id="@+id/invitarAmigoFragment"
+        android:name="com.example.miproyectohaikyuu.InvitarAmigoFragment"
+        android:label="fragment_invitar_amigo"
+        tools:layout="@layout/fragment_invitar_amigo" />
+    <fragment
+        android:id="@+id/historialPartidasFragment"
+        android:name="com.example.miproyectohaikyuu.HistorialPartidasFragment"
+        android:label="fragment_historial_partidas"
+        tools:layout="@layout/fragment_historial_partidas" />
 </navigation>

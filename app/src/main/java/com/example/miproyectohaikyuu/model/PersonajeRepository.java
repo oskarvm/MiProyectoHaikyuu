@@ -23,4 +23,8 @@ public class PersonajeRepository {
         return personajeDao.obtenerEquipo();
     }
 
+    public LiveData<List<Posicion>> obtenerPosicion(){
+        return personajeDao.obtenerPosicion();
+    }
+
 }

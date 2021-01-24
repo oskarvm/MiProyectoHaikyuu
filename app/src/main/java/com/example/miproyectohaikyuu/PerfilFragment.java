@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.NavController;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,7 @@ import com.example.miproyectohaikyuu.viewmodel.AutenticacionViewModel;
 public class PerfilFragment extends Fragment {
 
     private FragmentPerfilBinding binding;
+    private NavController navController;
     private AutenticacionViewModel autenticacionViewModel;
 
     @Override
@@ -46,5 +48,7 @@ public class PerfilFragment extends Fragment {
 
             }
         });
+
+        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
     }
 }

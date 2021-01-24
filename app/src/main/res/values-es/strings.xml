@@ -63,4 +63,7 @@
     <string name="telefono">Teléfono: </string>
     <string name="edad">Edad: </string>
     <string name="genero">Género: </string>
+    <string name="victoria">Victoria</string>
+    <string name="derrota">Derrota</string>
+    <string name="ultimaspartidas">Últimas 10 partidas</string>
 </resources>

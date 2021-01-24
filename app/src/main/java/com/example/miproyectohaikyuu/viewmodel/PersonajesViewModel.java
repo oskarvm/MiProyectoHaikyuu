@@ -10,6 +10,7 @@ import com.example.miproyectohaikyuu.model.Equipo;
 import com.example.miproyectohaikyuu.model.Personaje;
 import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
 import com.example.miproyectohaikyuu.model.PersonajeRepository;
+import com.example.miproyectohaikyuu.model.Posicion;
 
 import java.util.List;
 
@@ -19,6 +20,8 @@ public class PersonajesViewModel extends AutenticacionViewModel {
     public  MutableLiveData<PersonajeConEquipo> personajeSeleccionado = new MutableLiveData<>();
 
     public  MutableLiveData<Equipo> equipoSeleccionado = new MutableLiveData<>();
+
+    public  MutableLiveData<Posicion> posicionSeleccionado = new MutableLiveData<>();
 
     public PersonajesViewModel(@NonNull Application application) {
         super(application);
@@ -34,6 +37,10 @@ public class PersonajesViewModel extends AutenticacionViewModel {
         return personajeRepository.obtenerEquipo();
     }
 
+    public LiveData<List<Posicion>> obtenerPosicion(){
+        return personajeRepository.obtenerPosicion();
+    }
+
     public PersonajeRepository getPersonajeRepository() {
         return personajeRepository;
     }
@@ -46,8 +53,16 @@ public class PersonajesViewModel extends AutenticacionViewModel {
         return personajeSeleccionado;
     }
 
+    public MutableLiveData<Equipo> equipoSeleccionado(){
+        return equipoSeleccionado;
+    }
+
     public void seleccionarEquipo(Equipo equipo){
         equipoSeleccionado.setValue(equipo);
+    }
+
+    public void seleccionarPosicion(Posicion posicion){
+        posicionSeleccionado.setValue(posicion);
     }
 
    // public void insertarDeTodo(){

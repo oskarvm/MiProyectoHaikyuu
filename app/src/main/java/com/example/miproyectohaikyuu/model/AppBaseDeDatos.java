@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-@Database(entities = {Usuario.class, Personaje.class, Equipo.class}, version = 9, exportSchema = false)
+@Database(entities = {Usuario.class, Personaje.class, Equipo.class, Posicion.class}, version = 11, exportSchema = false)
 public abstract class AppBaseDeDatos extends RoomDatabase {
 
     public abstract AppDao obtenerDao();
@@ -78,11 +78,17 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
         @Insert
         void insertarEquipo(Equipo equipo);
 
+        @Insert
+        void insertarPosicion(Posicion posicion);
+
         @Query("SELECT * FROM Personaje JOIN Equipo ON Personaje.idEquipo = Equipo.idEquipo")
         LiveData<List<PersonajeConEquipo>> obtener();
 
         @Query("SELECT DISTINCT Equipo.idEquipo, Equipo.nombreEquipo, Equipo.escudo FROM Equipo JOIN Personaje ON Equipo.idEquipo = Personaje.idEquipo")
         LiveData<List<Equipo>> obtenerEquipo();
+
+        @Query("SELECT DISTINCT * FROM Posicion")
+        LiveData<List<Posicion>> obtenerPosicion();
 
        // @Query("SELECT DISTINCT Equipo.idEquipo, Equipo.nombreEquipo, Equipo.escudo FROM Equipo JOIN Personaje ON Equipo.idEquipo = Personaje.idEquipo")
         //LiveData<List<PersonajeConEquipo>> obtenerJugadoresDeUnEquipo();
@@ -93,7 +99,7 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
 
     public static void insertarTodo(PersonajeDao personajeDao){
 
-        List<Posicion> posicion = Arrays.asList(
+        List<Posicion> posiciones = Arrays.asList(
                 new Posicion("Punta", R.drawable.posicion_punta),
                 new Posicion("Colcador", R.drawable.posicion_colocador),
                 new Posicion("Bloqueador", R.drawable.posicion_bloqueador),
@@ -196,6 +202,10 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
                 new Personaje(R.drawable.jugador_inarizaki_akagi,"Michinari Akagi","Libero", 0, "174.2", "5", "5", "8", "5", "6",R.drawable.posicion_libero)
         ));
 
+        for (Posicion posicion : posiciones) {
+            personajeDao.insertarPosicion(posicion);
+        }
+
         for (Equipo equipo : equipos) {
                 personajeDao.insertarEquipo(equipo);
             }
@@ -209,6 +219,7 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
                     personajeDao.insertar(personaje);
                 }
             }
+
     }
 }
 
