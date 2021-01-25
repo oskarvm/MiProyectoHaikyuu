@@ -43,7 +43,7 @@ public class ListaEquiposFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         personajesViewModel  = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
-        navController = Navigation.findNavController(view);
+        //navController = Navigation.findNavController(view);
 
         PersonajesAdapter personajesAdapter;
         personajesAdapter = new PersonajesAdapter();
@@ -75,8 +75,10 @@ public class ListaEquiposFragment extends Fragment {
             Glide.with(ListaEquiposFragment.this).load(equipo.escudo).into(holder.binding.imagenEquipo);
 
             holder.itemView.setOnClickListener(v -> {
+                navController = Navigation.findNavController(v);
+
                 personajesViewModel.seleccionarEquipo(equipo);
-                navController.navigate(R.id.action_global_equiposPersonajesFragment);
+                navController.navigate(R.id.action_listaEquiposYPosicionesFragment_to_personajesPorEquipoFragment);
             });
         }
 

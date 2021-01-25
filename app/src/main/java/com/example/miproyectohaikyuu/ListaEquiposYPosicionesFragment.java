@@ -62,6 +62,8 @@ public class ListaEquiposYPosicionesFragment extends Fragment {
             }
         }).attach();
 
+
+
     }
 
 

@@ -46,7 +46,7 @@ public class ListaPosicionesFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         personajesViewModel  = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
-        navController = Navigation.findNavController(view);
+        //navController = Navigation.findNavController(view);
 
         PersonajesAdapter personajesAdapter;
         personajesAdapter = new PersonajesAdapter();
@@ -78,8 +78,9 @@ public class ListaPosicionesFragment extends Fragment {
             Glide.with(ListaPosicionesFragment.this).load(posicion.fotoPosicion).into(holder.binding.posicionfoto);
 
             holder.itemView.setOnClickListener(v -> {
+                navController = Navigation.findNavController(v);
                 personajesViewModel.seleccionarPosicion(posicion);
-                navController.navigate(R.id.action_global_personajesPorPosicionFragment);
+                navController.navigate(R.id.action_listaEquiposYPosicionesFragment_to_personajesPorPosicionFragment);
             });
         }
 

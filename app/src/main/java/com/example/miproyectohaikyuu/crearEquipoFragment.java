@@ -31,13 +31,13 @@ public class crearEquipoFragment extends Fragment {
 
         navController = Navigation.findNavController(view);
 
-        binding.insertar1.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_menuListasFragment));
-        binding.insertar2.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_menuListasFragment));
-        binding.insertar3.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_menuListasFragment));
-        binding.insertar4.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_menuListasFragment));
-        binding.insertar5.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_menuListasFragment));
-        binding.insertar6.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_menuListasFragment));
-        binding.insertar7.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_menuListasFragment));
+        binding.insertar1.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
+        binding.insertar2.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
+        binding.insertar3.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
+        binding.insertar4.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
+        binding.insertar5.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
+        binding.insertar6.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
+        binding.insertar7.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
 
 
 

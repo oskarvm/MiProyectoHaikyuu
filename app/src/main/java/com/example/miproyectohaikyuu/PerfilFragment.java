@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,7 +49,8 @@ public class PerfilFragment extends Fragment {
 
             }
         });
+        navController = Navigation.findNavController(view);
 
-        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
+        binding.irAtras.setOnClickListener(v -> navController.navigate(R.id.action_perfilFragment_to_homeFragment));
     }
 }
