@@ -127,16 +127,6 @@
         android:label="fragment_personajes_por_posicion"
         tools:layout="@layout/fragment_personajes_por_posicion" />
     <fragment
-        android:id="@+id/listaEquiposFragment"
-        android:name="com.example.miproyectohaikyuu.ListaEquiposFragment"
-        android:label="fragment_lista_equipos"
-        tools:layout="@layout/fragment_lista_equipos" />
-    <fragment
-        android:id="@+id/listaPosicionesFragment"
-        android:name="com.example.miproyectohaikyuu.ListaPosicionesFragment"
-        android:label="fragment_lista_posiciones"
-        tools:layout="@layout/fragment_lista_posiciones" />
-    <fragment
         android:id="@+id/menuMisEquiposFragment"
         android:name="com.example.miproyectohaikyuu.MenuMisEquiposFragment"
         android:label="fragment_menu_mis_equipos"
