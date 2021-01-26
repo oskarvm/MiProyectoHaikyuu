@@ -32,26 +32,28 @@
           android:layout_marginStart="10dp"
           android:layout_marginTop="10dp"/>
 
-      <ImageView
-          android:id="@+id/foto"
-          android:contentDescription="@string/yamaguchi"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_gravity="center"
-          android:orientation="horizontal"
-          android:layout_weight="1"
-          android:src="@drawable/jugador_karasuno_hinata"
-          android:layout_margin="10dp"/>
+       <de.hdodenhof.circleimageview.CircleImageView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/foto"
+           android:layout_width="0dp"
+           android:layout_height="280dp"
+           android:src="@drawable/jugador_kamomedai_hoshiumi"
+           app:civ_border_width="2dp"
+           android:layout_weight="1"
+           app:civ_border_color="#FFFFFF" />
 
-      <ImageView
-          android:id="@+id/escudo"
-          android:contentDescription="@string/karasuno"
-          android:layout_width="50dp"
-          android:layout_height="50dp"
-          android:layout_weight="0"
-          android:src="@drawable/escudo_karasuno"
-          android:layout_marginEnd="10dp"
-          android:layout_marginTop="10dp"/>
+       <de.hdodenhof.circleimageview.CircleImageView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/escudo"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_weight="0"
+           android:src="@drawable/escudo_karasuno"
+           android:layout_marginEnd="10dp"
+           android:layout_marginTop="10dp"
+           app:civ_border_width="2dp"
+           app:civ_border_color="#FFFFFF"/>
+
 
    </LinearLayout>
     <LinearLayout
@@ -63,7 +65,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/nombre"

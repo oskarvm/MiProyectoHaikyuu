@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="10dp"
     android:background="@color/naranja">
@@ -39,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textSize="25sp"
         android:textColor="@color/blanco"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/ultimaspartidas"/>
@@ -54,6 +55,16 @@
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/victoria"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/verde"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="25 - 20"
                 android:textSize="15sp"
@@ -62,101 +73,103 @@
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo1"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/victoria"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/verde"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo1"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/hoshiumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_kamomedai_hoshiumi"
-                    android:layout_gravity="center" />
-                <ImageView
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/hinata"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_karasuno_hinata"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/oikawa"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_aobajosai_oikawa"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/yaku"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_nekoma_yaku"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/ushijima"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_shiratorizawa_ushijima"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/aone"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_date_aone"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/bokuto"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_fukorodani_bokuto"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/victoria"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/verde"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -168,102 +181,102 @@
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo1"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/victoria"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/verde"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo1"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/hoshiumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_kamomedai_hoshiumi"
-                    android:layout_gravity="center" />
-                <ImageView
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/hinata"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_karasuno_hinata"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/oikawa"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_aobajosai_oikawa"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/yaku"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_nekoma_yaku"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/ushijima"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_shiratorizawa_ushijima"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/aone"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_date_aone"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/bokuto"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_fukorodani_bokuto"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/derrota"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/rojo"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -275,101 +288,209 @@
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo3"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/derrota"
-                        android:textSize="15sp"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/rojo"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo3"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/iwaizumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_aobajosai_iwaizumi"
-                    android:layout_gravity="center" />
-                <ImageView
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/kuroo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_nekoma_kuroo"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/atsumu"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_inarizaki_atsumu"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/nishinoya"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_karasuno_nishinoya"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/konoha"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_fukorodani_konoha"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/tendo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_shiratorizawa_tendo"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/futakuchi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_date_futakuchi"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/victoria"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/verde"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 - 20"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/negro"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo3"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/iwaizumi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_aobajosai_iwaizumi"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/kuroo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_nekoma_kuroo"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/atsumu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_inarizaki_atsumu"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/nishinoya"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_karasuno_nishinoya"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/konoha"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_fukorodani_konoha"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/tendo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_shiratorizawa_tendo"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/futakuchi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_date_futakuchi"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/derrota"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/rojo"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -381,419 +502,102 @@
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo3"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/victoria"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/verde"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo3"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/iwaizumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_aobajosai_iwaizumi"
-                    android:layout_gravity="center" />
-                <ImageView
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/kuroo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_nekoma_kuroo"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/atsumu"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_inarizaki_atsumu"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/nishinoya"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_karasuno_nishinoya"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/konoha"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_fukorodani_konoha"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/tendo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_shiratorizawa_tendo"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/futakuchi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_date_futakuchi"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="25 - 20"
-                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:text="@string/victoria"
+                android:layout_gravity="center"
+                android:textSize="20sp"
                 android:fontFamily="@font/roboto_bold"
-                android:textColor="@color/negro"
-                android:layout_gravity="center"
-                tools:ignore="HardcodedText" />
-
-            <LinearLayout
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/derrota"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/rojo"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo1"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
-                    android:contentDescription="@string/hoshiumi"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_kamomedai_hoshiumi"
-                    android:layout_gravity="center" />
-                <ImageView
-                    android:contentDescription="@string/hinata"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_karasuno_hinata"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/oikawa"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_aobajosai_oikawa"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/yaku"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_nekoma_yaku"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/ushijima"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_shiratorizawa_ushijima"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/aone"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_date_aone"
-                    android:layout_gravity="center"/>
-
-                <ImageView
-                    android:contentDescription="@string/bokuto"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_fukorodani_bokuto"
-                    android:layout_gravity="center"/>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="25 - 19"
-                android:textColor="@color/negro"
-                android:layout_gravity="center"
-                tools:ignore="HardcodedText" />
-
-            <LinearLayout
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                tools:ignore="TooManyViews,UseCompoundDrawables">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    tools:ignore="TooManyViews">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/victoria"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/verde"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo1"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat,TooManyViews" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
-                    android:contentDescription="@string/hoshiumi"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_kamomedai_hoshiumi"
-                    android:layout_gravity="center" />
-                <ImageView
-                    android:contentDescription="@string/hinata"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_karasuno_hinata"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/oikawa"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_aobajosai_oikawa"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/yaku"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_nekoma_yaku"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/ushijima"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_shiratorizawa_ushijima"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/aone"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_date_aone"
-                    android:layout_gravity="center"/>
-
-                <ImageView
-                    android:contentDescription="@string/bokuto"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_fukorodani_bokuto"
-                    android:layout_gravity="center"/>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="25 - 20"
-                android:textSize="15sp"
-                android:fontFamily="@font/roboto_bold"
-                android:textColor="@color/negro"
-                android:layout_gravity="center"
-                tools:ignore="HardcodedText" />
-
-            <LinearLayout
-                android:padding="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/victoria"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/verde"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo1"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
-                    android:contentDescription="@string/hoshiumi"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_kamomedai_hoshiumi"
-                    android:layout_gravity="center" />
-                <ImageView
-                    android:contentDescription="@string/hinata"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_karasuno_hinata"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/oikawa"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_aobajosai_oikawa"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/yaku"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_nekoma_yaku"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/ushijima"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_shiratorizawa_ushijima"
-                    android:layout_gravity="center" />
-
-                <ImageView
-                    android:contentDescription="@string/aone"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_date_aone"
-                    android:layout_gravity="center"/>
-
-                <ImageView
-                    android:contentDescription="@string/bokuto"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/jugador_fukorodani_bokuto"
-                    android:layout_gravity="center"/>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                android:textColor="@color/verde"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -805,101 +609,210 @@
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo1"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/victoria"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/verde"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo1"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/hoshiumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_kamomedai_hoshiumi"
-                    android:layout_gravity="center" />
-                <ImageView
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/hinata"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_karasuno_hinata"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/oikawa"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_aobajosai_oikawa"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/yaku"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_nekoma_yaku"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/ushijima"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_shiratorizawa_ushijima"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/aone"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_date_aone"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/bokuto"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_fukorodani_bokuto"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
+                android:background="@color/blanco"
                 android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                tools:ignore="TooManyViews" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/victoria"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/verde"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 - 19"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/negro"
+                android:layout_gravity="center"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo1"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/hoshiumi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_kamomedai_hoshiumi"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/hinata"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_karasuno_hinata"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/oikawa"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_aobajosai_oikawa"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/yaku"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_nekoma_yaku"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/ushijima"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_shiratorizawa_ushijima"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/aone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_date_aone"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/bokuto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/jugador_fukorodani_bokuto"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/derrota"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/rojo"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -911,101 +824,102 @@
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo1"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/derrota"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/rojo"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo3"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
-                    android:contentDescription="@string/iwaizumi"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/hoshiumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/jugador_aobajosai_iwaizumi"
-                    android:layout_gravity="center" />
-                <ImageView
-                    android:contentDescription="@string/kuroo"
+                    android:src="@drawable/jugador_kamomedai_hoshiumi"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/hinata"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/jugador_nekoma_kuroo"
-                    android:layout_gravity="center" />
+                    android:src="@drawable/jugador_karasuno_hinata"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
-                    android:contentDescription="@string/atsumu"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/oikawa"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/jugador_inarizaki_atsumu"
-                    android:layout_gravity="center" />
+                    android:src="@drawable/jugador_aobajosai_oikawa"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
-                    android:contentDescription="@string/nishinoya"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/yaku"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/jugador_karasuno_nishinoya"
-                    android:layout_gravity="center" />
+                    android:src="@drawable/jugador_nekoma_yaku"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
-                    android:contentDescription="@string/konoha"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/ushijima"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/jugador_fukorodani_konoha"
-                    android:layout_gravity="center" />
+                    android:src="@drawable/jugador_shiratorizawa_ushijima"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
-                    android:contentDescription="@string/tendo"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/aone"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/jugador_shiratorizawa_tendo"
-                    android:layout_gravity="center"/>
+                    android:src="@drawable/jugador_date_aone"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
-                    android:contentDescription="@string/futakuchi"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:contentDescription="@string/bokuto"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/jugador_date_futakuchi"
-                    android:layout_gravity="center"/>
+                    android:src="@drawable/jugador_fukorodani_bokuto"
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/victoria"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/verde"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -1017,207 +931,199 @@
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo3"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/victoria"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/verde"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo3"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/iwaizumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_aobajosai_iwaizumi"
-                    android:layout_gravity="center" />
-                <ImageView
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/kuroo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_nekoma_kuroo"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/atsumu"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_inarizaki_atsumu"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/nishinoya"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_karasuno_nishinoya"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/konoha"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_fukorodani_konoha"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/tendo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_shiratorizawa_tendo"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/futakuchi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_date_futakuchi"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/derrota"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/rojo"
+                android:layout_marginTop="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="18 - 25"
+                android:text="19 - 25"
                 android:textSize="15sp"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="@color/negro"
                 android:layout_gravity="center"
                 tools:ignore="HardcodedText" />
 
-            <LinearLayout
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/equipo3"
+                android:textSize="15sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/negro" />
+
+            <com.google.android.flexbox.FlexboxLayout
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                tools:ignore="UseCompoundDrawables">
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:justifyContent="space_between">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/derrota"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_bold"
-                        android:textColor="@color/rojo"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="@string/equipo3"
-                        android:gravity="center"
-                        android:textAlignment="textStart"
-                        android:textSize="15sp"
-                        android:fontFamily="@font/roboto_regular"
-                        android:textColor="@color/negro"
-                        tools:ignore="NestedWeights,RtlCompat" />
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/iwaizumi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_aobajosai_iwaizumi"
-                    android:layout_gravity="center" />
-                <ImageView
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/kuroo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_nekoma_kuroo"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/atsumu"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_inarizaki_atsumu"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/nishinoya"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_karasuno_nishinoya"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/konoha"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_fukorodani_konoha"
-                    android:layout_gravity="center" />
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/tendo"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_shiratorizawa_tendo"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:contentDescription="@string/futakuchi"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/jugador_date_futakuchi"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000" />
 
-            </LinearLayout>
+            </com.google.android.flexbox.FlexboxLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/negro"
-                android:orientation="horizontal"
-                android:layout_marginHorizontal="10dp" />
+                android:background="@color/blanco"
+                android:orientation="horizontal" />
 
         </LinearLayout>
 

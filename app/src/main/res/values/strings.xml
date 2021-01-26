@@ -31,6 +31,8 @@
     <string name="victoria">Victoria</string>
     <string name="derrota">Derrota</string>
     <string name="ultimaspartidas">Últimas 10 partidas</string>
+    <string name="tuequipo">Tu equipo</string>
+    <string name="equiporival">Equipo rival</string>
 
     <!-- Registro -->
     <string name="usuario">Usuario:</string>

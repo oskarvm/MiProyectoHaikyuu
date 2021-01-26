@@ -39,8 +39,6 @@ public class crearEquipoFragment extends Fragment {
         binding.insertar6.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
         binding.insertar7.setOnClickListener(v -> navController.navigate(R.id.action_crearEquipo_to_listaEquiposYPosicionesFragment));
 
-
-
         binding.irAtras.setOnClickListener(v -> navController.popBackStack());
     }
 }

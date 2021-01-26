@@ -51,6 +51,6 @@ public class PerfilFragment extends Fragment {
         });
         navController = Navigation.findNavController(view);
 
-        binding.irAtras.setOnClickListener(v -> navController.navigate(R.id.action_perfilFragment_to_homeFragment));
+        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
     }
 }

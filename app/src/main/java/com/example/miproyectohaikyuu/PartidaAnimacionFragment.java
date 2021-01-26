@@ -14,23 +14,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.miproyectohaikyuu.databinding.FragmentPartidaEncontradaBinding;
+import com.bumptech.glide.Glide;
+import com.example.miproyectohaikyuu.databinding.FragmentPartidaAnimacionBinding;
 import com.example.miproyectohaikyuu.viewmodel.AutenticacionViewModel;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-public class PartidaEncontradaFragment extends Fragment {
+public class PartidaAnimacionFragment extends Fragment {
 
     private AutenticacionViewModel autenticacionViewModel;
     private NavController navController;
-    private FragmentPartidaEncontradaBinding binding;
+    private FragmentPartidaAnimacionBinding binding;
 
     Executor executor = Executors.newSingleThreadExecutor();
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return (binding = FragmentPartidaEncontradaBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = FragmentPartidaAnimacionBinding.inflate(inflater, container, false)).getRoot();
     }
 
     @Override
@@ -40,9 +41,12 @@ public class PartidaEncontradaFragment extends Fragment {
         autenticacionViewModel = new ViewModelProvider(requireActivity()).get(AutenticacionViewModel.class);
         navController = Navigation.findNavController(view);
 
+        Glide.with(requireView()).load(R.drawable.gif1).into(binding.gif1);
+        Glide.with(requireView()).load(R.drawable.gif1).into(binding.gif2);
+
         final MutableLiveData<Boolean> finishedLoading = new MutableLiveData<>();
 
-        finishedLoading.observe(getViewLifecycleOwner(), aBoolean -> navController.navigate(R.id.action_partidaEncontradaFragment_to_partidaAnimacionFragment));
+        finishedLoading.observe(getViewLifecycleOwner(), aBoolean -> navController.navigate(R.id.action_partidaAnimacionFragment_to_partidaGifFragment));
 
         executor.execute(() -> {
             try {

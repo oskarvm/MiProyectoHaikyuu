@@ -183,7 +183,11 @@
         android:id="@+id/partidaEncontradaFragment"
         android:name="com.example.miproyectohaikyuu.PartidaEncontradaFragment"
         android:label="fragment_partida_encontrada"
-        tools:layout="@layout/fragment_partida_encontrada" />
+        tools:layout="@layout/fragment_partida_encontrada" >
+        <action
+            android:id="@+id/action_partidaEncontradaFragment_to_partidaAnimacionFragment"
+            app:destination="@id/partidaAnimacionFragment" />
+    </fragment>
     <fragment
         android:id="@+id/invitarAmigoFragment"
         android:name="com.example.miproyectohaikyuu.InvitarAmigoFragment"
@@ -194,4 +198,27 @@
         android:name="com.example.miproyectohaikyuu.HistorialPartidasFragment"
         android:label="fragment_historial_partidas"
         tools:layout="@layout/fragment_historial_partidas" />
+    <fragment
+        android:id="@+id/partidaAnimacionFragment"
+        android:name="com.example.miproyectohaikyuu.PartidaAnimacionFragment"
+        android:label="fragment_partida_animacion"
+        tools:layout="@layout/fragment_partida_animacion" >
+        <action
+            android:id="@+id/action_partidaAnimacionFragment_to_partidaGifFragment"
+            app:destination="@id/partidaGifFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partidaFinalizadaFragment"
+        android:name="com.example.miproyectohaikyuu.PartidaFinalizadaFragment"
+        android:label="fragment_partida_finalizada"
+        tools:layout="@layout/fragment_partida_finalizada" />
+    <fragment
+        android:id="@+id/partidaGifFragment"
+        android:name="com.example.miproyectohaikyuu.PartidaGifFragment"
+        android:label="fragment_partida_gif"
+        tools:layout="@layout/fragment_partida_gif" >
+        <action
+            android:id="@+id/action_partidaGifFragment_to_partidaFinalizadaFragment"
+            app:destination="@id/partidaFinalizadaFragment" />
+    </fragment>
 </navigation>

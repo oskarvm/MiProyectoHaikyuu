@@ -66,4 +66,6 @@
     <string name="victoria">Victory</string>
     <string name="derrota">Default</string>
     <string name="ultimaspartidas">" Last 10 games"</string>
+    <string name="tuequipo">Your team</string>
+    <string name="equiporival">"Opposing team "</string>
 </resources>
