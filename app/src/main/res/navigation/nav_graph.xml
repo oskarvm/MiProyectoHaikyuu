@@ -12,10 +12,18 @@
         tools:layout="@layout/fragment_iniciar_sesion" >
         <action
             android:id="@+id/action_iniciarSesionFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_iniciarSesionFragment_to_registroFragment"
-            app:destination="@id/registroFragment" />
+            app:destination="@id/registroFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
@@ -24,7 +32,11 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_iniciarSesionFragment"
-            app:destination="@id/iniciarSesionFragment" />
+            app:destination="@id/iniciarSesionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/cerrarSesionFragment"
@@ -33,7 +45,11 @@
         tools:layout="@layout/fragment_cerrar_sesion" >
         <action
             android:id="@+id/action_cerrarSesionFragment_to_iniciarSesionFragment"
-            app:destination="@id/iniciarSesionFragment" />
+            app:destination="@id/iniciarSesionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -42,7 +58,11 @@
         tools:layout="@layout/fragment_perfil" >
         <action
             android:id="@+id/action_perfilFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/registroFragment"
@@ -51,11 +71,12 @@
         tools:layout="@layout/fragment_registro"
         app:startDestination="@id/action_registroFragment_to_homeFragment">
         <action
-            android:id="@+id/action_registroFragment_to_iniciarSesionFragment"
-            app:destination="@id/iniciarSesionFragment" />
-        <action
             android:id="@+id/action_registroFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -65,16 +86,32 @@
         app:startDestination="@id/action_homeFragment_to_cerrarSesionFragment">
         <action
             android:id="@+id/action_homeFragment_to_cerrarSesionFragment"
-            app:destination="@id/cerrarSesionFragment" />
+            app:destination="@id/cerrarSesionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_homeFragment_to_perfilFragment"
-            app:destination="@id/perfilFragment" />
+            app:destination="@id/perfilFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_homeFragment_to_menuMisEquiposFragment"
-            app:destination="@id/menuMisEquiposFragment" />
+            app:destination="@id/menuMisEquiposFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_homeFragment_to_menuJugarPartidaFragment"
-            app:destination="@id/menuJugarPartidaFragment" />
+            app:destination="@id/menuJugarPartidaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/crearEquipo"
@@ -83,7 +120,11 @@
         tools:layout="@layout/fragment_crear_equipo" >
         <action
             android:id="@+id/action_crearEquipo_to_listaEquiposYPosicionesFragment"
-            app:destination="@id/listaEquiposYPosicionesFragment" />
+            app:destination="@id/listaEquiposYPosicionesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/equipoCreado"
@@ -92,7 +133,11 @@
         tools:layout="@layout/fragment_equipo_creado" >
         <action
             android:id="@+id/action_equipoCreado_to_menuMisEquiposFragment"
-            app:destination="@id/menuMisEquiposFragment" />
+            app:destination="@id/menuMisEquiposFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/listaEquiposYPosicionesFragment"
@@ -101,10 +146,18 @@
         tools:layout="@layout/fragment_lista_equipos_y_posiciones" >
         <action
             android:id="@+id/action_listaEquiposYPosicionesFragment_to_personajesPorPosicionFragment"
-            app:destination="@id/personajesPorPosicionFragment" />
+            app:destination="@id/personajesPorPosicionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_listaEquiposYPosicionesFragment_to_personajesPorEquipoFragment"
-            app:destination="@id/personajesPorEquipoFragment" />
+            app:destination="@id/personajesPorEquipoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/personajesFragment"
@@ -113,14 +166,22 @@
         tools:layout="@layout/fragment_personajes" >
         <action
             android:id="@+id/action_personajesFragment_to_equipoCreado"
-            app:destination="@id/equipoCreado" />
+            app:destination="@id/equipoCreado"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/personajesPorEquipoFragment"
         android:name="com.example.miproyectohaikyuu.PersonajesPorEquipoFragment"
         android:label="fragment_equipos_personajes"
         tools:layout="@layout/fragment_personaje_por_equipo" />
-    <action android:id="@+id/action_global_personajesFragment" app:destination="@id/personajesFragment"/>
+    <action android:id="@+id/action_global_personajesFragment" app:destination="@id/personajesFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"/>
     <fragment
         android:id="@+id/personajesPorPosicionFragment"
         android:name="com.example.miproyectohaikyuu.PersonajesPorPosicionFragment"
@@ -133,13 +194,25 @@
         tools:layout="@layout/fragment_menu_mis_equipos" >
         <action
             android:id="@+id/action_menuMisEquiposFragment_to_equipoCreado"
-            app:destination="@id/equipoCreado" />
+            app:destination="@id/equipoCreado"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_menuMisEquiposFragment_to_crearEquipo"
-            app:destination="@id/crearEquipo" />
+            app:destination="@id/crearEquipo"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_menuMisEquiposFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/menuJugarPartidaFragment"
@@ -148,16 +221,32 @@
         tools:layout="@layout/fragment_menu_jugar_partida" >
         <action
             android:id="@+id/action_menuJugarPartidaFragment_to_buscandoPartidaFragment"
-            app:destination="@id/buscandoPartidaFragment" />
+            app:destination="@id/buscandoPartidaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_menuJugarPartidaFragment_to_invitarAmigoFragment"
-            app:destination="@id/invitarAmigoFragment" />
+            app:destination="@id/invitarAmigoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_menuJugarPartidaFragment_to_historialPartidasFragment"
-            app:destination="@id/historialPartidasFragment" />
+            app:destination="@id/historialPartidasFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_menuJugarPartidaFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/splash1Fragment"
@@ -168,7 +257,8 @@
             android:id="@+id/action_splash1Fragment_to_splashFragment"
             app:destination="@id/splashFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:exitAnim="@anim/nav_default_exit_anim"
+            />
     </fragment>
     <fragment
         android:id="@+id/buscandoPartidaFragment"
@@ -177,7 +267,11 @@
         tools:layout="@layout/fragment_buscando_partida" >
         <action
             android:id="@+id/action_buscandoPartidaFragment_to_partidaEncontradaFragment"
-            app:destination="@id/partidaEncontradaFragment" />
+            app:destination="@id/partidaEncontradaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/partidaEncontradaFragment"
@@ -186,7 +280,11 @@
         tools:layout="@layout/fragment_partida_encontrada" >
         <action
             android:id="@+id/action_partidaEncontradaFragment_to_partidaAnimacionFragment"
-            app:destination="@id/partidaAnimacionFragment" />
+            app:destination="@id/partidaAnimacionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/invitarAmigoFragment"
@@ -205,7 +303,11 @@
         tools:layout="@layout/fragment_partida_animacion" >
         <action
             android:id="@+id/action_partidaAnimacionFragment_to_partidaGifFragment"
-            app:destination="@id/partidaGifFragment" />
+            app:destination="@id/partidaGifFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/partidaFinalizadaFragment"
@@ -219,6 +321,10 @@
         tools:layout="@layout/fragment_partida_gif" >
         <action
             android:id="@+id/action_partidaGifFragment_to_partidaFinalizadaFragment"
-            app:destination="@id/partidaFinalizadaFragment" />
+            app:destination="@id/partidaFinalizadaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
 </navigation>

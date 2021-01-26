@@ -1,14 +1,350 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InvitarAmigoFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InvitarAmigoFragment"
+    android:background="@color/naranja"
+    android:padding="10dp"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.flexbox.FlexboxLayout
+        android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between">
 
-</FrameLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hinata"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_karasuno_hinata"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hinata"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/oikawa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_aobajosai_oikawa"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oikawa"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/bokuto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_fukorodani_bokuto"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bokuto"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/aone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_date_aone"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aone"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/ushijima"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_shiratorizawa_ushijima"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ushijima"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="space_between">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/yaku"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_nekoma_yaku"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yaku"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>

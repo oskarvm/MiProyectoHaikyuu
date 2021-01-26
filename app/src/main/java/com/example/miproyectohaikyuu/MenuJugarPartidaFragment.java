@@ -33,6 +33,6 @@ public class MenuJugarPartidaFragment extends Fragment {
         binding.buscarPartida.setOnClickListener(v -> navController.navigate(R.id.action_menuJugarPartidaFragment_to_buscandoPartidaFragment));
         binding.invitarAmigo.setOnClickListener(v -> navController.navigate(R.id.action_menuJugarPartidaFragment_to_invitarAmigoFragment));
         binding.irHistorial.setOnClickListener(v -> navController.navigate(R.id.action_menuJugarPartidaFragment_to_historialPartidasFragment));
-        binding.irAtras.setOnClickListener(v -> navController.navigate(R.id.action_menuJugarPartidaFragment_to_homeFragment));
+        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
     }
 }

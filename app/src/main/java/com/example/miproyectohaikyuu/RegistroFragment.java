@@ -39,12 +39,8 @@ public class RegistroFragment extends Fragment {
         autenticacionViewModel = new ViewModelProvider(requireActivity()).get(AutenticacionViewModel.class);
         navController = Navigation.findNavController(view);
 
-        binding.irAlIniciarSesion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_registroFragment_to_iniciarSesionFragment);
-            }
-        });
+        binding.irAlIniciarSesion.setOnClickListener(v -> navController.popBackStack());
+
 
         autenticacionViewModel.iniciarRegistro();
 
