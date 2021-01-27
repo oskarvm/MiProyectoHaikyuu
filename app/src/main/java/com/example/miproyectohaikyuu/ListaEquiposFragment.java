@@ -17,19 +17,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentListaEquiposBinding;
-import com.example.miproyectohaikyuu.databinding.FragmentPersonajesPorPosicionBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderListaEquiposBinding;
-import com.example.miproyectohaikyuu.databinding.ViewholderPersonajePorPosicionBinding;
 import com.example.miproyectohaikyuu.model.Equipo;
-import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
-import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
+import com.example.miproyectohaikyuu.viewmodel.HaikyuuViewModel;
 
 import java.util.List;
 
 public class ListaEquiposFragment extends Fragment {
 
     private FragmentListaEquiposBinding binding;
-    PersonajesViewModel personajesViewModel;
+    HaikyuuViewModel haikyuuViewModel;
     private NavController navController;
 
     @Override
@@ -42,11 +39,11 @@ public class ListaEquiposFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        personajesViewModel  = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
-        //navController = Navigation.findNavController(view);
+        haikyuuViewModel = new ViewModelProvider(requireActivity()).get(HaikyuuViewModel.class);
+        navController = Navigation.findNavController(requireParentFragment().requireView());
 
-        PersonajesAdapter personajesAdapter;
-        personajesAdapter = new PersonajesAdapter();
+
+        PersonajesAdapter personajesAdapter = new PersonajesAdapter();
 
         binding.recyclerListaEquipos.setAdapter(personajesAdapter);
         binding.recyclerListaEquipos.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
@@ -55,7 +52,7 @@ public class ListaEquiposFragment extends Fragment {
     }
 
     LiveData<List<Equipo>> obtenerEquipo(){
-        return personajesViewModel.obtenerEquipo();
+        return haikyuuViewModel.obtenerEquipo();
     }
 
     class PersonajesAdapter extends RecyclerView.Adapter<PersonajeViewHolder>{
@@ -75,9 +72,7 @@ public class ListaEquiposFragment extends Fragment {
             Glide.with(ListaEquiposFragment.this).load(equipo.escudo).into(holder.binding.imagenEquipo);
 
             holder.itemView.setOnClickListener(v -> {
-                navController = Navigation.findNavController(v);
-
-                personajesViewModel.seleccionarEquipo(equipo);
+                haikyuuViewModel.seleccionarEquipo(equipo);
                 navController.navigate(R.id.action_listaEquiposYPosicionesFragment_to_personajesPorEquipoFragment);
             });
         }

@@ -81,8 +81,8 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
         @Insert
         void insertarPosicion(Posicion posicion);
 
-        @Query("SELECT * FROM Personaje JOIN Equipo ON Personaje.idEquipo = Equipo.idEquipo")
-        LiveData<List<PersonajeConEquipo>> obtener();
+        @Query("SELECT * FROM Personaje JOIN Equipo ON Personaje.idEquipo = Equipo.idEquipo WHERE Equipo.idEquipo = :idEquipo")
+        LiveData<List<PersonajeConEquipo>> obtenerPersonajesPorEquipo(int idEquipo);
 
         @Query("SELECT DISTINCT Equipo.idEquipo, Equipo.nombreEquipo, Equipo.escudo FROM Equipo JOIN Personaje ON Equipo.idEquipo = Personaje.idEquipo")
         LiveData<List<Equipo>> obtenerEquipo();
@@ -219,7 +219,6 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
                     personajeDao.insertar(personaje);
                 }
             }
-
     }
 }
 

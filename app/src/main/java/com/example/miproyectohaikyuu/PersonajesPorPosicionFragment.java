@@ -19,14 +19,15 @@ import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentPersonajesPorPosicionBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderPersonajePorPosicionBinding;
 import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
-import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
+import com.example.miproyectohaikyuu.model.Posicion;
+import com.example.miproyectohaikyuu.viewmodel.HaikyuuViewModel;
 
 import java.util.List;
 
 public class PersonajesPorPosicionFragment extends Fragment {
 
     private FragmentPersonajesPorPosicionBinding binding;
-    PersonajesViewModel personajesViewModel;
+    HaikyuuViewModel haikyuuViewModel;
     private NavController navController;
 
     @Override
@@ -39,20 +40,25 @@ public class PersonajesPorPosicionFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        personajesViewModel  = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
+        haikyuuViewModel = new ViewModelProvider(requireActivity()).get(HaikyuuViewModel.class);
         navController = Navigation.findNavController(view);
 
-        PersonajesAdapter personajesAdapter;
-        personajesAdapter = new PersonajesAdapter();
+        PersonajesAdapter personajesAdapter = new PersonajesAdapter();
 
         binding.recyclerPosicion.setAdapter(personajesAdapter);
         binding.recyclerPosicion.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
 
-        obtenerPersonaje().observe(getViewLifecycleOwner(), personajes -> personajesAdapter.establecerLista(personajes));
+        haikyuuViewModel.equipoSeleccionado().observe(getViewLifecycleOwner(), posicion -> {
+
+            Glide.with(PersonajesPorPosicionFragment.this).load(posicion.escudo).into(binding.escudoEquipo);
+            binding.nombreEquipo.setText(posicion.nombreEquipo);
+
+            obtenerPersonajes(posicion).observe(getViewLifecycleOwner(), personajes -> personajesAdapter.establecerLista(personajes));
+        });
     }
 
-    LiveData<List<PersonajeConEquipo>> obtenerPersonaje(){
-        return personajesViewModel.obtener();
+    LiveData<List<PersonajeConEquipo>> obtenerPersonajes(Posicion posicion){
+        return haikyuuViewModel.obtenerPersonajesPorPosicion(posicion);
     }
 
 
@@ -75,7 +81,7 @@ public class PersonajesPorPosicionFragment extends Fragment {
             Glide.with(PersonajesPorPosicionFragment.this).load(personaje.foto).into(holder.binding.foto);
 
             holder.itemView.setOnClickListener(v -> {
-                personajesViewModel.seleccionar(personaje);
+                haikyuuViewModel.seleccionar(personaje);
                 navController.navigate(R.id.action_global_personajesFragment);
             });
         }

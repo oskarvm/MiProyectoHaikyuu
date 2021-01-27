@@ -16,23 +16,17 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.miproyectohaikyuu.databinding.FragmentListaEquiposBinding;
 import com.example.miproyectohaikyuu.databinding.FragmentListaPosicionesBinding;
-import com.example.miproyectohaikyuu.databinding.FragmentPersonajesPorPosicionBinding;
-import com.example.miproyectohaikyuu.databinding.ViewholderListaEquiposBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderListaPosicionesBinding;
-import com.example.miproyectohaikyuu.databinding.ViewholderPersonajePorPosicionBinding;
-import com.example.miproyectohaikyuu.model.Equipo;
-import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
 import com.example.miproyectohaikyuu.model.Posicion;
-import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
+import com.example.miproyectohaikyuu.viewmodel.HaikyuuViewModel;
 
 import java.util.List;
 
 public class ListaPosicionesFragment extends Fragment {
 
     private FragmentListaPosicionesBinding binding;
-    PersonajesViewModel personajesViewModel;
+    HaikyuuViewModel haikyuuViewModel;
     private NavController navController;
 
     @Override
@@ -45,7 +39,7 @@ public class ListaPosicionesFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        personajesViewModel  = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
+        haikyuuViewModel = new ViewModelProvider(requireActivity()).get(HaikyuuViewModel.class);
         //navController = Navigation.findNavController(view);
 
         PersonajesAdapter personajesAdapter;
@@ -58,7 +52,7 @@ public class ListaPosicionesFragment extends Fragment {
     }
 
     LiveData<List<Posicion>> obtenerPosicion(){
-        return personajesViewModel.obtenerPosicion();
+        return haikyuuViewModel.obtenerPosicion();
     }
 
     class PersonajesAdapter extends RecyclerView.Adapter<PersonajeViewHolder>{
@@ -79,7 +73,7 @@ public class ListaPosicionesFragment extends Fragment {
 
             holder.itemView.setOnClickListener(v -> {
                 navController = Navigation.findNavController(v);
-                personajesViewModel.seleccionarPosicion(posicion);
+                haikyuuViewModel.seleccionarPosicion(posicion);
                 navController.navigate(R.id.action_listaEquiposYPosicionesFragment_to_personajesPorPosicionFragment);
             });
         }

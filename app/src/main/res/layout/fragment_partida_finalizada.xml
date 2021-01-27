@@ -1,14 +1,480 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PartidaFinalizadaFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/naranja"
+    android:padding="10dp"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
-</FrameLayout>
+        <ImageView
+            android:contentDescription="@string/logo"
+            android:layout_width="200dp"
+            android:layout_height="67dp"
+            android:layout_gravity="end"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/inarizaki"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/escudo_inarizaki"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuequipo"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/verde" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32 - 30"
+            android:textSize="25sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro"
+            tools:ignore="HardcodedText" />
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/shiratorizawa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/escudo_shiratorizawa"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/equiporival"
+                android:textColor="@color/rojo"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hoshiumi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hoshiumi"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hoshiumi"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asahi"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/asahi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_karasuno_asahi"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hinata"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_karasuno_hinata"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hinata"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hakuba"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/hakuba"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_kamomedai_hakuba"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/oikawa"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_aobajosai_oikawa"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oikawa"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kenma"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/kenma"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_nekoma_kenma"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/bokuto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_fukorodani_bokuto"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bokuto"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kentaro"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/kentaro"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_aobajosai_kentaro"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/aone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_date_aone"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aone"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/washio"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/washio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_fukorodani_washio"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/ushijima"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_shiratorizawa_ushijima"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ushijima"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/osamu"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/osamu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_inarizaki_osamu"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/yaku"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_nekoma_yaku"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+        <TextView
+            android:id="@+id/puta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yaku"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sakumani"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/negro" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:contentDescription="@string/sakumani"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/jugador_date_sakumani"
+            android:layout_gravity="center"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <Button
+        android:id="@+id/irInicio"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/boton_blanco"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="@string/menuprincipal"
+        android:textAlignment="center"
+        android:textColor="@color/negro" />
+
+</LinearLayout>

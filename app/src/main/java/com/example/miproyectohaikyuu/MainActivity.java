@@ -2,7 +2,6 @@ package com.example.miproyectohaikyuu;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,13 +13,13 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.miproyectohaikyuu.databinding.ActivityMainBinding;
 import com.example.miproyectohaikyuu.viewmodel.AutenticacionViewModel;
-import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
+import com.example.miproyectohaikyuu.viewmodel.HaikyuuViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
     AutenticacionViewModel autenticacionViewModel;
-    private PersonajesViewModel personajesViewModel;
+    private HaikyuuViewModel haikyuuViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         autenticacionViewModel = new ViewModelProvider(this).get(AutenticacionViewModel.class);
 
-        personajesViewModel = new ViewModelProvider(this).get(PersonajesViewModel.class);
+        haikyuuViewModel = new ViewModelProvider(this).get(HaikyuuViewModel.class);
 
 
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();

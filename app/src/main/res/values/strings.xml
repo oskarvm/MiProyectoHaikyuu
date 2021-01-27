@@ -33,6 +33,7 @@
     <string name="ultimaspartidas">Últimas 10 partidas</string>
     <string name="tuequipo">Tu equipo</string>
     <string name="equiporival">Equipo rival</string>
+    <string name="menuprincipal">Menú principal</string>
 
     <!-- Registro -->
     <string name="usuario">Usuario:</string>

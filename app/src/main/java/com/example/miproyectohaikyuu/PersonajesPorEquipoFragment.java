@@ -18,15 +18,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentPersonajePorEquipoBinding;
 import com.example.miproyectohaikyuu.databinding.ViewholderPersonajePorEquipoBinding;
+import com.example.miproyectohaikyuu.model.Equipo;
 import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
-import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
+import com.example.miproyectohaikyuu.viewmodel.HaikyuuViewModel;
 
 import java.util.List;
 
 public class PersonajesPorEquipoFragment extends Fragment {
 
     private FragmentPersonajePorEquipoBinding binding;
-    PersonajesViewModel personajesViewModel;
+    HaikyuuViewModel haikyuuViewModel;
     private NavController navController;
 
     @Override
@@ -39,20 +40,25 @@ public class PersonajesPorEquipoFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        personajesViewModel  = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
+        haikyuuViewModel = new ViewModelProvider(requireActivity()).get(HaikyuuViewModel.class);
         navController = Navigation.findNavController(view);
 
-        PersonajesAdapter personajesAdapter;
-        personajesAdapter = new PersonajesAdapter();
+        PersonajesAdapter personajesAdapter = new PersonajesAdapter();
 
         binding.recyclerEquipo.setAdapter(personajesAdapter);
         binding.recyclerEquipo.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
 
-        obtenerPersonaje().observe(getViewLifecycleOwner(), personajes -> personajesAdapter.establecerLista(personajes));
+        haikyuuViewModel.equipoSeleccionado().observe(getViewLifecycleOwner(), equipo -> {
+
+            Glide.with(PersonajesPorEquipoFragment.this).load(equipo.escudo).into(binding.escudoEquipo);
+            binding.nombreEquipo.setText(equipo.nombreEquipo);
+
+            obtenerPersonajes(equipo).observe(getViewLifecycleOwner(), personajes -> personajesAdapter.establecerLista(personajes));
+        });
     }
 
-    LiveData<List<PersonajeConEquipo>> obtenerPersonaje(){
-        return personajesViewModel.obtener();
+    LiveData<List<PersonajeConEquipo>> obtenerPersonajes(Equipo equipo){
+        return haikyuuViewModel.obtenerPersonajesPorEquipo(equipo);
     }
 
 
@@ -75,7 +81,7 @@ public class PersonajesPorEquipoFragment extends Fragment {
             Glide.with(PersonajesPorEquipoFragment.this).load(personaje.foto).into(holder.binding.foto);
 
             holder.itemView.setOnClickListener(v -> {
-                personajesViewModel.seleccionar(personaje);
+                haikyuuViewModel.seleccionar(personaje);
                 navController.navigate(R.id.action_global_personajesFragment);
             });
         }

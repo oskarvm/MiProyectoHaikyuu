@@ -14,7 +14,7 @@ import androidx.navigation.Navigation;
 
 import com.bumptech.glide.Glide;
 import com.example.miproyectohaikyuu.databinding.FragmentPersonajesBinding;
-import com.example.miproyectohaikyuu.viewmodel.PersonajesViewModel;
+import com.example.miproyectohaikyuu.viewmodel.HaikyuuViewModel;
 
 
 public class PersonajesFragment extends Fragment {
@@ -30,11 +30,11 @@ public class PersonajesFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        PersonajesViewModel personajesViewModel = new ViewModelProvider(requireActivity()).get(PersonajesViewModel.class);
+        HaikyuuViewModel haikyuuViewModel = new ViewModelProvider(requireActivity()).get(HaikyuuViewModel.class);
 
         navController = Navigation.findNavController(view);
 
-        personajesViewModel.seleccionado().observe(getViewLifecycleOwner(), personaje -> {
+        haikyuuViewModel.seleccionado().observe(getViewLifecycleOwner(), personaje -> {
             Glide.with(PersonajesFragment.this).load(personaje.foto).into(binding.foto);
             Glide.with(PersonajesFragment.this).load(personaje.escudo).into(binding.escudo);
             binding.nombre.setText(personaje.nombre);

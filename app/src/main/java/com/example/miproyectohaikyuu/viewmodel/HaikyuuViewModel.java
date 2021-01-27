@@ -3,19 +3,19 @@ package com.example.miproyectohaikyuu.viewmodel;
 import android.app.Application;
 
 import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.miproyectohaikyuu.model.Equipo;
-import com.example.miproyectohaikyuu.model.Personaje;
 import com.example.miproyectohaikyuu.model.PersonajeConEquipo;
-import com.example.miproyectohaikyuu.model.PersonajeRepository;
+import com.example.miproyectohaikyuu.model.HaikyuuRepository;
 import com.example.miproyectohaikyuu.model.Posicion;
 
 import java.util.List;
 
-public class PersonajesViewModel extends AutenticacionViewModel {
-    PersonajeRepository personajeRepository;
+public class HaikyuuViewModel extends AndroidViewModel {
+    HaikyuuRepository haikyuuRepository;
 
     public  MutableLiveData<PersonajeConEquipo> personajeSeleccionado = new MutableLiveData<>();
 
@@ -23,26 +23,30 @@ public class PersonajesViewModel extends AutenticacionViewModel {
 
     public  MutableLiveData<Posicion> posicionSeleccionado = new MutableLiveData<>();
 
-    public PersonajesViewModel(@NonNull Application application) {
+    public HaikyuuViewModel(@NonNull Application application) {
         super(application);
 
-        personajeRepository = new PersonajeRepository(application);
+        haikyuuRepository = new HaikyuuRepository(application);
     }
 
-    public LiveData<List<PersonajeConEquipo>> obtener(){
-        return personajeRepository.obtener();
+    public LiveData<List<PersonajeConEquipo>> obtenerPersonajesPorEquipo(Equipo equipo){
+        return haikyuuRepository.obtenerPersonajesPorEquipo(equipo);
+    }
+
+    public LiveData<List<PersonajeConEquipo>> obtenerPersonajesPorPosicion(Posicion posicion){
+        return haikyuuRepository.obtenerPersonajesPorPosicion(posicion);
     }
 
     public LiveData<List<Equipo>> obtenerEquipo(){
-        return personajeRepository.obtenerEquipo();
+        return haikyuuRepository.obtenerEquipo();
     }
 
     public LiveData<List<Posicion>> obtenerPosicion(){
-        return personajeRepository.obtenerPosicion();
+        return haikyuuRepository.obtenerPosicion();
     }
 
-    public PersonajeRepository getPersonajeRepository() {
-        return personajeRepository;
+    public HaikyuuRepository getHaikyuuRepository() {
+        return haikyuuRepository;
     }
 
     public void seleccionar(PersonajeConEquipo personaje){

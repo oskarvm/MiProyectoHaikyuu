@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PersonajesPorEquipoFragment"
-    android:background="@color/naranja">
+    android:background="@color/naranja"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/negro">
+
+        <ImageView
+            android:id="@+id/irAtras"
+            android:contentDescription="@string/flechaatras"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/flecha"
+            tools:ignore="NestedWeights"
+            android:layout_marginStart="10dp"
+            android:layout_marginVertical="10dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/nombreEquipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/karasuno"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/blanco"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/escudoEquipo"
+            android:contentDescription="@string/karasuno"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/escudo_karasuno"
+            tools:ignore="NestedWeights"
+            android:layout_marginEnd="10dp"
+            android:layout_marginVertical="10dp"/>
+
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerEquipo"
@@ -13,4 +65,4 @@
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/viewholder_personaje_por_equipo" />
-</FrameLayout>
+</LinearLayout>
