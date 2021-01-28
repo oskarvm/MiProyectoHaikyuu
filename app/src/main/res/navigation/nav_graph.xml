@@ -125,6 +125,9 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_crearEquipo_to_menuMisEquiposFragment"
+            app:destination="@id/menuMisEquiposFragment" />
     </fragment>
     <fragment
         android:id="@+id/equipoCreado"
@@ -138,6 +141,9 @@
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_equipoCreado_to_opcionesJugadorFragment"
+            app:destination="@id/opcionesJugadorFragment" />
     </fragment>
     <fragment
         android:id="@+id/listaEquiposYPosicionesFragment"
@@ -290,7 +296,11 @@
         android:id="@+id/invitarAmigoFragment"
         android:name="com.example.miproyectohaikyuu.InvitarAmigoFragment"
         android:label="fragment_invitar_amigo"
-        tools:layout="@layout/fragment_invitar_amigo" />
+        tools:layout="@layout/fragment_invitar_amigo" >
+        <action
+            android:id="@+id/action_invitarAmigoFragment_to_opcionesAmigoFragment"
+            app:destination="@id/opcionesAmigoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/historialPartidasFragment"
         android:name="com.example.miproyectohaikyuu.HistorialPartidasFragment"
@@ -331,4 +341,25 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
+    <dialog
+        android:id="@+id/opcionesAmigoFragment"
+        android:name="com.example.miproyectohaikyuu.OpcionesAmigoFragment"
+        android:label="fragment_opciones_amigo"
+        tools:layout="@layout/fragment_opciones_amigo" >
+        <action
+            android:id="@+id/action_opcionesAmigoFragment_to_buscandoPartidaFragment"
+            app:destination="@id/buscandoPartidaFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/opcionesJugadorFragment"
+        android:name="com.example.miproyectohaikyuu.OpcionesJugadorFragment"
+        android:label="fragment_opciones_jugador"
+        tools:layout="@layout/fragment_opciones_jugador" >
+        <action
+            android:id="@+id/action_opcionesJugadorFragment_to_crearEquipo"
+            app:destination="@id/crearEquipo" />
+        <action
+            android:id="@+id/action_opcionesJugadorFragment_to_listaEquiposYPosicionesFragment"
+            app:destination="@id/listaEquiposYPosicionesFragment" />
+    </dialog>
 </navigation>

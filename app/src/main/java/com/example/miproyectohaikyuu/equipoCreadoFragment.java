@@ -32,6 +32,14 @@ public class equipoCreadoFragment extends Fragment {
 
         navController = Navigation.findNavController(view);
 
+        binding.jugador1.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_opcionesJugadorFragment));
+        binding.jugador2.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_opcionesJugadorFragment));
+        binding.jugador3.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_opcionesJugadorFragment));
+        binding.jugador4.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_opcionesJugadorFragment));
+        binding.jugador5.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_opcionesJugadorFragment));
+        binding.jugador6.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_opcionesJugadorFragment));
+        binding.jugador7.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_opcionesJugadorFragment));
+
         binding.irAtras.setOnClickListener(v -> navController.navigate(R.id.action_equipoCreado_to_menuMisEquiposFragment));
     }
 }

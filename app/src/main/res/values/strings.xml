@@ -34,6 +34,13 @@
     <string name="tuequipo">Tu equipo</string>
     <string name="equiporival">Equipo rival</string>
     <string name="menuprincipal">Menú principal</string>
+    <string name="listadeamigos">Lista de amigos:</string>
+    <string name="cambiarjugador">Cambiar jugador</string>
+    <string name="quitarjugador">Quitar jugador</string>
+    <string name="amigopartida">Invitar a partida</string>
+    <string name="amigoborrar">Borrar de amigos</string>
+
+
 
     <!-- Registro -->
     <string name="usuario">Usuario:</string>
@@ -168,8 +175,8 @@
 
 
     <!-- Listas -->
-    <string name="conectados" >Conectados</string>
-    <string name="desconectados" >Desconectados</string>
+    <string name="conectados">Conectados</string>
+    <string name="desconectados">Desconectados</string>
 
     <string-array name="conectados">
         <item>Crypt0r</item>
@@ -184,7 +191,6 @@
         <item>Eleven</item>
         <item>Axel</item>
     </string-array>
-
 
 
 </resources>

@@ -18,10 +18,10 @@
             android:id="@+id/irAtras"
             android:contentDescription="@string/flechaatras"
             android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:background="@drawable/boton_sombra_atras"                    tools:ignore="NestedWeights"
             android:layout_marginStart="10dp"
-            android:layout_marginVertical="10dp"/>
+            android:layout_marginTop="20dp"/>
 
     <View
         android:layout_width="0dp"

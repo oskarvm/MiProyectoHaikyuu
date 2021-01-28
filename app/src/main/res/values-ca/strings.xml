@@ -71,4 +71,9 @@
     <string name="menuprincipal">Menú principal</string>
     <string name="conectados">Conectats</string>
     <string name="desconectados">Desconectats</string>
+    <string name="listadeamigos">Llista d\'amics:</string>
+    <string name="cambiarjugador">Change player</string>
+    <string name="quitarjugador">Remove player</string>
+    <string name="amigopartida">Invite to game</string>
+    <string name="amigoborrar">Esborrar d\'amics</string>
 </resources>

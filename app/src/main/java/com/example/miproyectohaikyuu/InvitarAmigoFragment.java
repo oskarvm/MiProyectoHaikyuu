@@ -2,63 +2,90 @@ package com.example.miproyectohaikyuu;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ExpandableListView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link InvitarAmigoFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.example.miproyectohaikyuu.databinding.FragmentInvitarAmigoBinding;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+import static com.example.miproyectohaikyuu.R.id.action_invitarAmigoFragment_to_opcionesAmigoFragment;
+
+
 public class InvitarAmigoFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private FragmentInvitarAmigoBinding binding;
+    private NavController navController;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public InvitarAmigoFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment InvitarAmigoFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static InvitarAmigoFragment newInstance(String param1, String param2) {
-        InvitarAmigoFragment fragment = new InvitarAmigoFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+    List<String> listaAmigos;
+    HashMap<String, List<String>> listItem;
+    MainAdapter adapter;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return (binding = FragmentInvitarAmigoBinding.inflate(inflater, container, false)).getRoot();
+    }
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        listaAmigos = new ArrayList<>();
+        listItem = new HashMap<>();
+        adapter = new MainAdapter(requireContext(),listaAmigos,listItem);
+        binding.listaamigos.setAdapter(adapter);
+        initListData();
+
+        navController = Navigation.findNavController(view);
+        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
+        binding.listaamigos.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+
+
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                navController.navigate(action_invitarAmigoFragment_to_opcionesAmigoFragment);
+                return true;
+
+            }
+        });
+
+    }
+
+
+
+
+    private void initListData() {
+        listaAmigos.add(getString(R.string.conectados));
+        listaAmigos.add(getString(R.string.desconectados));
+
+        String[] array;
+
+        List<String> list = new ArrayList<>();
+        array = getResources().getStringArray(R.array.conectados);
+        for (String item : array){
+            list.add(item);
         }
+
+        List<String> list2 = new ArrayList<>();
+        array = getResources().getStringArray(R.array.desconectados);
+        for (String item : array){
+            list2.add(item);
+        }
+
+        listItem.put(listaAmigos.get(0),list);
+        listItem.put(listaAmigos.get(1),list2);
+        adapter.notifyDataSetChanged();
+
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_invitar_amigo, container, false);
-    }
+
 }
