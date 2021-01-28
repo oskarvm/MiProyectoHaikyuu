@@ -127,7 +127,11 @@
             app:popExitAnim="@anim/slide_out_right"/>
         <action
             android:id="@+id/action_crearEquipo_to_menuMisEquiposFragment"
-            app:destination="@id/menuMisEquiposFragment" />
+            app:destination="@id/menuMisEquiposFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"/>
     </fragment>
     <fragment
         android:id="@+id/equipoCreado"
