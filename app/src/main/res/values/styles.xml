@@ -6,4 +6,8 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="MiTabLayout" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>

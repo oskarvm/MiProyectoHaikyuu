@@ -14,15 +14,14 @@
         android:orientation="horizontal"
         android:background="@color/negro">
 
-    <ImageView
-        android:id="@+id/irAtras"
-        android:contentDescription="@string/flechaatras"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/flecha"
-        tools:ignore="NestedWeights"
-        android:layout_marginStart="10dp"
-        android:layout_marginVertical="10dp"/>
+        <Button
+            android:id="@+id/irAtras"
+            android:contentDescription="@string/flechaatras"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boton_sombra_atras"                    tools:ignore="NestedWeights"
+            android:layout_marginStart="10dp"
+            android:layout_marginVertical="10dp"/>
 
     <View
         android:layout_width="0dp"

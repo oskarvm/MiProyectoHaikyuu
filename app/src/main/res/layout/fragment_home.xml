@@ -47,38 +47,41 @@
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/boton_negro_pulsado"
+                android:background="@drawable/boton_sombra_negro"
                 android:textColor="@color/blanco"
                 android:fontFamily="@font/roboto_black"
                 android:text="@string/miperfil"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textSize="20sp"/>
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:shadowColor="@color/naranjapuro"
+                android:shadowRadius="10"/>
 
             <Button
                 android:id="@+id/irMisEquipos"
+                android:text="@string/misequipos"
+                android:layout_marginBottom="10dp"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/boton_negro_pulsado"
+                android:background="@drawable/boton_sombra_negro"
                 android:fontFamily="@font/roboto_black"
-                android:layout_marginBottom="10dp"
-                android:text="@string/misequipos"
-                android:textAlignment="center"
-                android:textAllCaps="true"
                 android:textColor="@color/blanco"
-                android:textSize="20sp"/>
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:shadowColor="@color/naranja"
+                android:shadowRadius="10"/>
 
             <Button
                 android:id="@+id/irJugarPartida"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/boton_negro_pulsado"
+                android:background="@drawable/boton_sombra_negro"
                 android:fontFamily="@font/roboto_black"
                 android:text="@string/jugarpartida"
-                android:textAlignment="center"
-                android:textAllCaps="true"
+                android:textAllCaps="false"
                 android:textColor="@color/blanco"
-                android:textSize="20sp"/>
+                android:textSize="18sp"
+                android:shadowColor="@color/naranjapuro"
+                android:shadowRadius="10"/>
 
         </LinearLayout>
 
@@ -88,16 +91,18 @@
         android:layout_weight="1">
     </View>
 
-        <Button
-            android:id="@+id/cerrarSesion"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:background="@drawable/boton_blanco"
-            android:fontFamily="@font/roboto_bold_italic"
-            android:layout_gravity="center"
-            android:textSize="20sp"
-            android:text="@string/cerrarsesion"
-            android:textAlignment="center"
-            android:textColor="@color/negro" />
+    <Button
+        android:id="@+id/cerrarSesion"
+        android:text="@string/cerrarsesion"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/boton_sombra_blanco"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:textColor="@color/naranja"
+        android:textSize="18sp"
+        android:shadowColor="@color/negro"
+        android:shadowRadius="10"
+        android:textAllCaps="false"/>
 
 </LinearLayout>

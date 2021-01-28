@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/naranja">
 
@@ -15,14 +15,16 @@
         android:orientation="horizontal"
         tools:ignore="UseCompoundDrawables">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/posicionfoto"
             android:contentDescription="@string/colocador"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@drawable/posicion_colocador"
             android:layout_gravity="center"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/negro"/>
 
         <TextView
             android:id="@+id/posicion"
@@ -32,7 +34,7 @@
             android:gravity="center"
             android:fontFamily="@font/roboto_black"
             android:textColor="@color/negro"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:padding="10dp"
             android:layout_weight="1"
             tools:ignore="NestedWeights" />

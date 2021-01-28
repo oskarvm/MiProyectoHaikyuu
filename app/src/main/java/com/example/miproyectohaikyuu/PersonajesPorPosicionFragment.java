@@ -48,13 +48,15 @@ public class PersonajesPorPosicionFragment extends Fragment {
         binding.recyclerPosicion.setAdapter(personajesAdapter);
         binding.recyclerPosicion.addItemDecoration(new DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL));
 
-        haikyuuViewModel.equipoSeleccionado().observe(getViewLifecycleOwner(), posicion -> {
+        haikyuuViewModel.posicionSeleccionado().observe(getViewLifecycleOwner(), posicion -> {
 
-            Glide.with(PersonajesPorPosicionFragment.this).load(posicion.escudo).into(binding.escudoEquipo);
-            binding.nombreEquipo.setText(posicion.nombreEquipo);
+            Glide.with(PersonajesPorPosicionFragment.this).load(posicion.fotoPosicion).into(binding.escudoPosicion);
+            binding.nombrePosicion.setText(posicion.nombrePosicion);
 
             obtenerPersonajes(posicion).observe(getViewLifecycleOwner(), personajes -> personajesAdapter.establecerLista(personajes));
         });
+
+        binding.irAtras.setOnClickListener(v -> navController.popBackStack());
     }
 
     LiveData<List<PersonajeConEquipo>> obtenerPersonajes(Posicion posicion){

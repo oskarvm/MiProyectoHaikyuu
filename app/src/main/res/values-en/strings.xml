@@ -16,7 +16,7 @@
     <string name="elegirjugador">Choose player</string>
     <string name="miperfil">My profile</string>
     <string name="buscarpartida">Search game</string>
-    <string name="invitarpartida">Invite friend to game</string>
+    <string name="invitarpartida">Play with friend</string>
     <string name="historial">Game history</string>
     <string name="borrarequipos">Delete team</string>
     <string name="flechaatras">Back arrow</string>
@@ -69,4 +69,6 @@
     <string name="tuequipo">Your team</string>
     <string name="equiporival">"Opposing team "</string>
     <string name="menuprincipal">Main menu</string>
+    <string name="conectados">Online</string>
+    <string name="desconectados">Offline</string>
 </resources>

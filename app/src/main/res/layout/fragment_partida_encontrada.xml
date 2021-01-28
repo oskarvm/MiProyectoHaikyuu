@@ -8,6 +8,11 @@
     android:padding="10dp"
     android:orientation="vertical">
 
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -153,24 +158,16 @@
         android:layout_weight="1"/>
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:src="@drawable/versus" />
+        android:src="@drawable/versus"
+        tools:ignore="ContentDescription" />
 
     <View
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/equiporival"
-        android:textSize="23sp"
-        android:layout_gravity="end"
-        android:textColor="@color/negro" />
 
     <LinearLayout
         android:layout_width="300dp"
@@ -303,4 +300,17 @@
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/equiporival"
+        android:textSize="23sp"
+        android:layout_gravity="end"
+        android:textColor="@color/negro" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 </LinearLayout>

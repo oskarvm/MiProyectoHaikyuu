@@ -225,13 +225,15 @@
 
                 <Button
                     android:id="@+id/registrar"
+                    android:text="@string/crearcuenta"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:background="@drawable/fondonaranja"
-                    android:text="@string/crearcuenta"
+                    android:layout_marginTop="85dp"
+                    android:background="@drawable/boton_sombra_naranja"
                     android:fontFamily="@font/roboto_black"
-                    android:textSize="20sp"
-                    android:layout_marginTop="85dp"/>
+                    android:textSize="18sp"
+                    android:shadowColor="@color/blanco"
+                    android:shadowRadius="10" />
 
             </LinearLayout>
         </ScrollView>
@@ -246,13 +248,15 @@
 
     <Button
         android:id="@+id/irAlIniciarSesion"
+        android:text="@string/login"
+        android:layout_gravity="center"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:background="@drawable/boton_blanco"
-        android:fontFamily="@font/roboto_italic"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-        android:text="@string/login"
-        android:textAlignment="center"
-        android:textColor="@color/negro" />
+        android:background="@drawable/boton_sombra_blanco"
+        android:fontFamily="@font/roboto_bold_italic"
+        android:textColor="@color/naranja"
+        android:textSize="18sp"
+        android:shadowColor="@color/negro"
+        android:shadowRadius="10"
+        android:textAllCaps="false" />
 </LinearLayout>

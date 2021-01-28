@@ -84,6 +84,9 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
         @Query("SELECT * FROM Personaje JOIN Equipo ON Personaje.idEquipo = Equipo.idEquipo WHERE Equipo.idEquipo = :idEquipo")
         LiveData<List<PersonajeConEquipo>> obtenerPersonajesPorEquipo(int idEquipo);
 
+        @Query("SELECT * FROM Personaje JOIN Equipo ON Personaje.idEquipo = Equipo.idEquipo WHERE Personaje.posicion = :posicion")
+        LiveData<List<PersonajeConEquipo>> obtenerPersonajesPorPosicion(String posicion);
+
         @Query("SELECT DISTINCT Equipo.idEquipo, Equipo.nombreEquipo, Equipo.escudo FROM Equipo JOIN Personaje ON Equipo.idEquipo = Personaje.idEquipo")
         LiveData<List<Equipo>> obtenerEquipo();
 
@@ -101,7 +104,7 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
 
         List<Posicion> posiciones = Arrays.asList(
                 new Posicion("Punta", R.drawable.posicion_punta),
-                new Posicion("Colcador", R.drawable.posicion_colocador),
+                new Posicion("Colocador", R.drawable.posicion_colocador),
                 new Posicion("Bloqueador", R.drawable.posicion_bloqueador),
                 new Posicion("Opuesto", R.drawable.posicion_opuesto),
                 new Posicion("Libero", R.drawable.posicion_libero)

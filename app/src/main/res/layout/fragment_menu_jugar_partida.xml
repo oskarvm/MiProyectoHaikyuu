@@ -13,12 +13,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
+        <Button
             android:id="@+id/irAtras"
             android:contentDescription="@string/flechaatras"
-            android:layout_width="67dp"
-            android:layout_height="67dp"
-            android:src="@drawable/flecha" />
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boton_sombra_atras" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,38 +54,41 @@
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/boton_negro_pulsado"
-                android:textColor="@color/blanco"
+                android:background="@drawable/boton_sombra_negro"
                 android:fontFamily="@font/roboto_black"
+                android:shadowColor="@color/naranja"
+                android:shadowRadius="10"
                 android:text="@string/buscarpartida"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textSize="20sp"/>
+                android:textAllCaps="false"
+                android:textColor="@color/blanco"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/invitarAmigo"
+                android:text="@string/invitarpartida"
+                android:layout_marginBottom="10dp"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/boton_negro_pulsado"
+                android:background="@drawable/boton_sombra_negro"
                 android:fontFamily="@font/roboto_black"
-                android:layout_marginBottom="10dp"
-                android:text="@string/invitarpartida"
-                android:textAlignment="center"
-                android:textAllCaps="true"
                 android:textColor="@color/blanco"
-                android:textSize="20sp"/>
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:shadowColor="@color/naranja"
+                android:shadowRadius="10"/>
 
             <Button
                 android:id="@+id/irHistorial"
+                android:text="@string/historial"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/boton_negro_pulsado"
+                android:background="@drawable/boton_sombra_negro"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/historial"
-                android:textAlignment="center"
-                android:textAllCaps="true"
                 android:textColor="@color/blanco"
-                android:textSize="20sp"/>
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:shadowColor="@color/naranja"
+                android:shadowRadius="10"/>
 
         </LinearLayout>
 

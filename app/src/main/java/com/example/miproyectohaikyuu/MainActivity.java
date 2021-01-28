@@ -2,6 +2,7 @@ package com.example.miproyectohaikyuu;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ExpandableListView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,7 +16,15 @@ import com.example.miproyectohaikyuu.databinding.ActivityMainBinding;
 import com.example.miproyectohaikyuu.viewmodel.AutenticacionViewModel;
 import com.example.miproyectohaikyuu.viewmodel.HaikyuuViewModel;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+    //ExpandableListView expandableListView;
+    //List<String> listaAmigos;
+    //HashMap<String, List<String>> listItem;
+   // MainAdapter adapter;
 
     ActivityMainBinding binding;
     AutenticacionViewModel autenticacionViewModel;
@@ -25,6 +34,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
+
+        //expandableListView = findViewById(R.id.listaamigos);
+      //  listaAmigos = new ArrayList<>();
+    //    listItem = new HashMap<>();
+  //      adapter = new MainAdapter(this,listaAmigos,listItem);
+//        expandableListView.setAdapter(adapter);
+        //initListData();
 
         autenticacionViewModel = new ViewModelProvider(this).get(AutenticacionViewModel.class);
 
@@ -47,4 +63,28 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    /*private void initListData() {
+        listaAmigos.add(getString(R.string.conectados));
+        listaAmigos.add(getString(R.string.desconectados));
+
+        String[] array;
+
+        List<String> list = new ArrayList<>();
+        array = getResources().getStringArray(R.array.conectados);
+        for (String item : array){
+            list.add(item);
+        }
+
+        List<String> list2 = new ArrayList<>();
+        array = getResources().getStringArray(R.array.desconectados);
+        for (String item : array){
+            list2.add(item);
+        }
+
+        listItem.put(listaAmigos.get(0),list);
+        listItem.put(listaAmigos.get(1),list2);
+        adapter.notifyDataSetChanged();
+
+    }*/
 }

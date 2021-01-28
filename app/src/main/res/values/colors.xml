@@ -3,7 +3,9 @@
     <color name="negro">#333333</color>
     <color name="negropuro">#000000</color>
     <color name="naranja">#F1A431</color>
+    <color name="naranjapuro">#FF8000</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="crema">#D8FFFFFF</color>
 
     <color name="verde">#28832F</color>
     <color name="rojo">#E32815</color>

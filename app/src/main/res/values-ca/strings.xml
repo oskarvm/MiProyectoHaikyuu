@@ -14,9 +14,9 @@
     <string name="equipos">Equips</string>
     <string name="posiciones">Posicions</string>
     <string name="elegirjugador">Triar jugador</string>
-    <string name="miperfil">El meu pefil</string>
+    <string name="miperfil">El meu perfil</string>
     <string name="buscarpartida">Cercar partida</string>
-    <string name="invitarpartida">Convidar amic a partida</string>
+    <string name="invitarpartida">Jugar amb amic</string>
     <string name="historial">Historial de partides</string>
     <string name="borrarequipos">Esborrar equip</string>
     <string name="flechaatras">Fletxa enrere</string>
@@ -69,4 +69,6 @@
     <string name="tuequipo">El teu equip</string>
     <string name="equiporival">Equip rival</string>
     <string name="menuprincipal">Menú principal</string>
+    <string name="conectados">Conectats</string>
+    <string name="desconectados">Desconectats</string>
 </resources>

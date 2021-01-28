@@ -12,12 +12,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
+        <Button
             android:id="@+id/irAtras"
             android:contentDescription="@string/flechaatras"
-            android:layout_width="67dp"
-            android:layout_height="67dp"
-            android:src="@drawable/flecha" />
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@drawable/boton_sombra_atras" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,39 +51,42 @@
                 android:id="@+id/equipo1"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/boton_negro_pulsado"
-                android:textColor="@color/blanco"
-                android:fontFamily="@font/roboto_black"
                 android:text="@string/equipo1"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textSize="20sp"/>
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boton_sombra_negro"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="@color/blanco"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:shadowColor="@color/naranja"
+                android:shadowRadius="10"/>
 
             <Button
                 android:id="@+id/equipo2"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/boton_negro_pulsado"
-                android:fontFamily="@font/roboto_black"
                 android:layout_marginBottom="10dp"
                 android:text="@string/equipo2"
-                android:textAlignment="center"
-                android:textAllCaps="true"
+                android:background="@drawable/boton_sombra_negro"
+                android:fontFamily="@font/roboto_black"
                 android:textColor="@color/blanco"
-                android:textSize="20sp"/>
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:shadowColor="@color/naranja"
+                android:shadowRadius="10"/>
 
             <Button
                 android:id="@+id/equipo3"
+                android:text="@string/equipo3"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:background="@drawable/boton_negro_pulsado"
+                android:background="@drawable/boton_sombra_negro"
                 android:fontFamily="@font/roboto_black"
-                android:text="@string/equipo3"
-                android:textAlignment="center"
-                android:textAllCaps="true"
                 android:textColor="@color/blanco"
-                android:textSize="20sp"/>
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:shadowColor="@color/naranja"
+                android:shadowRadius="10"/>
 
         </LinearLayout>
 

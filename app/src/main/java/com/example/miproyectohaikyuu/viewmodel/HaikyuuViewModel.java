@@ -61,6 +61,10 @@ public class HaikyuuViewModel extends AndroidViewModel {
         return equipoSeleccionado;
     }
 
+    public MutableLiveData<Posicion> posicionSeleccionado(){
+        return posicionSeleccionado;
+    }
+
     public void seleccionarEquipo(Equipo equipo){
         equipoSeleccionado.setValue(equipo);
     }

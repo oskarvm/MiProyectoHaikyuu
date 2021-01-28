@@ -16,7 +16,7 @@
     <string name="elegirjugador">Elegir jugador</string>
     <string name="miperfil">Mi perfil</string>
     <string name="buscarpartida">Buscar partida</string>
-    <string name="invitarpartida">Invitar amigo a partida</string>
+    <string name="invitarpartida">Jugar con amigo</string>
     <string name="historial">Historial de partidas</string>
     <string name="borrarequipos">Borrar equipo</string>
     <string name="flechaatras">Flecha atras</string>
@@ -165,6 +165,26 @@
     <string name="akagi" translatable="false">Michinari Akagi</string>
 
     <string name="todo" translatable="false">TODO</string>
+
+
+    <!-- Listas -->
+    <string name="conectados" >Conectados</string>
+    <string name="desconectados" >Desconectados</string>
+
+    <string-array name="conectados">
+        <item>Crypt0r</item>
+        <item>Amaru</item>
+        <item>Platano</item>
+        <item>Shawn</item>
+    </string-array>
+
+    <string-array name="desconectados">
+        <item>Mandarina</item>
+        <item>Ordel</item>
+        <item>Eleven</item>
+        <item>Axel</item>
+    </string-array>
+
 
 
 </resources>

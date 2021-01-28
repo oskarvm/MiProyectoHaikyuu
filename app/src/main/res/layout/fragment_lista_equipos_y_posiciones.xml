@@ -9,7 +9,8 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/fondonegro2"
+        android:background="@color/negro"
+        app:tabTextAppearance="@style/MiTabLayout"
         app:tabTextColor="@color/blanco"
         app:tabIndicatorColor="@color/blanco"/>
 

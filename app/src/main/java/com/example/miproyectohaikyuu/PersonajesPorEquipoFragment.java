@@ -84,6 +84,8 @@ public class PersonajesPorEquipoFragment extends Fragment {
                 haikyuuViewModel.seleccionar(personaje);
                 navController.navigate(R.id.action_global_personajesFragment);
             });
+
+            binding.irAtras.setOnClickListener(v -> navController.popBackStack());
         }
 
         @Override
