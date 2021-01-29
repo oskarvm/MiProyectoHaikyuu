@@ -9,8 +9,8 @@
 
     <ImageView
         android:contentDescription="@string/logo"
-        android:layout_width="200dp"
-        android:layout_height="67dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:src="@drawable/logo" />
 
     <View
@@ -71,29 +71,33 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
         android:background="@drawable/fondonegro"
         android:orientation="vertical"
-        android:layout_weight="0"
-        android:paddingVertical="50dp"
-        android:paddingHorizontal="30dp">
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="50dp">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_regular"
-            android:textSize="15sp"
             android:text="@string/usuario"
-            android:textColor="@color/blanco" />
+            android:textColor="@color/blanco"
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/fondoblanco"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/fondoblanco"
             android:importantForAutofill="no"
             android:inputType="text"
             tools:ignore="LabelFor" />
@@ -101,10 +105,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:fontFamily="@font/roboto_regular"
             android:text="@string/contraseña"
             android:textColor="@color/blanco"
-            android:fontFamily="@font/roboto_regular"/>
+            android:textSize="15sp" />
+
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
@@ -116,16 +121,17 @@
 
         <Button
             android:id="@+id/iniciarSesion"
-            android:text="@string/login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/boton_sombra_naranja"
             android:fontFamily="@font/roboto_black"
-            android:textSize="18sp"
             android:shadowColor="@color/blanco"
-            android:shadowRadius="10"/>
+            android:shadowRadius="10"
+            android:text="@string/login"
+            android:textSize="18sp" />
     </LinearLayout>
+    </ScrollView>
 
     <View
         android:layout_width="match_parent"

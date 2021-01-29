@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:text="@string/cambiarjugador"
         android:textColor="@color/blanco"
-        android:textSize="12sp"
+        android:textSize="20sp"
         android:padding="10dp"
         android:fontFamily="@font/roboto_bold"/>
 
@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:text="@string/quitarjugador"
         android:textColor="@color/blanco"
-        android:textSize="12sp"
+        android:textSize="20sp"
         android:padding="10dp"
         android:fontFamily="@font/roboto_bold"/>
 

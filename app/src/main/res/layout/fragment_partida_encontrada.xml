@@ -23,7 +23,7 @@
 
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="230dp"
+        android:layout_height="200dp"
         android:layout_weight="0"
         android:orientation="vertical"
         android:background="@drawable/pistareverse"
@@ -42,8 +42,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador1r"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_kamomedai_hoshiumi"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -56,8 +56,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador2r"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_karasuno_hinata"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -70,8 +70,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador3r"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_aobajosai_oikawa"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -91,8 +91,8 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador4r"
                 android:layout_gravity="end"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_nekoma_yaku"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -111,8 +111,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador5r"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_shiratorizawa_ushijima"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -125,8 +125,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador6r"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_date_aone"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -139,8 +139,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador7r"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_fukorodani_bokuto"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -150,12 +150,8 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
         </LinearLayout>
-    </LinearLayout>
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+    </LinearLayout>
 
     <ImageView
         android:layout_width="100dp"
@@ -164,14 +160,9 @@
         android:src="@drawable/versus"
         tools:ignore="ContentDescription" />
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="230dp"
+        android:layout_height="200dp"
         android:layout_weight="0"
         android:orientation="vertical"
         android:background="@drawable/pista"
@@ -191,8 +182,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_karasuno_asahi"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -205,8 +196,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_kamomedai_hakuba"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -219,8 +210,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_nekoma_kenma"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -240,8 +231,8 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador4"
                 android:layout_gravity="end"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_date_sakumani"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -260,8 +251,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_inarizaki_osamu"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -274,8 +265,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador6"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_fukorodani_washio"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -288,8 +279,8 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/jugador7"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@drawable/jugador_aobajosai_kentaro"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
