@@ -35,10 +35,20 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:background="@drawable/fondonaranja">
 
         <TextView
@@ -52,15 +62,10 @@
             android:layout_marginVertical="10dp"/>
     </LinearLayout>
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
         android:orientation="vertical"
         android:background="@drawable/pista"
         android:padding="40dp">
@@ -75,12 +80,14 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/insertar1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
-                app:srcCompat="@android:drawable/ic_input_add" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boton_anyadir"
+                app:civ_border_color="@color/blanco"
+                app:civ_border_width="2dp"
+                />
 
             <View
                 android:layout_width="0dp"
@@ -88,24 +95,28 @@
                 android:layout_weight="1" />
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/insertar2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
-                app:srcCompat="@android:drawable/ic_input_add" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boton_anyadir"
+                app:civ_border_color="@color/blanco"
+                app:civ_border_width="2dp"
+                />
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/insertar3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
-                app:srcCompat="@android:drawable/ic_input_add" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boton_anyadir"
+                app:civ_border_color="@color/blanco"
+                app:civ_border_width="2dp"
+                />
 
             <View
                 android:layout_width="0dp"
@@ -118,13 +129,16 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/insertar7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_input_add"
                 android:layout_gravity="end"
-                android:contentDescription="@string/todo" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boton_anyadir"
+                app:civ_border_color="@color/blanco"
+                app:civ_border_width="2dp"
+                />
+
         </LinearLayout>
 
         <LinearLayout
@@ -137,36 +151,45 @@
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/insertar4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_input_add"
-                android:contentDescription="@string/todo" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boton_anyadir"
+                app:civ_border_color="@color/blanco"
+                app:civ_border_width="2dp"
+                />
+
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/insertar5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_input_add"
-                android:contentDescription="@string/todo" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boton_anyadir"
+                app:civ_border_color="@color/blanco"
+                app:civ_border_width="2dp"
+                />
+
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/insertar6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_input_add"
-                android:contentDescription="@string/todo" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boton_anyadir"
+                app:civ_border_color="@color/blanco"
+                app:civ_border_width="2dp"
+                />
+
 
             <View
                 android:layout_width="0dp"
@@ -175,15 +198,9 @@
         </LinearLayout>
     </LinearLayout>
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:orientation="vertical"
         android:background="@drawable/fondonaranja">
 
@@ -318,5 +335,12 @@
         </LinearLayout>
 
     </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
 </LinearLayout>

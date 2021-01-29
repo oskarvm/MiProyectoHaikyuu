@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
-    android:orientation="vertical"
     android:background="@color/naranja"
-    android:padding="10dp">
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,24 +15,30 @@
 
         <Button
             android:id="@+id/irAtras"
-            android:contentDescription="@string/flechaatras"
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:background="@drawable/boton_sombra_atras" />
+            android:background="@drawable/boton_sombra_atras"
+            android:contentDescription="@string/flechaatras" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <ImageView
-                android:contentDescription="@string/logo"
                 android:layout_width="200dp"
                 android:layout_height="67dp"
                 android:layout_gravity="end"
+                android:contentDescription="@string/logo"
                 android:src="@drawable/logo" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -42,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,20 +58,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
                     android:fontFamily="@font/roboto_bold"
                     android:text="@string/elegirjugadoresequipo"
-                    android:textSize="23sp"
                     android:textColor="@color/negro"
-                    tools:ignore="HardcodedText"
-                    android:layout_marginVertical="10dp"/>
+                    android:textSize="23sp"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:orientation="vertical"
                 android:background="@drawable/pista"
+                android:orientation="vertical"
                 android:padding="40dp">
 
                 <LinearLayout
@@ -83,36 +90,34 @@
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/jugador_kamomedai_hoshiumi"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                        app:civ_border_color="@color/negro"
+                        app:civ_border_width="2dp" />
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_weight="1" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/jugador2"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/jugador_karasuno_hinata"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                        app:civ_border_color="@color/negro"
+                        app:civ_border_width="2dp" />
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_weight="1" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/jugador3"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/jugador_aobajosai_oikawa"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                        app:civ_border_color="@color/negro"
+                        app:civ_border_width="2dp" />
 
                     <View
                         android:layout_width="0dp"
@@ -125,15 +130,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/jugador4"
-                        android:layout_gravity="end"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
+                        android:layout_gravity="end"
                         android:src="@drawable/jugador_nekoma_yaku"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                        app:civ_border_color="@color/negro"
+                        app:civ_border_width="2dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -146,42 +150,39 @@
                         android:layout_height="0dp"
                         android:layout_weight="1" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/jugador5"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/jugador_shiratorizawa_ushijima"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                        app:civ_border_color="@color/negro"
+                        app:civ_border_width="2dp" />
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_weight="1" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/jugador6"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/jugador_date_aone"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                        app:civ_border_color="@color/negro"
+                        app:civ_border_width="2dp" />
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:layout_weight="1" />
 
-                    <de.hdodenhof.circleimageview.CircleImageView
-                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/jugador7"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:src="@drawable/jugador_fukorodani_bokuto"
-                        app:civ_border_width="2dp"
-                        app:civ_border_color="#FF000000"/>
+                        app:civ_border_color="@color/negro"
+                        app:civ_border_width="2dp" />
 
                     <View
                         android:layout_width="0dp"
@@ -193,14 +194,14 @@
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:background="@drawable/fondonaranja">
+                android:background="@drawable/fondonaranja"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -210,11 +211,11 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
                         android:fontFamily="@font/roboto_bold_italic"
                         android:text="@string/mediaequipo"
-                        android:textSize="23sp"
                         android:textColor="@color/negro"
-                        android:layout_marginVertical="10dp"/>
+                        android:textSize="23sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -250,17 +251,17 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
                         android:text="@string/remate"
-                        android:textSize="18sp"
-                        android:textColor="@color/blanco" />
+                        android:textColor="@color/blanco"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:fontFamily="@font/roboto_regular"
                         android:text="9"
-                        tools:ignore="HardcodedText"
                         android:textColor="@color/blanco"
-                        android:textSize="18sp" />
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -273,17 +274,17 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
                         android:text="@string/recepcion"
-                        android:textSize="18sp"
-                        android:textColor="@color/blanco" />
+                        android:textColor="@color/blanco"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
                         android:text="8"
-                        tools:ignore="HardcodedText"
+                        android:textColor="@color/blanco"
                         android:textSize="18sp"
-                        android:textColor="@color/blanco" />
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -296,17 +297,17 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
                         android:text="@string/saque"
-                        android:textSize="18sp"
-                        android:textColor="@color/blanco" />
+                        android:textColor="@color/blanco"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
                         android:text="9"
-                        tools:ignore="HardcodedText"
+                        android:textColor="@color/blanco"
                         android:textSize="18sp"
-                        android:textColor="@color/blanco" />
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -319,21 +320,26 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_bold"
                         android:text="@string/colocacion"
-                        android:textSize="18sp"
-                        android:textColor="@color/blanco" />
+                        android:textColor="@color/blanco"
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto_regular"
                         android:text="8"
-                        tools:ignore="HardcodedText"
+                        android:textColor="@color/blanco"
                         android:textSize="18sp"
-                        android:textColor="@color/blanco" />
+                        tools:ignore="HardcodedText" />
                 </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 
 </LinearLayout>
