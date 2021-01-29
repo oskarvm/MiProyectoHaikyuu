@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="login">Log in</string>
-    <string name="usuario">User: </string>
-    <string name="contraseña">Password: </string>
+    <string name="usuario">User</string>
+    <string name="contraseña">Password</string>
     <string name="verjugadores">View players</string>
     <string name="misequipos">My teams</string>
     <string name="jugarpartida">Play game</string>
     <string name="cerrarsesion">Sign off</string>
-    <string name="nombre">Name: </string>
-    <string name="apellido">Last name: </string>
-    <string name="correo">Mail: </string>
+    <string name="nombre">Name</string>
+    <string name="apellido">Last name</string>
+    <string name="correo">Mail</string>
     <string name="crearcuenta">Create account</string>
     <string name="equipos">Teams</string>
     <string name="posiciones">Positions</string>
@@ -60,9 +60,9 @@
     <string name="inarizaki">Inarizaki High</string>
     <string name="iniciodesesion">Login</string>
     <string name="registro">Registry data</string>
-    <string name="telefono">Phone: </string>
-    <string name="edad">Age: </string>
-    <string name="genero">Gender: </string>
+    <string name="telefono">Phone</string>
+    <string name="edad">Age</string>
+    <string name="genero">Gender</string>
     <string name="victoria">Victory</string>
     <string name="derrota">Default</string>
     <string name="ultimaspartidas">" Last 10 games"</string>

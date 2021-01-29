@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="login">Iniciar sesión</string>
-    <string name="usuario">Usuario: </string>
-    <string name="contraseña">Contraseña: </string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
     <string name="verjugadores">Ver jugadores</string>
     <string name="misequipos">Mis equipos</string>
     <string name="jugarpartida">Jugar partida</string>
     <string name="cerrarsesion">Cerrar sesión</string>
-    <string name="nombre">Nombre: </string>
-    <string name="apellido">Apellido: </string>
-    <string name="correo">Correo: </string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="correo">Correo</string>
     <string name="crearcuenta">Crear cuenta</string>
     <string name="equipos">Equipos</string>
     <string name="posiciones">Posiciones</string>
@@ -60,9 +60,9 @@
     <string name="inarizaki">Preparatoria Inarizaki</string>
     <string name="iniciodesesion">Inicio de sesión</string>
     <string name="registro">Datos del registro</string>
-    <string name="telefono">Teléfono: </string>
-    <string name="edad">Edad: </string>
-    <string name="genero">Género: </string>
+    <string name="telefono">Teléfono</string>
+    <string name="edad">Edad</string>
+    <string name="genero">Género</string>
     <string name="victoria">Victoria</string>
     <string name="derrota">Derrota</string>
     <string name="ultimaspartidas">Últimas 10 partidas</string>

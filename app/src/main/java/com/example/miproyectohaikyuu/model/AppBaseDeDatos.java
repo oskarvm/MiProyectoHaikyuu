@@ -93,8 +93,6 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
         @Query("SELECT DISTINCT * FROM Posicion")
         LiveData<List<Posicion>> obtenerPosicion();
 
-       // @Query("SELECT DISTINCT Equipo.idEquipo, Equipo.nombreEquipo, Equipo.escudo FROM Equipo JOIN Personaje ON Equipo.idEquipo = Personaje.idEquipo")
-        //LiveData<List<PersonajeConEquipo>> obtenerJugadoresDeUnEquipo();
 
         @Query("SELECT  idEquipo FROM Equipo WHERE nombreEquipo = :nombre")
         int obtenerIdEquipo(String nombre);

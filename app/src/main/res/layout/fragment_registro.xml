@@ -103,6 +103,7 @@
                     android:layout_marginBottom="20dp"
                     android:importantForAutofill="no"
                     android:inputType="text"
+                    android:hint="@string/usuario"
                     tools:ignore="LabelFor" />
 
                 <TextView
@@ -120,6 +121,7 @@
                     android:layout_marginBottom="20dp"
                     android:importantForAutofill="no"
                     android:inputType="textPassword"
+                    android:hint="@string/contraseña"
                     tools:ignore="LabelFor" />
 
                 <TextView
@@ -137,6 +139,7 @@
                     android:layout_marginBottom="20dp"
                     android:importantForAutofill="no"
                     android:inputType="text"
+                    android:hint="@string/nombre"
                     tools:ignore="LabelFor" />
 
                 <TextView
@@ -154,6 +157,7 @@
                     android:layout_marginBottom="20dp"
                     android:importantForAutofill="no"
                     android:inputType="text"
+                    android:hint="@string/apellido"
                     tools:ignore="LabelFor" />
 
                 <TextView
@@ -170,8 +174,9 @@
                     android:background="@drawable/fondoblanco"
                     android:layout_marginBottom="20dp"
                     android:importantForAutofill="no"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
+                    android:inputType="textEmailAddress"
+                    android:hint="example@gmail.com"
+                    tools:ignore="HardcodedText,LabelFor" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -187,8 +192,9 @@
                     android:background="@drawable/fondoblanco"
                     android:layout_marginBottom="20dp"
                     android:importantForAutofill="no"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
+                    android:inputType="number"
+                    android:hint="654789123"
+                    tools:ignore="HardcodedText,LabelFor" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -204,8 +210,9 @@
                     android:background="@drawable/fondoblanco"
                     android:layout_marginBottom="20dp"
                     android:importantForAutofill="no"
-                    android:inputType="text"
-                    tools:ignore="LabelFor" />
+                    android:inputType="number"
+                    android:hint="18"
+                    tools:ignore="HardcodedText,LabelFor" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -221,7 +228,8 @@
                     android:background="@drawable/fondoblanco"
                     android:importantForAutofill="no"
                     android:inputType="text"
-                    tools:ignore="LabelFor" />
+                    android:hint="Hombre | Mujer"
+                    tools:ignore="HardcodedText,LabelFor" />
 
                 <Button
                     android:id="@+id/registrar"

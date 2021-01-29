@@ -43,13 +43,13 @@
 
 
     <!-- Registro -->
-    <string name="usuario">Usuario:</string>
-    <string name="contraseña">Contraseña: </string>
-    <string name="nombre">Nombre:</string>
-    <string name="apellido">Apellido:</string>
-    <string name="correo">Correo:</string>
-    <string name="telefono">Teléfono:</string>
-    <string name="edad">Edad:</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="correo">Correo</string>
+    <string name="telefono">Teléfono</string>
+    <string name="edad">Edad</string>
     <string name="genero">Género:</string>
 
     <!-- Campo -->
