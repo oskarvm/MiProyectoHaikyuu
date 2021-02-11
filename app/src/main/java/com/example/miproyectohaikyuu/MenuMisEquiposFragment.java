@@ -30,6 +30,8 @@ public class MenuMisEquiposFragment extends Fragment {
 
         navController = Navigation.findNavController(view);
 
+
+        // antes de navegar guardar en el viewmodel del equipo seleccionada (equipo=1)
         binding.equipo1.setOnClickListener(v -> navController.navigate(R.id.action_menuMisEquiposFragment_to_equipoCreado));
         binding.equipo2.setOnClickListener(v -> navController.navigate(R.id.action_menuMisEquiposFragment_to_crearEquipo));
         binding.equipo3.setOnClickListener(v -> navController.navigate(R.id.action_menuMisEquiposFragment_to_equipoCreado));

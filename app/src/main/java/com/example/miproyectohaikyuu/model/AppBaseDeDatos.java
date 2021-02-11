@@ -78,11 +78,15 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
         @Insert
         void insertarEquipo(Equipo equipo);
 
+        //@Insert
+        //void insertarPosicion(Posicion posicion);
+
         @Insert
-        void insertarPosicion(Posicion posicion);
+        void insertarPosiciones(List<Posicion> posiciones);
 
         @Query("SELECT * FROM Personaje JOIN Equipo ON Personaje.idEquipo = Equipo.idEquipo WHERE Equipo.idEquipo = :idEquipo")
         LiveData<List<PersonajeConEquipo>> obtenerPersonajesPorEquipo(int idEquipo);
+
 
         @Query("SELECT * FROM Personaje JOIN Equipo ON Personaje.idEquipo = Equipo.idEquipo WHERE Personaje.posicion = :posicion")
         LiveData<List<PersonajeConEquipo>> obtenerPersonajesPorPosicion(String posicion);
@@ -99,6 +103,8 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
     }
 
     public static void insertarTodo(PersonajeDao personajeDao){
+
+
 
         List<Posicion> posiciones = Arrays.asList(
                 new Posicion("Punta", R.drawable.posicion_punta),
@@ -203,23 +209,21 @@ public abstract class AppBaseDeDatos extends RoomDatabase {
                 new Personaje(R.drawable.jugador_inarizaki_akagi,"Michinari Akagi","Libero", 0, "174.2", "5", "5", "8", "5", "6",R.drawable.posicion_libero)
         ));
 
-        for (Posicion posicion : posiciones) {
-            personajeDao.insertarPosicion(posicion);
-        }
+        personajeDao.insertarPosiciones(posiciones);
 
         for (Equipo equipo : equipos) {
-                personajeDao.insertarEquipo(equipo);
+            personajeDao.insertarEquipo(equipo);
+        }
+
+        for (String nombreEquipo : personajes.keySet()) {
+            int idEquipo = personajeDao.obtenerIdEquipo(nombreEquipo);
+
+            for (Personaje personaje : personajes.get(nombreEquipo)) {
+                personaje.idEquipo = idEquipo;
+
+                personajeDao.insertar(personaje);
             }
-
-            for (String nombreEquipo : personajes.keySet()) {
-                int idEquipo = personajeDao.obtenerIdEquipo(nombreEquipo);
-
-                for (Personaje personaje : personajes.get(nombreEquipo)) {
-                    personaje.idEquipo = idEquipo;
-
-                    personajeDao.insertar(personaje);
-                }
-            }
+        }
     }
 }
 

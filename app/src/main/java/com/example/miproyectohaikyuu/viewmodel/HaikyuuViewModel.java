@@ -18,6 +18,7 @@ public class HaikyuuViewModel extends AndroidViewModel {
     HaikyuuRepository haikyuuRepository;
 
     public  MutableLiveData<PersonajeConEquipo> personajeSeleccionado = new MutableLiveData<>();
+    public Integer posicionTitulares;
 
     public  MutableLiveData<Equipo> equipoSeleccionado = new MutableLiveData<>();
 
@@ -51,6 +52,13 @@ public class HaikyuuViewModel extends AndroidViewModel {
 
     public void seleccionar(PersonajeConEquipo personaje){
         personajeSeleccionado.setValue(personaje);
+    }
+    public void seleccionarTitulares(int pos){
+        posicionTitulares = pos;
+    }
+
+    public Integer seleccionadoTitulares(){
+        return posicionTitulares;
     }
 
     public MutableLiveData<PersonajeConEquipo> seleccionado(){

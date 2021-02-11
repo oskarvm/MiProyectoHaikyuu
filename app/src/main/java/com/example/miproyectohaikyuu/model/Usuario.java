@@ -18,6 +18,8 @@ public class Usuario {
     public String edad;
     public String genero;
 
+    public int j1_1, j1_2, j1_3;
+
     public Usuario(String username, String password, String nombre, String apellido, String correo, String telefono, String edad, String genero) {
         this.username = username;
         this.password = password;

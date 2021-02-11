@@ -21,6 +21,8 @@ public class Personaje {
     public String colocacion;
     public int fotoPosicion;
 
+
+
     public Personaje(int foto, String nombre, String posicion, int idEquipo, String altura, String bloqueo, String remate, String recepcion, String saque, String colocacion, int fotoPosicion) {
         this.foto = foto;
         this.nombre = nombre;
