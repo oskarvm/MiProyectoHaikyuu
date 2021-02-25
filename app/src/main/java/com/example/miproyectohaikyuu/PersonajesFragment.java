@@ -52,7 +52,7 @@ public class PersonajesFragment extends Fragment {
         // cuando haces click aqui, guardas en la base de datos que este jugador va en el equipo tal y en tal posicion
         // y eso lo sabes del viewmodel
         binding.elegirJugador.setOnClickListener(v -> {
-            navController.navigate(R.id.action_personajesFragment_to_crearEquipo);
+            navController.navigate(R.id.action_personajesFragment_to_equipoCreado);
         });
 
 

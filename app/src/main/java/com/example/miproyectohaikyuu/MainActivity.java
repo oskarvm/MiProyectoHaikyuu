@@ -22,8 +22,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     ActivityMainBinding binding;
     AutenticacionViewModel autenticacionViewModel;
     private HaikyuuViewModel haikyuuViewModel;
@@ -33,12 +31,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView((binding = ActivityMainBinding.inflate(getLayoutInflater())).getRoot());
 
-
-
         autenticacionViewModel = new ViewModelProvider(this).get(AutenticacionViewModel.class);
 
         haikyuuViewModel = new ViewModelProvider(this).get(HaikyuuViewModel.class);
-
 
         NavController navController = ((NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment)).getNavController();
 
